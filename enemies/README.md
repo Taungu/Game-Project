@@ -59,7 +59,7 @@ Data: `ReplicatedStorage.EnemyDefinitions` (HP, base damage, EXP, stagger, resis
 | **SuffererEncounter** | Combat | Second stage | A Cleanser squad is already fighting the Sufferer. Help them. |
 | **CorruptedDohvEncounter** | Combat | Second stage (corrupted paths' pools) | Dohv(Corrupted) charges in from the side of the path (DohvCharge) and attacks straight away, no howl. |
 | **BeneshCharmSeller** | Safe | Random (rarer, weighted) | Benesh sells charms. |
-| **RossMerchant** | Safe | Guaranteed on the path **before every Safe Haven** | Ross the merchant: buy and sell. |
+| **RossMerchant** | Safe | Random pool, weight 0.5 (a chance encounter) | Ross the merchant: buy and sell. |
 
 ## Planned
 - **Alpha Dohv** (pinnacle of the Dohv species, just under Lord Dohv) and **Lord Dohv** as a major enemy.

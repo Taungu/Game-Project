@@ -29,7 +29,7 @@ Driver: `ServerScriptService.PathProgressionScript`.
   - A SafeEvent never comes twice in a row.
   - The path after a Safe Haven or a SafeEvent is **always a combat event**.
   - The first path after an entrance is always combat.
-  - **Ross** is guaranteed on the path **right before every Safe Haven**.
+  - **Ross** is a chance encounter in the random pool (weight 0.5; a fight is 1, Benesh 0.3). No longer guaranteed before a Safe Haven.
   - **Locked events** only appear on their own path (Totems → Path version 5, Akavish → caves, Wyvern → Nest, Rehem → its arena).
 - Leaving a node destroys any leftover enemies, so a fight left mid-battle doesn't follow you.
 - Full event list: [enemies/README.md](../enemies/README.md#encounters-serverstoragepathevents).
