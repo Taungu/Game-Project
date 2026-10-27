@@ -70,4 +70,4 @@ Several moves grab and hold a target: the Light Brigand, Bella's Injection, the 
 - When full, the player dies on the spot and becomes a **Host** (`HostSpawner`). Solo, that's game over. Zumin's brace blocks build-up.
 
 ## Hit feedback
-Damage numbers (`DamageIndicator`), enemy overhead health and status markers (`EnemyOverheadUI`), screen shake (`ScreenShakeScript`), blood hit reactions (`BloodSplatterVFX`), the boss health bar, combat music.
+Damage numbers (`DamageIndicator`), enemy overhead health and status markers (`EnemyOverheadUI`), screen shake (`ScreenShakeScript`), blood hit reactions (`BloodSplatterVFX`), the boss health bar (`BossHealthBar`: a skinny crimson bar across the top with a dark pewter-edged outline, the boss name small and left-aligned above it, health numbers below, a pink damage trail and one decorative notch; shows while a listed boss is awake), combat music.
