@@ -3,6 +3,7 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-10-27
+- **Earth Spikes** pillars doubled in size (×1.5–2.2 of `GroundPike`, ~83–122 studs tall); spots now keep 28 studs apart.
 - **Earth Spikes** reworked: no ground outline, bigger dust, fewer spots (2 every 0.3 s), pillars slightly smaller and ease up instead of snapping, shake nearby screens, and **stay** as solid pillars that fill the arena until her descent shatters them all.
 - **Earth Spikes** now use the `GroundPike` union (stood up along its new Base/Tip attachments), ~60–90 studs tall, no shadows, coloured to match the ground under each one.
 - **The Chastity** first airborne attack, **Earth Spikes**: arena-wide waves of shaking spots (Deceased rise dust + a faint circle) that burst into big earth spikes for ~4 s. Her cast animation holds while they come.
