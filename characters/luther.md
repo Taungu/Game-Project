@@ -16,7 +16,7 @@
 | Slot | Name | What it does | Numbers |
 |---|---|---|---|
 | **E** | **Blood Letting** | A wind-up drift, then a server-driven lunge stab with his rondel dagger. Applies **Bleed** carrying **Hemorrhage**. | 10 Physical · cd 8 s · 15 Essence · stagger 1 · lunge 110 studs/s × 13/60 s after 29/60 s |
-| **Q** | **Tainted Rage** | He cuts himself and sprays blood in a 120° cone. Enemies are **Blinded** (3 s, 1.5 s vs players). Point-blank enemies (inside 4.5 studs) instead take a heavy hit and get **Bleed + Hemorrhage**. Costs him health and slows him while casting. | 6 Physical (cone) / 20 (point blank) · radius 12.5 · self-damage 5 True · cd 1 s (marked in code as a temporary testing value; the ship value noted there is 18 s) · 15 Essence · stagger 1 |
+| **Q** | **Tainted Rage** | He cuts himself and sprays blood in a 120° cone. Enemies are **Blinded** (3 s, 1.5 s vs players). Point-blank enemies (inside 4.5 studs) instead take a heavy hit and get **Bleed + Hemorrhage**. Costs him health and slows him while casting. | 6 Physical (cone) / 20 (point blank) · radius 12.5 · self-damage 5 True · cd 18 s · 15 Essence · stagger 1 |
 | **P** | **Anemic** | Whenever a Bleed **he applied** bursts, there's a **25% chance to Stun** (2.5 s). Today natural expiry counts as a burst too (`forcedBurstsOnly = false`). | — |
 | **R** | **Hemostatic Impact** | A step forward, then one heavy 120° slash. It **force-bursts every Bleed** it hits, **doubles** the stored pool, and **roots** the targets. | 20 Physical · radius 8 · root 0.75 s · cd 45 s · 35 Essence · stagger 3 |
 
