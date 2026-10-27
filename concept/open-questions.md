@@ -9,7 +9,8 @@ Things the design hasn't settled yet. Move an item out once it's decided and doc
 - What a win/loss writes to the Beacon. The meta-currency and permanent buffs are planned but not built.
 - Is the Beacon itself a walkable place?
 - The **Morale** flee trigger isn't wired. Nothing adds or removes stacks yet.
-- **Rejuvenating Field**: a separate zone generator is planned. Today it's a route node toward the caves and the Wyvern Nest.
+- **Rejuvenating Field**: a separate zone generator is planned. Today it's a route node toward the caves and the Wyvern Nest, with the lake reward.
+- The lake's lines (`RejuvenatingLake` LINES) are placeholders.
 - The final Story **enemy level** pacing (PATHS_PER_TIER / LEVELS_PER_TIER are placeholders).
 
 ## Characters

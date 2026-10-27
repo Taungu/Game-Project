@@ -34,7 +34,7 @@ Where things live, for quick navigation. ~185 live scripts (plus backups in Serv
 | Run | `PathProgressionScript` (nodes, events, safe havens, PVP tracks/Ambush), `RunProgressState`, `EncounterControllers/*` (BrigandAmbush, ZevFeast, DohvCharge, TotemGrove, RehemBoss, WyvernNest, FleeingBeasts, RootEmergence, BrigandHost, CleanserSquad) |
 | Enemies | `RehemBossAI` (+`RehemSceneExport`), `WyvernAI` (+`WyvernGrabTrack`), `AkavishAI`, `DeceasedAI`, `HostAI`, `HostSpawner`, `HostTransform`, `SuffererAI`, `CleanserAI`, `EnemyAggroManager`, `EnemyLevelState`, `EnemyOverheadUI`, `CombatTagManager`. Brigands/Zev/Dohv/Totems use their own scripts inside `ReplicatedStorage.Enemies.*`. |
 | Economy & items | `PlayerInventoryState`, `InventoryServerScript`, `ItemEffects`, `ItemPassives`, `ItemEquipServerScript`, `ItemOwnership`, `PlayerSmallInventoryState`, `SmallInventoryServerScript`, `ShopServerScript`, `ShopContext`, `SellServerScript`, `PlayerSilverState`, `EnemyDropDefinitions`, `EnemyDropScript`, `EnemyExpDropScript`, `CraftingService`, `CraftsmanNPCScript`, `CharmAutoEquip`, `CharmPartsPurchase`, `CharmBuildInfoServer` |
-| World | `SafeHavenHealScript`, `NPCInteractionScript`, `LavaHazardScript` (test pads), `CollisionSetup`, `PassiveGlowVFX`, `DamageIndicator` |
+| World | `SafeHavenHealScript`, `RejuvenatingLake` (the field's G-to-touch lake: full heal + one level, needs the cave cleared, once before and once after the Rehem), `NPCInteractionScript`, `LavaHazardScript` (test pads), `CollisionSetup`, `PassiveGlowVFX`, `DamageIndicator` |
 | Safety | `FreezeWatchdog`, `AnimationLoopGuard`, `PreloadManifestServer`, `SoundPrep`, `DevTestingStudioOnly` |
 
 ## StarterPlayerScripts (client)
