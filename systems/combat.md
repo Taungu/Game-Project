@@ -14,7 +14,9 @@
 - Optional per-step movement: **lunges**, **leaps** (an arc that aims at the real ground), **ground slams**, **step VFX** and screen shake. While swinging, a slow is applied to the wielder (e.g. ×0.5 for The Commandment).
 - `m1StatScaling` sets how much of your damage stat an M1 uses (IllThorn 0.2).
 - **Attack Speed** shortens time between swings. **Fahlon ×1.14** (also copied by Authan and Hayut) is the only class multiplier on M1 damage; everyone else is ×1.0.
-- Server-side lag compensation for hits on moving enemies: `EnemyHitRewind`.
+- Server-side lag compensation for hits on moving enemies: `EnemyHitRewind`. It replays where each enemy's **whole visible body** was a moment ago (its HitBox plus every visible part attached to it, measured once at spawn), not just its HitBox.
+- A hit counts on an enemy's `HitBox` part or any **visible** part; invisible parts (like the Dohv's attack zones) never count, and bullets fly through them.
+- **Bullets** (Imperial Rifle): the enemy the bullet's cast struck counts as hit on arrival even if it moved off the impact spot meanwhile (up to 30 studs away).
 
 ## Abilities (E / Q / R)
 - Data in `ClassAbilities`; behaviour in `AbilityScript`. Bella and Zumin run their own kit modules.
