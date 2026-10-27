@@ -15,7 +15,8 @@ Driver: `ServerScriptService.PathProgressionScript`.
 - PathVersion2 has two exits (a fork); for now both lead to a random next node.
 - Special routes:
   - **Rejuvenating Field** (a RouteNode via a SpecialExit) → **CaveEntrance** → cave paths in **random order** → **Wyvern Nest** (boss). Players leave through the same opening they came in by. Killing the Wyvern **clears the cave**: the party goes **back to the field they came from** (not the random paths), still on the route (no safe haven, doesn't count as a path). After that, the field's CaveEntrance is a solid wall for that team. The field's own EndOfPath leads back to the forest paths.
-  - **The lake** (`RejuvenatingLake`): press **G** at the field's water ("Touch the water") to be **healed fully** (health and Essence) and **levelled up once**. Only once your team has cleared the cave. **Twice per run per player**: once before the Rehem and once after it. Both fields (the normal one and `RejuvenatingFieldCorrupted`) have it. Lines are placeholders.
+  - **The lake** (`RejuvenatingLake`): press **G** at the field's water ("Touch the water") to be **healed fully** (health and Essence) and **levelled up once**. Only once your team has cleared the cave. **Twice per run per player**: once before the Rehem and once after it. Lines are placeholders.
+  - **After the Rehem** the same detour (PathVersion3 (corrupted) → Path version 5 (corrupted)) leads to **RejuvenatingField(Corrupted)** instead. Its cave entrance is blocked by the Corrupted Roots; the **Abominable Akavish** waits there instead (the second stage's Wyvern). The field's exit stays shut until it's dead, and killing it unlocks that field's lake (`LakeUnlockedBy = "Event"`), which gives the after-Rehem claim.
   - **SecondHalfBossPath(TheRehem)**: the Rehem arena.
   - **"Secound Stage"**: copies of the paths with some grass turned dark red (corrupted), matching the Lobby's maroon Tree of Knowledge.
 
