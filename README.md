@@ -31,4 +31,4 @@ This repo is the **design reference**, not the code. The code lives in the two R
 - **Planned**: designed but not built yet.
 - **Dev only**: test content that isn't part of the real game.
 
-*Last full survey of both Studio places: 2026-10-23.*
+*Last full survey of both Studio places: 2026-10-23. Weapons, Bella, PVP weapon locks and Convoke re-checked 2026-10-27.*

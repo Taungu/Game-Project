@@ -18,11 +18,11 @@ Things the design hasn't settled yet. Move an item out once it's decided and doc
 - A Conjurer Soul. DivineServant exists, but no Conjurer class does.
 - Fahlon's **Affinity Stat** (deliberately undecided).
 - Luther's Anemic: should a naturally expiring Bleed count as a "burst"? Today it does (`forcedBurstsOnly = false`).
-- PVP signature weapons per character (for now PVP locks each character to their best 2★ weapon).
+- PVP signature weapons per character (for now PVP locks each character to their affinity's 3★ weapon).
 
 ## Weapons
 - WarHammer has no M1 combo. Bow, Crossbow, StraightSword, Dagger and BroadDagger have basic combos.
-- Weapon skills for SilverFlash, The Commandment, Than and DivineServant.
+- Weapon skills for SilverFlash, The Commandment, Than, DivineServant, Akhzarims Tenacity and Imperial Rifle.
 
 ## Enemies & world
 - Brigand (MediumVarient) has no real attacks.

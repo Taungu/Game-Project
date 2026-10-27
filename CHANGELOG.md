@@ -2,6 +2,14 @@
 
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
+## 2026-10-27
+- Docs re-synced with Studio (current values only):
+  - **Akhzarims Tenacity** (3★ Gauntlet, no model) and **Imperial Rifle** (3★ Artillery, hybrid, branching shot/follow-up M1) added to the weapon roster.
+  - **Weapon passives** documented for every 3★: Inner Sensation, Rumble, SiphoningLife, Trained Veteran, Relentless Pursuit, OverflowingSynapse.
+  - Weapon numbers updated: IllThorn M1 7/7/8, ThornBurst 12 + 3/mark on a 3 s cooldown; CleanserSilverGauntlets 5/5/8; DivineServant 10/10/11/19 and now 3★ in the Convoke pool; per-step swing cooldowns.
+  - Bella's ×0.4 M1 penalty is gone (she deals full weapon damage).
+  - PVP locks each Soul to its affinity's 3★ (was the best 2★).
+
 ## 2026-10-23
 - Knowledge base created from a full survey of both Studio places and the design notes.
 

@@ -2,7 +2,7 @@
 
 - **Affinity:** Light · **Default weapon:** Dagger · **Rarity:** 2★ starter
 - **Role:** An assassin-like mage at close range. Big damage over time plus a big burst. Lukas calls her "by far the most complex character".
-- **Scales with both** Physical and Magic damage (both are her Affinity Stats). Her **kit is her damage**; M1s only support. That's why her M1 multiplier is **×0.4**, set per class rather than per weapon, so a future M1-focused Light character can keep the Broad Dagger strong.
+- **Scales with both** Physical and Magic damage (both are her Affinity Stats). Her **kit is her damage**; M1s only support. Her M1s deal **full weapon damage** (M1 multiplier ×1.0; the old ×0.4 class penalty was removed). Any future M1 weakening is meant to be per class, not per weapon, so a future M1-focused Light character can keep the Broad Dagger strong.
 - **Essence colour:** dark pink · **Class weapon:** Bella's Kleilev (her injector, only visible during Peak Health)
 - Full kit runs in `ServerScriptService.BellaKit`. All numbers live in `ClassAbilities.Bella` (placeholders).
 

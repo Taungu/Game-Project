@@ -26,7 +26,8 @@ Join → **Menu** (`MenuUI`, EngravedButton style: Balthazar font, lavender glow
 - **Odds:** relative weights 1★ 50 : 2★ 10 : 3★ 1. A featured item takes **50%** of pulls that land on its tier.
 - **Pity:** a 2★+ guaranteed within every **10** pulls; a 3★ guaranteed by **70**. Counters are separate per tab and carry across single calls.
 - **Duplicates** give 10 Convoke Essence (a placeholder currency with no use yet).
-- Personal-tier Souls and weapons are never in the pool.
+- The pool is every Soul and weapon with a star tier, so all 3★ weapons (SilverFlash, IllThorn, The Commandment, DivineServant, Akhzarims Tenacity, Imperial Rifle) are pullable. Personal-tier Souls (Authan, Hayut) and Than have no tier and are never in the pool.
+- `FAKE_ENTRIES` in `ConvokeBanners` adds a test 3★ Soul, "UnnamedSoul", that can be pulled but is never saved.
 
 ## Parties & sessions (`SessionManager`)
 - Pick a **stage** (North Forest) and a **mode** (Story / PVP).
@@ -35,7 +36,7 @@ Join → **Menu** (`MenuUI`, EngravedButton style: Balthazar font, lavender glow
 
 ## Saved data (Beacon)
 - DataStores `PlayerClassData` (owned and equipped classes) and `PlayerWeaponData` (owned weapons, per-class equipped weapon), plus Convoke pity and Convoke Essence.
-- Personal grants by userId (in `Script`): Lukas's account gets Authan and DivineServant.
+- Personal grants by userId (in `Script`): Lukas's account gets Authan, plus DivineServant, Akhzarims Tenacity and Imperial Rifle; the dev account gets Hayut.
 
 ## Visual identity
 - Lavender UI accents, the Balthazar font, star-tier borders (1★ grey, 2★ violet, 3★ gold, Personal its own border).

@@ -6,7 +6,8 @@
 
 ## M1: 3-slice combo
 - Animation `83994177729760`, slices f0–42 / f42–56 / f56–90, hits at f11 / f47 / f80.
-- Damage 3 / 3 / 4, with only **20% stat scaling** (`m1StatScaling = 0.2`). The M1s exist to place marks, not to kill.
+- Damage 7 / 7 / 8, with only **20% stat scaling** (`m1StatScaling = 0.2`). The M1s exist to place marks, not to kill.
+- Swing cooldowns 0.7 / 0.23 / 0.57 s.
 - Hit sound `HitBlade`.
 
 ## Thorn Marks (`ServerScriptService.ThornMarks`, `ThornMarksClient`)
@@ -24,9 +25,12 @@
 | Contact | A 4×5×3 contact box. On touching an enemy: stab at f33, impale at f37. |
 | Grab | The victim plays `112074130587235` as a **GrabVisual double** held at 3.65 studs, facing you. Your facing is locked (`FacingLocked`); the lock-on camera respects it. |
 | Impact | Shock + Wave rings, screen shake 0.35, and a quick **1.5-stud forward thrust that springs back** to the real distance. |
-| Burst | After 0.45 s: **20 + 12 per mark** in your dominant damage type. |
+| Burst | After 0.45 s: **12 + 3 per mark** (30 at 6 marks, before stats) in your dominant damage type. Stagger 3. |
 | Thresholds | **4+ marks**: force **Stagger**. **6 marks**: the burst becomes **True damage** with ×1.5 blood. |
 | Release | Victim ragdolls for 1 s. Players also get a dizzy blur (2 s) and a red flash (0.6 s). |
 | Sounds | `ThanThrust` on the stab, `ThornBurstImpact` (`71770751712389`) on the burst |
 
-Cooldown **8 s**.
+Cooldown **3 s**.
+
+## Passive: SiphoningLife
+A ThornBurst unleashed at **max marks (6)** heals you for **20%** of its damage and coats the blade in the victim's blood for **2 s**. While coated, your slices reach **2.5 studs** further and deal **True** damage.

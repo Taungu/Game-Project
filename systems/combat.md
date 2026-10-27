@@ -13,7 +13,7 @@
 - Each weapon defines combo **segments** (slices of one animation or separate animations), **hit delays**, per-hit **damage**, **cooldowns**, **hitbox offsets/sizes**, **stagger points** (per step allowed), and swing/hit **sounds** and VFX.
 - Optional per-step movement: **lunges**, **leaps** (an arc that aims at the real ground), **ground slams**, **step VFX** and screen shake. While swinging, a slow is applied to the wielder (e.g. ×0.5 for The Commandment).
 - `m1StatScaling` sets how much of your damage stat an M1 uses (IllThorn 0.2).
-- **Attack Speed** shortens time between swings. **Bella ×0.4** and **Fahlon ×1.14** are class multipliers on M1 damage.
+- **Attack Speed** shortens time between swings. **Fahlon ×1.14** (also copied by Authan and Hayut) is the only class multiplier on M1 damage; everyone else is ×1.0.
 - Server-side lag compensation for hits on moving enemies: `EnemyHitRewind`.
 
 ## Abilities (E / Q / R)

@@ -30,4 +30,13 @@ The Navat at their entrance says: *"Eliminate those who follow the false prophet
 - **PVP Test** mode (testing only): random teams sharing one track, kill feed and Silver, no lives lost.
 
 ## Planned
-Each Soul gets a locked **signature weapon** in PVP. For now they're locked to their best 2★.
+Each Soul gets a locked **signature weapon** in PVP. Until those exist, every Soul is locked to its affinity's 3★, whatever it has equipped (session-only, never saved):
+
+| Soul | Locked PVP weapon |
+|---|---|
+| Raam | The Commandment |
+| Fahlon | Imperial Rifle |
+| Bella | IllThorn |
+| Luther | SilverFlash |
+| Zumin | Akhzarims Tenacity |
+| Authan | Than |

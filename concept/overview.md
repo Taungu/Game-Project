@@ -23,8 +23,8 @@ Same Soul with a different weapon = a different route through that person. Same 
 
 ### Rarity (stars)
 - 1★: defaults/commons. M1 combo only.
-- 2★ and 3★: also get an **F weapon skill**. 3★ weapons are the showpieces (SilverFlash, IllThorn, The Commandment).
-- "Personal" tier: never in Convoke (Authan, Hayut, Than, DivineServant for now).
+- 2★ and 3★: also get an **F weapon skill**. 3★ weapons are the showpieces and each has a **weapon passive** (SilverFlash, IllThorn, The Commandment, DivineServant, Akhzarims Tenacity, Imperial Rifle). Every affinity now has a 3★.
+- "Personal" tier: never in Convoke (Authan, Hayut, Than).
 
 ## Character kit shape
 | Slot | Key | What it is |
