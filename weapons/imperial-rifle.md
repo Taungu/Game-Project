@@ -12,7 +12,7 @@ The M1s aren't a combo. They alternate a **shot** with a **follow-up** picked by
 |---|---|---|---|---|---|
 | 1 | Shot (every other M1) | Aims and fires a bullet (260 studs/s, range 120). You're frozen while aiming. | 24 | 1.6 | 1.03 |
 | 2 | Follow-up, **W** (also the default) | Bayonet slash with a 3-stud forward dash. Inflicts **Vulnerable** (Trained Veteran). | 18 | 1.2 | 0.67 |
-| 3 | Follow-up, **S** | Back-leap (12 studs, height 7) that shoots the ground where you stood; it explodes (12-stud hitbox). The explosion knocks enemies down: **Imbalance** for 1 s (human-shaped bodies only). | 20 | 2 | 1.33 |
+| 3 | Follow-up, **S** | Back-leap (12 studs, height 7) that shoots the ground where you stood; it explodes (12-stud hitbox). The explosion knocks enemies down: **Imbalance** for 1 s (human-shaped bodies only). A player victim also gets ThornBurst's after effect: a 2 s dizzy blur and a 0.6 s red flash. | 20 | 2 | 1.33 |
 | 4 | Follow-up, **A** | Side dash left (10 studs, 0.25 s). No hit. | 0 | — | 0.47 |
 | 5 | Follow-up, **D** | Side dash right (10 studs, 0.25 s). No hit. | 0 | — | 0.47 |
 
