@@ -43,7 +43,7 @@ Passive names and descriptions come from `WeaponMoves.GetPassiveInfo` (for the p
 - **SilverFlash**: the first pullable 3★ weapon. A Cleanser's silver blade, featured on the "Cleanser's Silver" Weapons banner. 5-hit combo sliced from one animation; the dash hit is the strongest.
 - **DivineServant**: the first Conjurer weapon, an **Opharim**. It's worn on the **torso**, not held, and pulses its emitters. The wielder writes an incantation and the Opharim fires lances; hit 4 is a "sky lance". No Conjurer Soul exists yet. The Cleanser spellcaster NPC uses it. It's 3★ and in the Convoke pool.
 - **Akhzarims Tenacity**: 3★ Gauntlet with **no physical model** (`noModel`); like the Opharim, VFX make up for it. One animation sliced into 5 hits: impale, two claw swings, two kicks. Hit 5 is a lunging slam along the ground.
-- **Imperial Rifle**: 3★ Artillery rifle with a bayonet. Its M1s alternate a shot with a follow-up chosen by the held key ([details](imperial-rifle.md)). It holsters on the back after 3 s idle.
+- **Imperial Rifle**: 3★ Artillery rifle with a bayonet. Its M1s alternate a shot with a follow-up chosen by the held key ([details](imperial-rifle.md)). The S leap shot's ground explosion inflicts **Imbalance** (1 s) on human-shaped enemies. It holsters on the back after 3 s idle.
 - **Than**: Authan's trident staff. Gripped at its `Value` CFrameValue. The only weapon outside Convoke.
 - **LeatherGloves / CleanserSilverGauntlets**: modelled as a left/right **pair**, one per hand. Saved data from the old placeholder "HandWraps" is renamed on load.
 - **SavageGlaive**: granted in the Lobby by a SavageGlaiveCrate pickup (renamed from GreatGlaive).
