@@ -3,6 +3,7 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-10-27
+- **The Chastity** head tracking: from the moment she lands until she flies back up, her head follows the nearest player in the arena (same neck math as Garrison/the Charm Seller).
 - **The Chastity's descent**: bigger (default arena radius 90 → 135 studs) and now leaves Zumin's Devastation crater (the four cracked plates) at arena size for the 5 s slow zone (`ZuminKit.SpawnDevastationCrater`).
 - **The Chastity's barrier**: always up. Hits on her no longer play the attacks' hit effects (M1 cut/blood VFX and hit sounds, ability hit VFX, ThornBurst blood, Zumin's Vengeance impact), airborne or grounded; the barrier glows and throws a burst of gold sparks on every hit. Applies to any model marked `Shielded`.
 - **The Chastity** animated: Idle loops all fight; the Descent animation plays for her plunge, with the drop following its frames (slow pull down f0–45, fast f45–57, near-instant to the floor f57–59; the hit lands on f59; rings still give 1.6 s of warning). She then stays down playing the Idle.
