@@ -18,7 +18,7 @@ Data: `ReplicatedStorage.EnemyDefinitions` (HP, base damage, EXP, stagger, resis
 | **Brigand (Medium)** | 180 | 80 | 30 | 3 | 100 / 25 | 6 | Sword. No real attacks yet. |
 | **Brigand (Heavy)** | 280 | 100 | 45 | 5 | 175 / 40 | 9 | Big two-handed sword: swings 24, spin 60. |
 | **Zev** | 100 | 80 | 15 | 1 | 40 / 10 | 5 | A lean beast with quick bites. Comes in packs. |
-| **Dohv** | 450 | 200 | 60 | 10 | 125 / 75 | 10; Attack3 14; Attack4 **BREAK** | A huge-headed beast. Swing 20%, bite 30%, combo 20%, and a finisher (outer 20% / inner 60%) that knocks you down (ragdoll + blur + flash). Roars. |
+| **Dohv** | 450 | 200 | 60 | 10 | 125 / 75 | 10; Attack3 14; Attack4 **BREAK** | A huge-headed beast. Swing 20%, bite 30%, combo 20%, and a finisher (outer 20% / inner 60%) that knocks you down (**Imbalance** + blur + flash). Roars. |
 | **Imbedded Tree Totem** | 90 | 60 | 20 | 2 | 150 / 0 | 2 | Pops out of platform edges and shoots thorns (15/60 each). |
 | **Akavish** | 80 | 60 | 15 | 1 | 25 / 0 | 3 | A spider. The bite (15/60) adds **Sick**: the bite's final damage ×3 more over 20 s. Swarms in caves. |
 

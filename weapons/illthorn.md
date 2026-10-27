@@ -27,7 +27,7 @@
 | Impact | Shock + Wave rings, screen shake 0.35, and a quick **1.5-stud forward thrust that springs back** to the real distance. |
 | Burst | After 0.45 s: **12 + 3 per mark** (30 at 6 marks, before stats) in your dominant damage type. Stagger 3. |
 | Thresholds | **4+ marks**: force **Stagger**. **6 marks**: the burst becomes **True damage** with ×1.5 blood. |
-| Release | Victim ragdolls for 1 s. Players also get a dizzy blur (2 s) and a red flash (0.6 s). |
+| Release | Victim is knocked down (**Imbalance**) for 1 s. Players also get a dizzy blur (2 s) and a red flash (0.6 s). |
 | Sounds | `ThanThrust` on the stab, `ThornBurstImpact` (`71770751712389`) on the burst |
 
 Cooldown **3 s**.

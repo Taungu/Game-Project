@@ -39,6 +39,7 @@
 | **Stun** | Immobility | 2.5 s | Full interrupt. The heaviest control. |
 | **Daze** | Immobility | 0.75 s | Can't move. |
 | **Aerial** | Immobility | 0.8 s | Launched upward (50 studs/s), then held. |
+| **Imbalance** | Immobility | 2 s (callers set their own) | The knockdown: thrown off balance and ragdolled onto the floor, paired with a screen blur. Applied by every ragdoll in the game: grab releases (Light Brigand, Bella's Q, ThornBurst, the Host), Dohv's finisher, the Rehem and the Wyvern. Outranks Stun, ranks under Stagger. |
 | **Stagger** | Immobility | 1 s | The stagger payoff. Top priority, can't be preempted. |
 | **Vulnerable** | OverStatus | ≤15 s | Bursts early after taking 10% max HP of damage (+5% max HP bonus damage). Fahlon's mark. |
 | **Bleed** | OverStatus | 5 s | DoT of 0.5% max HP per second, up to 3 stacks. |
@@ -49,11 +50,11 @@
 | **Weakened** | OverStatus | 5 s | Deals 20% less (strength can vary; the strongest wins). |
 | **Sensitive** | OverStatus | 5 s | Takes 20% more from everything. |
 | **Hemorrhage** | StatusAmplifier | — | Turns Bleed into a pool of 10% of physical hits, burst at the end (Luther). |
-| **Ragdoll** | Physics | 2 s | Full physics knockdown, paired with a screen blur. |
 
-- **Immobility** effects fight for control of WalkSpeed. Only one is in control at a time, by priority, and it shows as the marker above the enemy health bar.
+- **Immobility** effects fight for control of WalkSpeed. Only one is in control at a time, by priority (Daze < Aerial < Stun < Imbalance < Stagger), and it shows as the marker above the head. Imbalance's ragdoll physics always happens, even when Stagger holds the marker.
 - **OverStatus** effects are tracked independently, can stack with each other, and render on the target.
-- **Immobilizing** (for resist passives like Zumin's): Stun, Daze, Aerial, Stagger, Rooted, Ragdoll.
+- **Immobilizing** (for resist passives like Zumin's): Stun, Daze, Aerial, Imbalance, Stagger, Rooted.
+- `"Ragdoll"` is the old name of Imbalance and still works as an alias in `StatusEffectManager.Apply`. Death ragdolls (`RagdollCorpse`) aren't a status effect.
 
 ## Grabs
 Several moves grab and hold a target: the Light Brigand, Bella's Injection, the Host's Invading Grab, the Wyvern's talon, IllThorn's ThornBurst. Grabbed players see a GrabVisual double, get screen blur/flashes, and the camera respects `Grabbed`. Dodging through the catch moment makes a grab miss. Zumin's brace is immune.
