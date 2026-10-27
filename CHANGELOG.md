@@ -3,6 +3,7 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-10-27
+- **The Chastity at path 50 without an arena:** until `FinalBossPath(TheChastity)` is built, she takes over whatever second-stage path comes up at path 50 (overriding its locked event). Earth Spikes skip spots with no floor under them.
 - **Story run reset from testing:** the run no longer jumps straight from the entrance to the corrupted grounds with the Deceased (`FORCED_FIRST_PATH`/`FORCED_FIRST_EVENT` = nil), the entrance no longer forces the Sufferer event (empty again), and Luther's Tainted Rage cooldown is back to its real **18 s** (was 1 s for animation testing).
 - **Ross** is a chance encounter again: back in the random event pool (weight 0.5), no longer guaranteed on the path before every Safe Haven.
 - **The Chastity scheduled at path 50** (second stage): `PathProgressionScript` sends the party to `FinalBossPath(TheChastity)` once per run, like the Rehem at 27. The arena isn't built yet; until it exists the run carries on with random paths. The entrance preview is removed (back to the Sufferer test).
