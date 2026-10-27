@@ -16,7 +16,7 @@
 - **Resistance** uses a diminishing curve: `reduction = points / (points + 1000)`. Every 100 points ≈ +10% effective health, and it never reaches 100%. Armor Pen / Magic Pen cut the resulting percent.
 - **Crit:** Crit Chance rolls; a crit adds **+50%** damage (base `CRIT_DAMAGE_BONUS`).
 - **True damage** bypasses resistances *and* damage reduction.
-- Defaults: Health 100, Essence 100, Essence regen 1/3 per sec, Health regen 1/30 HP per sec (scales with Essence, capped at 1/sec), CDR 10 units, MaxStagger 20.
+- Defaults: Health 100, Essence 100, Essence regen 1/3 per sec, Health regen 1/30 HP per sec (scales with Essence, capped at 1/sec), CDR 10 units, MaxStagger 12 (Raam and Luther 15, Zumin 20).
 
 ## Final value formula (order-independent)
 ```

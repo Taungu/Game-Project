@@ -10,7 +10,7 @@
 | Physical / Magic Damage | 20 / 20 |
 | Physical / Magic Res | 25 / 15 |
 | CDR | 0 |
-| MaxStagger | 25 |
+| MaxStagger | 15 (sturdier than the default 12) |
 
 ## Kit
 | Slot | Name | What it does | Numbers |

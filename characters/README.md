@@ -19,15 +19,15 @@ Units: damage, resistance, CDR and movement speed use **10 units = 1%**. Health 
 
 | Soul | Health | PhysDmg | MagicDmg | PhysRes | MagRes | CDR | MoveSpd | Max Essence (L1) | MaxStagger | M1 mult |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Raam | 180 | 25 | 0 | 25 | 0 | 10 | 0 | 175 | 20 | 1.0 |
-| Fahlon | 120 | 25 | 15 | 0 | 0 | 10 | 100 (+10%) | 100 | 20 | 1.14 |
-| Luther | 140 | 20 | 20 | 25 | 15 | 0 | 0 | 175 | 25 | 1.0 |
-| Bella | 130 | 25 | 25 | 0 | 0 | 10 | 0 | 200 | 20 | 1.0 |
+| Raam | 180 | 25 | 0 | 25 | 0 | 10 | 0 | 175 | 15 | 1.0 |
+| Fahlon | 120 | 25 | 15 | 0 | 0 | 10 | 100 (+10%) | 100 | 12 | 1.14 |
+| Luther | 140 | 20 | 20 | 25 | 15 | 0 | 0 | 175 | 15 | 1.0 |
+| Bella | 130 | 25 | 25 | 0 | 0 | 10 | 0 | 200 | 12 | 1.0 |
 | Zumin | 250 | 10 | 0 | 50 | 50 | 10 | 0 | 175 | 20 | 1.0 |
-| Authan | 150 | 40 | 30 | 0 | 0 | 10 | 100 | 100 | 20 | 1.14 |
-| Hayut | 120 | 0 | 30 | 20 | 25 | 10 | 0 | 175 | 15 | 1.14 |
+| Authan | 150 | 40 | 30 | 0 | 0 | 10 | 100 | 100 | 12 | 1.14 |
+| Hayut | 120 | 0 | 30 | 20 | 25 | 10 | 0 | 175 | 10 | 1.14 |
 
-Defaults: Health 100, Essence 100 (×1.75 at level 1, so 175), Essence regen 1/3 per sec (an empty bar refills in about 5 min), Health regen 1 HP / 30 s, MaxStagger 20, CDR 10. Fahlon and Bella's Essence bases are set so level 1 lands exactly on 100 and 200. Their regen is scaled so the refill *time* matches everyone else's. Source: `ReplicatedStorage.ClassBaseStats`.
+Defaults: Health 100, Essence 100 (×1.75 at level 1, so 175), Essence regen 1/3 per sec (an empty bar refills in about 5 min), Health regen 1 HP / 30 s, MaxStagger 12, CDR 10. MaxStagger is the base; in a run it grows with health (square root), so a level-20 player with no items has about 2.75× it. Fahlon and Bella's Essence bases are set so level 1 lands exactly on 100 and 200. Their regen is scaled so the refill *time* matches everyone else's. Source: `ReplicatedStorage.ClassBaseStats`.
 
 ## Essence colours (Character Page sparkle)
 Raam red · Fahlon dark blue · Bella dark pink · Luther pale yellow · default white.
