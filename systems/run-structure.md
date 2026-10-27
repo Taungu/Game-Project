@@ -7,7 +7,7 @@ Driver: `ServerScriptService.PathProgressionScript`.
 2. Start at **EntranceToNorthForest** (fixed, no forced event).
 3. Reaching a path's **EndOfPath** fades to black, picks the next node and moves everyone to its **StartOfPath**.
 4. Each new path pulls one **event** at its `EventAnchor!`.
-5. Repeat. A **Safe Haven** every 5 paths. Late in the first half the route leads to the **Rehem**; after it comes the corrupted **second stage**.
+5. Repeat. A **Safe Haven** every 5 paths. At **path 27** the route leads to the **Rehem**; after it comes the corrupted **second stage**. At **path 50** (second stage only) it leads to **The Chastity**, the North Forest's final boss.
 
 ## Path nodes
 - Hand-built walkable segments tagged `PathNode` (PathVersion1–4, "Path version 5", cave paths…). Inactive nodes are parked in ServerStorage; only the active one is in Workspace.
@@ -18,6 +18,7 @@ Driver: `ServerScriptService.PathProgressionScript`.
   - **The lake** (`RejuvenatingLake`): press **G** at the field's water ("Touch the water") to be **healed fully** (health and Essence) and **levelled up once**. Only once your team has cleared the cave. **Twice per run per player**: once before the Rehem and once after it. Lines are placeholders.
   - **After the Rehem** the same detour (PathVersion3 (corrupted) → Path version 5 (corrupted)) leads to **RejuvenatingField(Corrupted)** instead. Its cave entrance is blocked by the Corrupted Roots; the **Abominable Akavish** waits there instead (the second stage's Wyvern). The field's exit stays shut until it's dead, and killing it unlocks that field's lake (`LakeUnlockedBy = "Event"`), which gives the after-Rehem claim.
   - **SecondHalfBossPath(TheRehem)**: the Rehem arena.
+  - **FinalBossPath(TheChastity)**: The Chastity's arena (not built yet). Scheduled like the Rehem: once per run, the first normal pick after 50 completed paths, never random; a due Safe Haven comes first and a detour isn't interrupted. Needs `LockedEvent = ChastityEncounter`, the `PathNode` tag and an `EventAnchor!` in its middle (arena centre; optional `ArenaRadius`, default 135). Until it exists the run carries on with random paths.
   - **"Secound Stage"**: copies of the paths with some grass turned dark red (corrupted), matching the Lobby's maroon Tree of Knowledge.
 
 ## Events (`ServerStorage.PathEvents`)
