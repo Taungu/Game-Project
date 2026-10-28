@@ -11,6 +11,13 @@
 - Paid up front; a call you can't afford doesn't start. The page shows your balance and each button's cost (red when you're short).
 - **Duplicates refund** by star tier: 1★ **15**, 2★ **40**, 3★ **165** (a 3★ duplicate gives a pull back).
 
+## Welcome (no tutorial)
+- Every account gets **1650 Essence once** (one Call 10). New accounts get it when they pick their first Soul; existing accounts the next time they join.
+- Their **first Call 10** guarantees, among the ten results:
+  - a **2★ weapon for their starting Soul**: Raam → SavageGlaive, Fahlon → Crossbow, Bella → BroadDagger. Luther gets none yet (there's no 2★ Medium weapon).
+  - an **extra Soul from the unique affinities** (Gauntlet, Conjurer: the weapon types without a fixed design rule), one they don't own, at random. Today that's always Zumin; a Conjurer Soul joins the draw once one exists.
+  - The other eight are normal rolls. Data: `ConvokeBanners.WELCOME_*`.
+
 ## What a Story run pays (`RunRewardDefinitions`, Session)
 Every reward is **per player** (co-op doesn't split it) and **kept even if the party wipes or you leave** (banked as you go). Story only; PVP pays nothing.
 

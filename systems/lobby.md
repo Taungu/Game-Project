@@ -24,7 +24,8 @@ Join → **Menu** (`MenuUI`, EngravedButton style: Balthazar font, lavender glow
   - Weapons: "Cleanser's Silver" (featured SilverFlash 3★) · "Lingers of Arms" (standard)
 - **Call / Call 10.** Calling plays the Moon "ConvokeAnimation" scene (tree roots burst up, essence shoots skyward), then the "Called Forth" panel.
 - **Odds:** relative weights 1★ 50 : 2★ 10 : 3★ 1. A featured item takes **50%** of pulls that land on its tier.
-- **Pity:** a 2★+ guaranteed within every **10** pulls; a 3★ guaranteed by **70**. Counters are separate per tab and carry across single calls.
+- **Pity:** a 2★+ guaranteed within every **10** pulls; a 3★ guaranteed by **70**. Counters are separate per tab, carry across single calls and are saved (the Weapons tab's and the 3★ counters used to reset on every rejoin).
+- **Welcome:** every account gets 1650 Essence once, and its first Call 10 guarantees a 2★ weapon for the starting Soul plus a Gauntlet/Conjurer Soul ([economy](economy.md)).
 - **Price:** 165 Essence a pull, 1650 for Call 10; you can't call without enough. Balance and costs show on the page.
 - **Duplicates** refund Essence by tier: 1★ 15, 2★ 40, 3★ 165. Story runs pay Essence too ([economy](economy.md)); it's claimed when you join the Lobby.
 - The pool is every Soul and weapon with a star tier, so all 3★ weapons (SilverFlash, IllThorn, The Commandment, DivineServant, Akhzarims Tenacity, Imperial Rifle) are pullable. Personal-tier Souls (Authan, Hayut) and Than have no tier and are never in the pool.
