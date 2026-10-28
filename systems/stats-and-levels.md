@@ -57,3 +57,8 @@ final = classBase × levelMultiplier × (1 + itemPercent) × morale  +  flatItem
 5. Target **damage reduction** (named, stacking sources in `PlayerDamageReduction`; i-frames from `PlayerInvulnerability`; Sensitive increases damage taken).
 6. **Blind** check on the attacker: the hit lands but its damage is nulled ("Miss").
 7. Apply damage, stagger, status effects, aggro, hit reaction and the damage number.
+
+## Level-up feedback (`PlayerLevelState`, `LevelUpVfxClient`)
+- Every level up plays **LevelUp**; every 5th level (5, 10, 15, 20) plays **LevelUpSpecial** instead.
+- Every player sees it: the body pulses twice like Akhzarims Tenacity's heartbeat (your own screen shakes on each beat) and a small burst of Raam's ultimate aura (`OverloadingEssence`) comes out of the chest.
+- Normal levels are **lavender**; every 5th level is **pastel yellow**, with a bigger burst, stronger pulse and stronger shake.

@@ -3,6 +3,7 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-10-28
+- **Level-up feedback**: LevelUp / LevelUpSpecial (every 5th level) sounds, a heartbeat pulse (Akhzarims Tenacity's) with screen shake and a burst of Raam's ultimate aura; lavender normally, pastel yellow and bigger every 5th level.
 - **Dev (Studio only):** a "DEV  Level up" button (top-left) raises your level by one per click (`DevStudioTools` / `DevStudioButtons`; inactive outside Studio).
 - **Story death rules**: solo gets 2 lives (refilled at Safe Havens); groups get 1 life each and fallen players stay down (spectating) until the party reaches a Safe Haven. Fallen players earn no EXP, Silver or Essence and aren't waited for at exits. Defeat (nobody standing / solo out of lives) shows results with **Retry** (fresh run, new server) or **Return to the Lobby**. Developers can toggle revives on (`DevAccess`, top-left button).
 - **Welcome Essence**: every account gets 1650 once (new accounts on picking their first Soul, existing ones on their next join). The first Call 10 guarantees a 2★ weapon for the starting Soul (Raam SavageGlaive, Fahlon Crossbow, Bella BroadDagger; Luther none yet) and a Soul from the Gauntlet/Conjurer affinities (Zumin today). Fixed: the Weapons tab's 2★ pity and both 3★ pity counters weren't saved, so they reset on every rejoin.
