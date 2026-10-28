@@ -3,6 +3,7 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-10-28
+- **Javelin of God**: every 5th lance aims at a random player in the arena (still with its ground warning).
 - **Javelin of God**: twice the lances (28 a second, was 14).
 - **Javelin of God**: the flame ring faces straight down and is back to ~50 studs wide (no longer scaled with the bigger suction ball).
 - **Javelin of God** fixes: the flame ring now faces like the Moon file (forward and 30° down) and turns slowly (~45°/s); it flickers every frame during the spasm (client-side, new `ChastityVfxClient`); the suction ball grows to ~100 studs (was ~37).
