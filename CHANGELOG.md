@@ -3,6 +3,7 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-10-28
+- **Javelin of God**: lances doubled again to 56 a second for more coverage; still 1 in 5 aimed at a player.
 - **Javelin of God**: every 5th lance aims at a random player in the arena (still with its ground warning).
 - **Javelin of God**: twice the lances (28 a second, was 14).
 - **Javelin of God**: the flame ring faces straight down and is back to ~50 studs wide (no longer scaled with the bigger suction ball).
