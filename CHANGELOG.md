@@ -3,6 +3,7 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-10-28
+- **Javelin of God** fixes: the flame ring now faces like the Moon file (forward and 30° down) and turns slowly (~45°/s); it flickers every frame during the spasm (client-side, new `ChastityVfxClient`); the suction ball grows to ~100 studs (was ~37).
 - **The Chastity** second airborne attack, **Javelin of God**: she writes the spell, a Divine-Servant-style suction ball grows above her, a ring of flames forms and it spasms, raining warned lances of light across the arena; lances shatter Earth Spikes pillars in their way. New VFX templates `JavelinAura`, `JavelinLance` (meshes from Unlimited Arts) and `JavelinImpact`.
 
 ## 2026-10-27
