@@ -7,7 +7,7 @@ Driver: `ServerScriptService.PathProgressionScript`.
 2. Start at **EntranceToNorthForest** (fixed, no forced event).
 3. Reaching a path's **EndOfPath** fades to black, picks the next node and moves everyone to its **StartOfPath**.
 4. Each new path pulls one **event** at its `EventAnchor!`.
-5. Repeat. A **Safe Haven** every 5 paths. At **path 27** the route leads to the **Rehem**; after it comes the corrupted **second stage**. At **path 50** (second stage only) it leads to **The Chastity**, the North Forest's final boss.
+5. Repeat. A **Safe Haven** every 5 paths. At **path 27** the route leads to the **Rehem**; after it comes the corrupted **second stage**. At **path 50** (second stage only) it leads to **The Chastity**, the North Forest's final boss. Killing her ends the run: ending scene (placeholder), results, back to the Lobby. Every run pays Essence ([economy](economy.md)).
 
 ## Path nodes
 - Hand-built walkable segments tagged `PathNode` (PathVersion1–4, "Path version 5", cave paths…). Inactive nodes are parked in ServerStorage; only the active one is in Workspace.

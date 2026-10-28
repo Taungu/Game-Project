@@ -3,6 +3,7 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-10-28
+- **Essence economy**: Convoke now costs **165** a pull / **1650** for 10 (was free); duplicates refund 15/40/165 by tier. Story runs pay Essence per player, kept on a loss: 10 per path, Rehem 300, Chastity 1650, Wyvern 100, Abominable Akavish 150, +50% flawless boss, 15 per elite, level × 10, first clear 1650. Banked in `PendingRunRewards`, claimed on joining the Lobby. Killing The Chastity ends the run: placeholder ending scene → results screen → back to the Lobby. See [systems/economy.md](systems/economy.md).
 - **Javelin of God**: lances doubled again to 56 a second for more coverage; still 1 in 5 aimed at a player.
 - **Javelin of God**: every 5th lance aims at a random player in the arena (still with its ground warning).
 - **Javelin of God**: twice the lances (28 a second, was 14).
