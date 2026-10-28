@@ -2,6 +2,9 @@
 
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
+## 2026-10-28
+- **The Chastity** second airborne attack, **Javelin of God**: she writes the spell, a Divine-Servant-style suction ball grows above her, a ring of flames forms and it spasms, raining warned lances of light across the arena; lances shatter Earth Spikes pillars in their way. New VFX templates `JavelinAura`, `JavelinLance` (meshes from Unlimited Arts) and `JavelinImpact`.
+
 ## 2026-10-27
 - **The Chastity's path 50 counts overall**: every path left counts toward it, detours and Safe Havens included (the Rehem's path-27 counter still skips detours).
 - **The Chastity at path 50 without an arena:** until `FinalBossPath(TheChastity)` is built, she takes over whatever second-stage path comes up at path 50 (overriding its locked event). Earth Spikes skip spots with no floor under them.
