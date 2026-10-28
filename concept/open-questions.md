@@ -3,7 +3,7 @@
 Things the design hasn't settled yet. Move an item out once it's decided and documented elsewhere.
 
 ## Run & progression
-- **Story death/lives** (planned, not built): solo gets 2 lives, and the second recharges at a safe haven. In co-op each player has 1 life and stays down until a special class/item revives them or the party reaches a safe haven. Game over when everyone has died or turned.
+- **Story death/lives**: built (see [run-structure](../systems/run-structure.md#death-story-storydeathrules)). Still open: a special class/item that revives a fallen teammate.
 - How do path **forks** resolve (vote? first to arrive)? Today PathVersion2's two exits are interchangeable.
 - **Final boss** of the North Forest: not designed.
 - What a win/loss writes to the Beacon. The meta-currency and permanent buffs are planned but not built.

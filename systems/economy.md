@@ -19,7 +19,7 @@
   - The other eight are normal rolls. Data: `ConvokeBanners.WELCOME_*`.
 
 ## What a Story run pays (`RunRewardDefinitions`, Session)
-Every reward is **per player** (co-op doesn't split it) and **kept even if the party wipes or you leave** (banked as you go). Story only; PVP pays nothing.
+Every reward is **per player** (co-op doesn't split it) and **kept even if the party wipes or you leave** (banked as you go). A **fallen** player earns nothing until revived (the first-clear bonus still counts for them). Story only; PVP pays nothing.
 
 | Source | Essence |
 |---|---|

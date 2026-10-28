@@ -53,5 +53,11 @@ Driver: `ServerScriptService.PathProgressionScript`.
 ## Morale (`MoraleSystem`)
 A party-wide penalty for **fleeing** a combat event: −10% to Phys/Magic Damage and Phys/Magic Res per stack, max 5 stacks (−50%). A stack comes off for winning a fight or resting at a Safe Haven. *The flee trigger isn't wired yet.*
 
-## Death (Story)
-Today a dead player just respawns. The planned lives rules are in [open-questions](../concept/open-questions.md). An infested player turns into a **Host**.
+## Death (Story) (`StoryDeathRules`)
+- **Solo:** 2 lives. Dying with a life left respawns you on the current path after 3 s. Lives refill at every **Safe Haven**. Dying on your last life is defeat.
+- **Group (2+):** 1 life each. A fallen player stays down (their body is cleared after 4 s and their camera follows a standing teammate) until the ones still standing reach a **Safe Haven**, where everyone fallen is revived. Nobody left standing is defeat.
+- **While down you earn nothing:** no EXP, Silver or Essence (attribute `Downed`). The end-of-path gate doesn't wait for fallen players.
+- **Defeat:** everyone keeps the Essence they earned (it's banked as you go), sees their results and picks **Retry** (a fresh run in a new private server with whoever picked it) or **Return to the Lobby**. Undecided after 30 s goes to the Lobby.
+- **Dev revives** (developers in `DevAccess` only): a top-left toggle turns revives on for the run; every death then respawns after 3 s with no lives lost and no defeat.
+- Characters are spawned by hand in Story (`CharacterAutoLoads` off).
+- An infested player turns into a **Host**.
