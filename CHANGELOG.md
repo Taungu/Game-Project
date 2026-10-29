@@ -3,6 +3,7 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-10-29
+- Abominable Akavish: all parts massless + non-colliding, HumanoidRootPart invisible (template and AI).
 - (Studio only, testing) The Abominable Akavish spawns at the Story entrance (`FORCED_ENTRANCE_EVENT_NAME` in PathProgressionScript).
 - **Abominable Akavish** Sweep and Slam now use Lukas's left/right swing and body slam animations (hits timed off the clips).
 - **Abominable Akavish Bite + Grab** combo (3 hits, holds the player at its jaw). Draft animation `AbominableBiteGrab` (KeyframeSequence) for Lukas to refine/upload; Studio plays the draft.
