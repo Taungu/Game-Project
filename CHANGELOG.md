@@ -3,6 +3,8 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-10-29
+- **Artifacts (the Armory)** planned: permanent 1–3★ items, 4-slot universal loadout, Story rewards only (not Convoke, not PVP), dupes sold for Essence, cross-run pity. `ArtifactDefinitions` (12 draft Artifacts) added to both places. See [items/artifacts.md](items/artifacts.md).
+- Lore: the Ill Father Tree isn't dying but overgrowing on the wrong energy; Cleansers go wherever corruption appears.
 - **Leg i-frames on jumps**: from a jump until landing, a player's legs can't be hit (part-based hitboxes skip them).
 - **Combat tag** no longer disables jumping: in combat you can jump once a second.
 - **The Chastity** fourth airborne attack, **Frost**: arena fog + slow blue highlight on players, then a cloudy-blue air wave; anyone who doesn't dodge it is frozen in ice blocks for 2.5 s. `ZuminKit.PlayStompDust` exported (any size/colour).

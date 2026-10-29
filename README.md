@@ -15,6 +15,7 @@ This repo is the **design reference**, not the code. The code lives in the two R
 | Who you can play | [characters/README.md](characters/README.md) |
 | What they fight with | [weapons/README.md](weapons/README.md) |
 | Charms, materials and crafting | [items/charms.md](items/charms.md) · [items/materials.md](items/materials.md) |
+| Artifacts (the Armory, permanent) | [items/artifacts.md](items/artifacts.md) |
 | What they fight | [enemies/README.md](enemies/README.md) |
 | How stats, levels and damage work | [systems/stats-and-levels.md](systems/stats-and-levels.md) |
 | How combat works (M1, abilities, stagger, status effects) | [systems/combat.md](systems/combat.md) |

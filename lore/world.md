@@ -21,7 +21,8 @@
   - **Wealth runs outward:** only the wealthiest live at the capital's edges; the closer to the tree, the poorer it gets.
   - Most people don't live in the capital at all but in the **outskirts of Da'at Rav**, a spread of villages where it's hard to say whose rule anyone is under anymore. That's the root of the **cold war between the capital and the Empire**.
 - The **Sentence of Sin** was the great corruption that made the Father Tree **ill** (the "Ill-Father"). It also killed the great ravine at the opposite end of the world.
-- The ill tree's roots now creep through the land. The **Infected** are its victims and offspring: the **Deceased** (the dead, used as vessels the roots control) and the **Host** (a living person turned). The North Forest's second half is these **corrupted grounds**.
+  - **"Ill" doesn't mean dying.** Nothing about the tree is decaying; if anything it's *too* healthy, fed on the wrong kind of energy. It grows far more than it should, at a pace that suggests it's trying to cover the world. Its roots are healthy in the same wrong way.
+- The ill tree's roots now creep through the land. **Cleansers are dispatched wherever that corruption appears**, not to fixed regions (the North Forest is one such place). The **Infected** are its victims and offspring: the **Deceased** (the dead, used as vessels the roots control) and the **Host** (a living person turned). The North Forest's second half is these **corrupted grounds**.
 - The **Forest of Life** lies outside the North Gate. Its herbs were gathered "while the soil still remembered being rich" (*Forest of Life Salve*). *Living Roots* still carry the life the Father Tree was planted with, from before it turned ill.
 
 ## The Church, Cleansers and Opharim
