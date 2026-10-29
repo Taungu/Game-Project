@@ -28,11 +28,13 @@ Needed per level: 100, 150, 200, 250, 300 (L5 = 1,000 total), 350, 400, 450, 500
 | Soul | Level 5 passive | Level 10 skill change |
 |---|---|---|
 | Raam | **Breaking Point**: dropping to 30% health gives 30% DR for 2 s (once per 60 s) | **Liberating Cleave**: inner ring deals half of the outer's damage (was a quarter) |
-| Bella | **Steady Hands**: a skill cast on the same vial as her previous skill deals +15% | *to design (Lukas)* |
-| Fahlon | *to design (Lukas)* | *to design (Lukas)* |
-| Zumin | *to design (Lukas)* | *to design (Lukas)* |
+| Bella | **Steady Hands**: a skill cast on the same vial as her previous skill deals +15% | **Injection**: no charge-up (the clip skips straight to the leap), leap reaches 50% further at the same speed |
+| Fahlon | **Royal Haste**: any ability (E/Q/R) gives +25% move speed for 2 s | **Marking**: two charges, each with its own cooldown (ability bar shows the count; the countdown only when none are left) |
+| Zumin | **Settled Ground**: Devastation gives him (only him) +30 Physical and Magic Resistance for 8 s | **Brace and Vengeance**: Fimble Decision (E) can be used any time during the hold or the release; it cuts the Q short (a brace cut before release still starts Q's cooldown) |
 | Luther | *his owner designs it* | *his owner designs it* |
 | Authan | *after his kit exists* | *after his kit exists* |
+
+Names marked by Claude where Lukas gave none (Royal Haste, Settled Ground): rename freely in `SoulMasteryDefinitions.GOALS`.
 
 ## How it's wired
 - **Session**: `RunRewards` banks Mastery EXP into the same `PendingRunRewards` entry as Essence (`mastery = { [Soul] = exp }`). `SoulMastery` (module) reads `PlayerMasteryData` on join, adds the bumps once the Soul is known, runs Breaking Point, and answers `HasPassive` / `GetSkillChange` for the kits (`AbilityScript` Liberating Cleave, `BellaKit` Steady Hands). Your level during a run is the one you started with.
