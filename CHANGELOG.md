@@ -3,6 +3,7 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-10-29
+- **Tooltip ingredients** glow gold when you have them and are greyed out when you don't.
 - **Item tooltips** now show what a tier 2/3 is made from (ingredient icons with counts) and tier-3 passives in a short form.
 - **Finn limited in Story** (PVP unchanged): a rotating recipe book per Safe Haven visit (all tier 1, 5 random tier 2, 2 random tier 3 with one from your class section), plus **recipe pages** that keep a tier 3 in your book for the run: the Rehem lets you pick 1 of 3; side bosses 50% and elites 10% drop a random page.
 - **PathVersion3 rarer**: random paths are now weighted by a `PickWeight` node attribute; PathVersion3 and its corrupted twin are 0.6 (~13% of picks, was 20%).
