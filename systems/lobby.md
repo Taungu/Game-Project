@@ -15,7 +15,7 @@ Join → **Menu** (`MenuUI`, EngravedButton style: Balthazar font, lavender glow
 
 ## Character Page: "Inner Core" (`CharacterPageUI`)
 Redesigned 2026-10-29 (hard edges, no rounded corners):
-- **Tab rail** (far left, the old top selector stood up): **Weapons**, **Armory**, **Mastery** (locked placeholder). A side marker slides to the open tab. Armory and Mastery use placeholder letters until they get icon art (swap `Symbol.Image`). Opens on **Armory**.
+- **Tab rail** (far left, the old top selector stood up): **Weapons**, **Armory**, **Mastery** ([Soul Mastery](soul-mastery.md); takes over the whole left panel). A side marker slides to the open tab. Armory and Mastery use placeholder letters until they get icon art (swap `Symbol.Image`). Opens on **Armory**.
 - **Left panel**: the equipped Soul's affinity icon (`AffinityIcons`), name, title (`ClassDefinitions.GetTitle`), stars, and **stats** (Health, Max Essence at level 1, Phys/Magic Dmg, Phys/Magic Res as % blocked, CDR, Move Speed; Crit/Atk Speed/Pen only when an Artifact gives them). Equipped Artifacts show as green **+** amounts. Below: the open tab's content.
 - **Weapons tab**: the old weapon grid (spinning 3D weapons, click to equip) and the weapon camera/pose.
 - **Armory tab**: 4 slots, owned Artifacts (rarity border + initials until there's art; green dot = equipped), a detail card (rarity, section, stats, passive, lore) with Equip/Unequip. One loadout for every Soul. Server: `ArtifactService` (DataStore `PlayerArtifactData`, `ArtifactEvent`). **In Studio every Artifact shows as owned** (never saved).

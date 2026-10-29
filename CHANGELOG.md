@@ -3,6 +3,7 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-10-29
+- **Soul Mastery** (0–10 per Soul, Story only): EXP from runs (banked with Essence, claimed in the Lobby), small bumps, Raam's Breaking Point + Liberating Cleave change, Bella's Steady Hands. Inner Core **Mastery tab** built. See [systems/soul-mastery.md](systems/soul-mastery.md).
 - **Inner Core redesign** (Lobby): tab rail (Weapons / Armory / Mastery-locked), Soul name + stars + stats panel, roster of Soul boxes on the right, hard edges. New **Armory tab** + `ArtifactService` saving. New `3StarBorder` template. `ClassDefinitions.GetTitle` added; Lobby `ClassBaseStats` numbers mirrored from the Session (Luther's, Fahlon's and Bella's were stale).
 - **Artifacts (the Armory)** planned: permanent 1–3★ items, 4-slot universal loadout, Story rewards only (not Convoke, not PVP), dupes sold for Essence, cross-run pity. `ArtifactDefinitions` (12 draft Artifacts) added to both places. See [items/artifacts.md](items/artifacts.md).
 - Lore: the Ill Father Tree isn't dying but overgrowing on the wrong energy; Cleansers go wherever corruption appears.

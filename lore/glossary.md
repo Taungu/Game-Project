@@ -22,7 +22,8 @@ Game terms (mechanics and lore) in one place. Lore details: [world.md](world.md)
 | **Infestation** | A hidden meter that Infected hits fill. Full = death and turning into a Host (Story only). |
 | **Inner Core** | The Lobby's Character Page (Soul tab and Weapon tab). |
 | **Kleilev** | A weapon forged of steel of essence. |
-| **Mastery level** | Levels 5/10/15/20. A bigger bonus plus the Affinity Stat kicker. |
+| **Mastery level** | In-run levels 5/10/15/20. A bigger bonus plus the Affinity Stat kicker. Not the same as Soul Mastery. |
+| **Soul Mastery** | A Soul's own permanent 0–10 progression from Story runs ([soul-mastery](../systems/soul-mastery.md)). |
 | **Morale** | A stacking party-wide stat penalty for fleeing fights (–10% per stack, max 5). |
 | **Named Boss** | A boss that can only be met once. |
 | **Navats / Seedlings** | The faction opposing the Embracers (PVP Team B); Seedlings are its members. |
