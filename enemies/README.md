@@ -29,6 +29,8 @@ Data: `ReplicatedStorage.EnemyDefinitions` (HP, base damage, EXP, stagger, resis
 | **The Rehem** | 2500 | 200 | 250 | never | 200 / 200 | **The first half's "graduation boss"**, meant to be its only real challenge. Lives in SecondHalfBossPath(TheRehem). It sleeps until the party crosses in, then a cutscene plays. **HeadSlam** (inner/outer ring, BREAK), **HeadRam** (surging ram with a big flank zone; always chosen when you're too close; stagger 16), **HeadSlamAndTail** (front-left slam, then a tail sweep hitting everyone within range, BREAK). Its **body is lethal** on every hit moment. Every hit knocks you down unless dodged. Bite 50/200, tail 35/200. It has a boss health bar. |
 
 ## Second stage: the corrupted grounds (Infected)
+Corrupted enemies (Deceased, Host, Sufferer, Dohv(Corrupted), Abominable Akavish) **walk through the Corrupted Roots** (collision groups `CorruptedEnemies` / `CorruptedRoots`, `CorruptedEnemyCollision`), so they don't get stuck in them. Players still collide with the roots.
+
 | Enemy | HP | Base dmg | EXP | MaxStagger | Res | Notes |
 |---|---|---|---|---|---|---|
 | **Deceased** | 70 | 50 | 12 | 2 | 0 / 150 | The dead, used as vessels by the roots. 5 looks. They crawl out of the **Corrupted Roots** 4–7 at a time. Each rises with a random weapon (a Brigand weapon or a 1★ GreatAxe/StraightSword/Dagger, maroon-styled) and uses its animations. Strike 12/50. Every landed hit fills **Infestation**. Stagger 4 (7 with heavy weapons). |
