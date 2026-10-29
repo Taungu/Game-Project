@@ -39,4 +39,5 @@ Names marked by Claude where Lukas gave none (Royal Haste, Settled Ground): rena
 ## How it's wired
 - **Session**: `RunRewards` banks Mastery EXP into the same `PendingRunRewards` entry as Essence (`mastery = { [Soul] = exp }`). `SoulMastery` (module) reads `PlayerMasteryData` on join, adds the bumps once the Soul is known, runs Breaking Point, and answers `HasPassive` / `GetSkillChange` for the kits (`AbilityScript` Liberating Cleave, `BellaKit` Steady Hands). Your level during a run is the one you started with.
 - **Lobby**: `SoulMasteryService` owns `PlayerMasteryData` (`{ exp = { [Soul] = n } }`), claims the pending EXP on join, and sends it via `SoulMasteryEvent`. The Mastery tab takes over the whole left panel: level, progress bar, goal marks 0–10 (5 and 10 gold), the two goal cards. **Studio only**: a "+250 EXP" button (never saved).
+- **Studio testing**: `SoulMastery.STUDIO_TEST_LEVEL` (10) makes every Soul count as that level in Studio runs only (nil = your real level).
 - Not built yet: showing Mastery EXP earned on the Results screen.
