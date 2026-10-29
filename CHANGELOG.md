@@ -3,6 +3,7 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-10-29
+- **Javelin of God**: fewer aimed lances (1 in 20, was 1 in 5) and the rest now cover the arena evenly (shuffled golden-angle spread) instead of random clumps.
 - **Javelin of God**: lances doubled again to 112 a second (still 1 in 5 aimed at a player).
 - **Sufferer** Hand Slam no longer shows the red ground circle.
 - **SuffererEncounter** added to every corrupted path's event pool (1 in 5 per path); it only ever ran as an entrance test before.
