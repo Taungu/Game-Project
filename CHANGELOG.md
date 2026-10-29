@@ -3,6 +3,7 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-10-29
+- **Finn limited in Story** (PVP unchanged): a rotating recipe book per Safe Haven visit (all tier 1, 5 random tier 2, 2 random tier 3 with one from your class section), plus **recipe pages** that keep a tier 3 in your book for the run: the Rehem lets you pick 1 of 3; side bosses 50% and elites 10% drop a random page.
 - **PathVersion3 rarer**: random paths are now weighted by a `PickWeight` node attribute; PathVersion3 and its corrupted twin are 0.6 (~13% of picks, was 20%).
 - **Levelling slowed down**: EXP to level 20 is now 37,720 (was 6,175, which a solo player had by path ~24). New per-level table fitted to simulated runs: normal play ends ~17, every extra step ~19, 20 in about a third of such runs. **Party EXP**: every standing party member now gets the full EXP of a kill (was a 70/30 killer/assist split).
 
