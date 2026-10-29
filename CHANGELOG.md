@@ -3,6 +3,7 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-10-29
+- **Combat tag** no longer disables jumping: in combat you can jump once a second.
 - **The Chastity** fourth airborne attack, **Frost**: arena fog + slow blue highlight on players, then a cloudy-blue air wave; anyone who doesn't dodge it is frozen in ice blocks for 2.5 s. `ZuminKit.PlayStompDust` exported (any size/colour).
 - **The Chastity** third airborne attack, **Wind Slashes**: teleports to each arena corner and sends waves of huge Hayut-style slashes across the arena. `ProjectileVfxClient` can now draw a server-described projectile ("Spec").
 - **Javelin of God**: fewer aimed lances (1 in 20, was 1 in 5) and the rest now cover the arena evenly (shuffled golden-angle spread) instead of random clumps.
