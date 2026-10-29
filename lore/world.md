@@ -16,7 +16,10 @@
 - **Steel of essence**: metal constantly exposed to the gift of creation and strengthened by it. A great enough forging of it is an **artifact** (*Essence Mathakot*). A weapon forged of it is a **Kleilev** (*Bavel Blank*; Bella's injector and Benesh's memorial weapon are both called Kleilev).
 
 ## The Father Tree and the Sentence of Sin
-- **Da'at Rav** is the official centre of the world and holds the **Father Tree** (the "Tree of Knowledge"). In the Lobby it appears dark maroon red.
+- **Da'at Rav** is the official centre of the world: a huge **capital split into 4 lands**, each stretching out like its own independent country. The **Ill Father Tree** (the "Tree of Knowledge") stands **sealed off at its very centre**. In the Lobby it appears dark maroon red.
+  - Cleansers constantly keep the tree under control at its heart, but its roots creep through the ground, and some reach **beyond the gates** toward the rest of the world, even into the vastness of the North Forest.
+  - **Wealth runs outward:** only the wealthiest live at the capital's edges; the closer to the tree, the poorer it gets.
+  - Most people don't live in the capital at all but in the **outskirts of Da'at Rav**, a spread of villages where it's hard to say whose rule anyone is under anymore. That's the root of the **cold war between the capital and the Empire**.
 - The **Sentence of Sin** was the great corruption that made the Father Tree **ill** (the "Ill-Father"). It also killed the great ravine at the opposite end of the world.
 - The ill tree's roots now creep through the land. The **Infected** are its victims and offspring: the **Deceased** (the dead, used as vessels the roots control) and the **Host** (a living person turned). The North Forest's second half is these **corrupted grounds**.
 - The **Forest of Life** lies outside the North Gate. Its herbs were gathered "while the soil still remembered being rich" (*Forest of Life Salve*). *Living Roots* still carry the life the Father Tree was planted with, from before it turned ill.
@@ -42,7 +45,7 @@
 ## Nations, houses and peoples
 | Name | What we know |
 |---|---|
-| **The Empire** | At odds with the divine capital. Its military trains with Ankle Weights. Its force uses the split crown as its mark. |
+| **The Empire** | In a cold war with the divine capital. Formed by uniting the hearts of the people who suffered under the corrupt Ministry of divinity; its founder is connected to **Fahlon**. Its military trains with Ankle Weights. Its force uses the split crown as its mark. |
 | **House of Benaiah** | Royal executioners; the split crown was once their crest (*Executioner's Split*). Old law: "power above all, and a hunt with the body alone". |
 | **Sturla** | Successor of Shiryon. Rivals his cousin, the modern house heir, for the head of the Benaiah. Left the estate at 13 and returned at 16 with impossible proof (*Sturla's Rehem*). |
 | **House Kanin** | A field house known only for speed. They once hunted heads (*Kanin Field Knife*, *Suit of Kanins*). |
@@ -62,4 +65,4 @@
 ## Beasts of the North Forest
 - **Lord Dohv**: the dominant Dohv. Below him in rank comes the planned **Alpha Dohv**, the pinnacle of the species. Dohv hide is prized (*Dohv-Hide Harness*: "two cubic metres of head, and the rest was this").
 - **Named Bosses**: bosses that can only be met once, unlike regular bosses.
-- **Valrek**: the monster that chases the player in the intro.
+- **Valrek**: the monster that chases the player in the intro, seen in-game as his **Deceased manifestation**. Known as **the Apex Predator**, a **named bounty filed by the Ministry of the Church itself**.
