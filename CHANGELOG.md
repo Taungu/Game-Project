@@ -3,6 +3,7 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-10-29
+- **Test content is Studio-only**: the forced first path / Chastity event only apply in Studio; `DevContentGuard` removes `Workspace.DevTesting` and `LavaHazard`/`DevOnly` parts outside Studio; Convoke's fake test Soul only pulls in Studio; PVP Test mode is Studio or developers (`DevAccess`, now also in the Lobby).
 - Dev: Lukas's account owns every Soul, weapon and Artifact (`GRANT_EVERYTHING`, topped up each join).
 - **Soul Mastery** (0–10 per Soul, Story only): EXP from runs (banked with Essence, claimed in the Lobby), small bumps, Raam's Breaking Point + Liberating Cleave change, Bella's Steady Hands. Inner Core **Mastery tab** built. See [systems/soul-mastery.md](systems/soul-mastery.md).
 - **Inner Core redesign** (Lobby): tab rail (Weapons / Armory / Mastery-locked), Soul name + stars + stats panel, roster of Soul boxes on the right, hard edges. New **Armory tab** + `ArtifactService` saving. New `3StarBorder` template. `ClassDefinitions.GetTitle` added; Lobby `ClassBaseStats` numbers mirrored from the Session (Luther's, Fahlon's and Bella's were stale).

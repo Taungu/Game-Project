@@ -23,6 +23,7 @@ Read [README.md](README.md) first. It indexes everything. This file covers how t
 - NPC dialogue calls the player **"wanderer"**. Brigands talk normally (no "Oi").
 - Item descriptions tell the **history** behind the item, not how it looks, and hint at links to other items rather than stating them.
 - He animates in **Moon Animator** at 60 fps; hit timings are written as `frame/60`.
+- **Test-only things stay in Studio.** Every test override, forced event, test pickup/NPC or dev button must be gated with `RunService:IsStudio()` (or `DevAccess` when it has to work on real servers, like PVP Test). Session test content goes in `Workspace.DevTesting` or gets the `DevOnly` tag; `DevContentGuard` removes both outside Studio.
 
 ## Tool gotchas (learned the hard way)
 
