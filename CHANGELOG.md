@@ -3,6 +3,7 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-10-29
+- **SuffererEncounter** added to every corrupted path's event pool (1 in 5 per path); it only ever ran as an entrance test before.
 - **Corrupted enemies pass through the Corrupted Roots** (Deceased, Host, Sufferer, Dohv(Corrupted), Abominable Akavish): new collision groups so they stop getting stuck. Players still collide with the roots.
 - **Spawning stuck in / falling through the floor** fixed at the source: side lanes no longer land inside walls, the floor ray finds the real walkable surface near the entrance's height (skipping invisible/non-solid parts) instead of shooting from 150 studs up at the `Path` model only, and players are set at their real feet height + 0.75 instead of a flat 3 studs. **Off-path guard**: anyone far outside the path or fallen below it is teleported back to the path's start.
 - **Tooltip ingredients** glow gold when you have them and are greyed out when you don't.

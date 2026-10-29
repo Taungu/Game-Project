@@ -58,7 +58,7 @@ Corrupted enemies (Deceased, Host, Sufferer, Dohv(Corrupted), Abominable Akavish
 | **ChastityEncounter** | Boss | Locked to FinalBossPath(TheChastity) (path 50) | The Chastity. The arena centre is the floor under the EventAnchor!; radius from the node's `ArenaRadius` attribute (default 135). |
 | **DeceasedInfestation** | Combat | Second stage | 4–7 Deceased rise from the Corrupted Roots. |
 | **BrigandHostEncounter** | Combat | Second stage only | A Medium and a Heavy Brigand mid-conversation (no Light). Talk to one and he's worried about his friend, who then turns into a Host, attacks him and turns him too. Both Hosts go after you. |
-| **SuffererEncounter** | Combat | Second stage | A Cleanser squad is already fighting the Sufferer. Help them. |
+| **SuffererEncounter** | Combat | Second stage (corrupted paths' pools: 1 in 5) | A Cleanser squad is already fighting the Sufferer. Help them. |
 | **CorruptedDohvEncounter** | Combat | Second stage (corrupted paths' pools) | Dohv(Corrupted) charges in from the side of the path (DohvCharge) and attacks straight away, no howl. |
 | **BeneshCharmSeller** | Safe | Random (rarer, weighted) | Benesh sells charms. |
 | **RossMerchant** | Safe | Random pool, weight 0.5 (a chance encounter) | Ross the merchant: buy and sell. |
