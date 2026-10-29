@@ -3,6 +3,7 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-10-29
+- Dev: Marcus's account also owns every Soul, weapon and Artifact (`GRANT_EVERYTHING`).
 - **Soul Mastery goals**: Bella 10 (instant, longer Injection), Fahlon 5 (Royal Haste) and 10 (two Marking charges), Zumin 5 (Settled Ground armor) and 10 (E cancels Brace and Vengeance).
 - **Settings menu** (both places): top-left button; master/music/SFX volume, screen shake, damage numbers, FPS counter; saved per account. Music now has its own SoundGroup. See [systems/settings.md](systems/settings.md).
 - Abominable Akavish body slam: the Dohv's GroundImpact effect, deadlier close (inner box 50%) and longer reach (outer box 84×92, 20%).
