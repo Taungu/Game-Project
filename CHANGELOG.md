@@ -2,6 +2,9 @@
 
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
+## 2026-10-29
+- **Levelling slowed down**: EXP to level 20 is now 37,720 (was 6,175, which a solo player had by path ~24). New per-level table fitted to simulated runs: normal play ends ~17, every extra step ~19, 20 in about a third of such runs. **Party EXP**: every standing party member now gets the full EXP of a kill (was a 70/30 killer/assist split).
+
 ## 2026-10-28
 - **Level-up feedback**: LevelUp / LevelUpSpecial (every 5th level) sounds, a heartbeat pulse (Akhzarims Tenacity's) with screen shake and a burst of Raam's ultimate aura; lavender normally, pastel yellow and bigger every 5th level.
 - **Dev (Studio only):** a "DEV  Level up" button (top-left) raises your level by one per click (`DevStudioTools` / `DevStudioButtons`; inactive outside Studio).
