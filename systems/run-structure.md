@@ -10,6 +10,7 @@ Driver: `ServerScriptService.PathProgressionScript`.
 5. Repeat. A **Safe Haven** every 5 paths. At **path 27** the route leads to the **Rehem**; after it comes the corrupted **second stage**. At **path 50** (second stage only) it leads to **The Chastity**, the North Forest's final boss. Killing her ends the run: ending scene (placeholder), results, back to the Lobby. Every run pays Essence ([economy](economy.md)).
 
 ## Path nodes
+- **Pick weight:** a node's `PickWeight` attribute (default 1) sets how often it comes up in the random pool. **PathVersion3** and **PathVersion3 (corrupted)** (the ones with the Rejuvenating Field exit) are **0.6**: about 13% of picks each instead of 20%.
 - Hand-built walkable segments tagged `PathNode` (PathVersion1–4, "Path version 5", cave paths…). Inactive nodes are parked in ServerStorage; only the active one is in Workspace.
 - **Party gate:** the exit wall stays solid until **every** party member has touched it *and* the combat event is cleared. Then it opens and everyone walks through as the screen fades.
 - PathVersion2 has two exits (a fork); for now both lead to a random next node.
