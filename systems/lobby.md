@@ -45,6 +45,7 @@ Redesigned 2026-10-29 (hard edges, no rounded corners):
 ## Saved data (Beacon)
 - DataStores `PlayerClassData` (owned and equipped classes) and `PlayerWeaponData` (owned weapons, per-class equipped weapon), plus Convoke pity and Convoke Essence.
 - Personal grants by userId (in `Script`): Lukas's account gets Authan, plus DivineServant, Akhzarims Tenacity and Imperial Rifle; the dev account gets Hayut.
+- **Everything (dev):** accounts in `GRANT_EVERYTHING` (`Script` and `ArtifactService`, Lukas's) own every Soul, weapon and Artifact, topped up on every join so new ones arrive automatically.
 
 ## Visual identity
 - Lavender UI accents, the Balthazar font, star-tier borders (1★ grey, 2★ violet, 3★ gold, Personal its own border).
