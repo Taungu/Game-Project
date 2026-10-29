@@ -3,6 +3,7 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-10-29
+- **Spawning stuck in / falling through the floor** fixed at the source: side lanes no longer land inside walls, the floor ray finds the real walkable surface near the entrance's height (skipping invisible/non-solid parts) instead of shooting from 150 studs up at the `Path` model only, and players are set at their real feet height + 0.75 instead of a flat 3 studs. **Off-path guard**: anyone far outside the path or fallen below it is teleported back to the path's start.
 - **Tooltip ingredients** glow gold when you have them and are greyed out when you don't.
 - **Item tooltips** now show what a tier 2/3 is made from (ingredient icons with counts) and tier-3 passives in a short form.
 - **Finn limited in Story** (PVP unchanged): a rotating recipe book per Safe Haven visit (all tier 1, 5 random tier 2, 2 random tier 3 with one from your class section), plus **recipe pages** that keep a tier 3 in your book for the run: the Rehem lets you pick 1 of 3; side bosses 50% and elites 10% drop a random page.
