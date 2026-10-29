@@ -14,8 +14,14 @@ Join → **Menu** (`MenuUI`, EngravedButton style: Balthazar font, lavender glow
 - Then a push into his void and you wake in the bar.
 
 ## Character Page: "Inner Core" (`CharacterPageUI`)
-- One page for loadout. The **Soul tab** lists owned classes and plays each class's pick animation with an essence sparkle in its colour. The **Weapon tab** is the next step to design.
-- Opened via the CoreEssenceButton. Lavender style.
+Redesigned 2026-10-29 (hard edges, no rounded corners):
+- **Tab rail** (far left, the old top selector stood up): **Weapons**, **Armory**, **Mastery** (locked placeholder). A side marker slides to the open tab. Armory and Mastery use placeholder letters until they get icon art (swap `Symbol.Image`). Opens on **Armory**.
+- **Left panel**: the equipped Soul's affinity, name, title (`ClassDefinitions.GetTitle`), stars, and **stats** (Health, Max Essence at level 1, Phys/Magic Dmg, Phys/Magic Res as % blocked, CDR, Move Speed; Crit/Atk Speed/Pen only when an Artifact gives them). Equipped Artifacts show as green **+** amounts. Below: the open tab's content.
+- **Weapons tab**: the old weapon grid (spinning 3D weapons, click to equip) and the weapon camera/pose.
+- **Armory tab**: 4 slots, owned Artifacts (rarity border + initials until there's art; green dot = equipped), a detail card (rarity, section, stats, passive, lore) with Equip/Unequip. One loadout for every Soul. Server: `ArtifactService` (DataStore `PlayerArtifactData`, `ArtifactEvent`). **In Studio every Artifact shows as owned** (never saved).
+- **Roster** (right edge, replaces the Soul tab): each owned Soul as its box with its rarity border and live rig, name underneath. Click to equip.
+- Rarity borders now include a **3StarBorder** template (a gold copy of the 2★ design), so 3★ weapons and Artifacts get one too.
+- The 3D avatar copy, camera fly-in, class echo, quotes and white fades are unchanged.
 
 ## Convoke (gacha) (`ConvokeUI`, `ConvokeBanners`, Convoke section of `ServerScriptService.Script`)
 - Opening it whites out the screen and moves the camera to the **WorldInbetweenCamera** (the ConvokeAnimationPlace).

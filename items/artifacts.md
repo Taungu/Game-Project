@@ -51,5 +51,8 @@ Each roll becomes one Artifact, shown on the Results screen and claimed in the L
 | 3 | Living Root Ward | Invulnerability | 40 Health, 20 PhysRes, 20 MagRes | Infected hits fill Infestation 15% slower |
 | 3 | Apex Bounty Writ | Momentum | 100 PhysDmg, 20 MoveSpd | After a dodge +10% MoveSpd for 2 s |
 
+## Built
+- Lobby: saving (`ArtifactService`, DataStore `PlayerArtifactData`), the Inner Core **Armory tab** (equip/unequip, stats preview). Studio shows every Artifact as owned for testing.
+
 ## Not built yet
-Saving (Lobby DataStore), the Armory tab, applying stats/passives in the Session, reward rolls and pity, HUD icons, party icons, Results reveal, art.
+Applying stats/passives in the Session, reward rolls and pity, HUD icons, party icons, Results reveal, art.
