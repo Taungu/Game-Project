@@ -64,6 +64,7 @@ Several moves grab and hold a target: the Light Brigand, Bella's Injection, the 
 ## Aggro & combat tag
 - **Aggro race:** the first hitter takes aggro; after that, whoever lands **5 hits** first takes or keeps it (`EnemyAggroManager`).
 - **Combat tag:** while enemies that noticed you are alive, you can only **jump once a second** (`CombatTagManager` sets `InCombat`; the client's `CombatJumpCooldown` limits the jumps).
+- **Leg i-frames:** from a jump until you land (max 2.5 s), your **legs can't be hit**: their CanTouch/CanQuery are switched off (`JumpLegIFrames`), so part-based enemy hitboxes miss them. Torso, arms and head still count, and attacks measured to the body's centre still land.
 
 ## Infestation (Story only) (`PlayerInfestation`)
 - A hidden meter that hits from **Infected** enemies fill. It's shown as roots growing over the health bar.
