@@ -3,6 +3,7 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-10-29
+- Abominable Akavish body slam: the Dohv's GroundImpact effect, deadlier close (inner box 50%) and longer reach (outer box 84×92, 20%).
 - Abominable Akavish: attack animations at Action4 priority; the post-swing freeze now waits for the clip's last frame and holds it.
 - Abominable Akavish: moves picked at random among those in reach (the body slam had no real chance before).
 - Abominable Akavish: Dohv-style welded hitboxes (bigger reach) decide and resolve its moves; it freezes 0.6 s in its swung pose after a swing.
