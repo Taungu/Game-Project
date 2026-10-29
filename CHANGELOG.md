@@ -3,6 +3,7 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-10-29
+- **Fix: enemies spawning on the roof** of paths without a `Path` folder (e.g. Path version 5 (corrupted)): the floor ray started 150 studs up and hit PathSurroundings ~140 studs overhead, so the Corrupted Dohv (and any event there) landed on top of the cliffs. Those nodes now start the ray 40 studs above the spawn spot (PathProgressionScript `floorRayLift`, DohvCharge `hasFloor`).
 - Dev: Marcus's account also owns every Soul, weapon and Artifact (`GRANT_EVERYTHING`).
 - **Soul Mastery goals**: Bella 10 (instant, longer Injection), Fahlon 5 (Royal Haste) and 10 (two Marking charges), Zumin 5 (Settled Ground armor) and 10 (E cancels Brace and Vengeance).
 - **Settings menu** (both places): top-left button; master/music/SFX volume, screen shake, damage numbers, FPS counter; saved per account. Music now has its own SoundGroup. See [systems/settings.md](systems/settings.md).
