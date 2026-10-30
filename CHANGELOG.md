@@ -3,6 +3,7 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-10-30
+- Results screens (cleared and Defeat): rewards appear one by one, the level reward included: each slides in and counts its Essence up into the total, then the Mastery bar appears and fills. Knobs in RunEndUI: `REVEAL_START`, `REVEAL_COUNT_TIME`, `REVEAL_GAP`, `MASTERY_AFTER_SHOW`.
 - Mastery results bar: slower fill (3 s per level), a sweeping glint and sparks off its edge; a level-up bursts the bar (swelling bright copy that fades, ring of sparks).
 - **Mastery on the results screen**: both end screens (cleared / Defeat) fill your Soul's Mastery bar with the run's EXP, popping on each level-up and naming the level 5 / 10 unlock.
 - **Fix: dashes into trees** (Fahlon's Q on Path version 5): the dash check was one thin ray from the body's centre that stopped at the first leaf it touched. It now sweeps a body-wide sphere and skips non-colliding parts.
