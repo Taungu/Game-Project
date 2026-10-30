@@ -39,4 +39,6 @@ The hammer slams down and the ground extrudes into a crater of spikes (`VFXModel
 | Size | `1 + (physical multiplier − 1) × 0.25`, capped at 1.4: scales the area and the spikes |
 | Cooldown | 10 s |
 
-Cancelled if the wielder is stunned/staggered/ragdolled before f100. All numbers are PLACEHOLDERS. Rumble isn't applied to the skill.
+Cancelled if the wielder is stunned/staggered/ragdolled before f100. All numbers are PLACEHOLDERS.
+
+**Synergy with Rumble** (`rumble = true`): every crater hit on a staggerable target is a Rumble smash (+20%, BluntHit burst), checked before the damage like the M1s. Stagger-immune bosses don't trigger it.

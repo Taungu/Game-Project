@@ -3,6 +3,7 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-10-30
+- CraterSlam now triggers **Rumble**: every hit on a staggerable target smashes for +20% with the BluntHit burst (`rumble = true` on the skill entry).
 - CraterSlam: size scaling halved (×0.25 per Physical Damage, cap 1.4, was ×0.5 / 1.75); spikes faster (eruption 180 studs/s, was 90; rise 0.1 s, was 0.18).
 - **The Commandment's F skill: CraterSlam** (placeholder name). The hammer slams down on frame 100 of its new animation and the ground erupts into a crater of GroundPike spikes: a ring around the hammer and a cone reaching further forward. Everything inside takes 20 Physical (scales with Physical Damage) and is staggered without fail; the area and spikes grow with Physical Damage (up to 1.75×). Cooldown 10 s. See [weapons/the-commandment.md](weapons/the-commandment.md).
 - **Polish pass: sound wiring.** New `SoundEffects` entries: `Dodge` (every dodge, from the dodger), `ImbalanceFall` (body-fall thud whenever anyone is knocked into Imbalance), `PlayerHurt` (only the hit player hears it, off a real health drop, throttled, tiny DoT drops skipped; `PlayerFeedbackSounds`), plus empty slots (`rbxassetid://0`, silent until given an id) for `PlayerDown`, `EssenceAbsorb` (your EXP orbs arriving) and `SafeHavenHeal` (stepping into a heal zone). Pro Sound Effects picks are first guesses.
