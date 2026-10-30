@@ -29,6 +29,7 @@ Read [README.md](README.md) first. It indexes everything. This file covers how t
 
 - `multi_edit` can **silently no-op**, especially `replace_all` across a big file. After every edit, re-read or grep the script to confirm the change landed.
 - Requiring modules in Edit mode can hang if they `WaitForChild` something that only exists at runtime. Read `.Source` instead in that case.
+- **Edit mode counts as a client** (`RunService:IsClient()` is true there). Client-only side effects at module load (building instances, pools) must also check `RunService:IsRunning()`, or every Edit-mode require saves junk into the place. That's how ~5,300 UI sounds piled up in SoundService. Mark runtime-built helpers `Archivable = false`.
 - Server-side `:Emit()` on VFX fired right after cloning often doesn't show on clients (replication race). Play one-shot VFX on the client through a RemoteEvent.
 - Grip offsets: weapon models carry a `Value` CFrameValue at the **model** level. Set the `AsC1` attribute when the value is authored as a C1.
 
