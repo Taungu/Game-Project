@@ -2,6 +2,10 @@
 
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
+## 2026-10-30
+- **Fix: dashes into trees** (Fahlon's Q on Path version 5): the dash check was one thin ray from the body's centre that stopped at the first leaf it touched. It now sweeps a body-wide sphere and skips non-colliding parts.
+- **Reset button = unstuck**: in runs, Reset puts you back at the start of your current path instead of killing you (8 s cooldown). See [systems/run-structure.md](systems/run-structure.md).
+
 ## 2026-10-29
 - **Fix: enemies spawning on the roof** of paths without a `Path` folder (e.g. Path version 5 (corrupted)): the floor ray started 150 studs up and hit PathSurroundings ~140 studs overhead, so the Corrupted Dohv (and any event there) landed on top of the cliffs. Those nodes now start the ray 40 studs above the spawn spot (PathProgressionScript `floorRayLift`, DohvCharge `hasFloor`).
 - Dev: Marcus's account also owns every Soul, weapon and Artifact (`GRANT_EVERYTHING`).
