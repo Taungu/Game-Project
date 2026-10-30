@@ -3,6 +3,7 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-10-30
+- **Imperial Rifle's F skill: BayonetCharge** (placeholder name). A bayonet thrust dash (fires f37, lands f105 into a roll, no endlag). The cut triggers **Trained Veteran** (Vulnerable, sharing the slash's 8 s per-target limit) and marks the target with **gunpowder** for 3 s: your next focused shot that connects explodes on them with the S leap shot's ground explosion. New `GunpowderMarks`; `DashSlash` gained `dashEaseOut`, `hybridScaling`, `dashSounds`, `hitSounds`, `veteran`, `gunpowderMark`. See [weapons/imperial-rifle.md](weapons/imperial-rifle.md).
 - CraterSlam **inner hit**: anything within 4 studs of where the hammer lands (grows with size) takes ×1.5 damage (`innerRadius`, `innerMultiplier`).
 - CraterSlam now triggers **Rumble**: every hit on a staggerable target smashes for +20% with the BluntHit burst (`rumble = true` on the skill entry).
 - CraterSlam: size scaling halved (×0.25 per Physical Damage, cap 1.4, was ×0.5 / 1.75); spikes faster (eruption 180 studs/s, was 90; rise 0.1 s, was 0.18).
