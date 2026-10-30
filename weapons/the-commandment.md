@@ -35,6 +35,7 @@ The hammer slams down and the ground extrudes into a crater of spikes (`VFXModel
 | Area (size 1) | Ring radius 8 + forward cone 26 studs long, 60° wide; ±8 studs height. Big enemies count by their body size |
 | Eruption | Runs outward at 180 studs/s: spikes and hits further out land later |
 | Spikes | 7 in a ring leaning out 40°, 4 cone rows (2, 3, 4, 5) leaning 28°; scale 0.14 → 0.26 of GroundPike. Ground-coloured, no collision, rise in 0.1 s, stand 1.6 s, then sink |
+| Inner hit | Within 4 studs of the impact (× size, by body reach): ×1.5 damage |
 | Hit | 20 Physical (scales with Physical Damage, crits, resistances as usual) + **guaranteed stagger** (`StaggerSystem.ForceStagger`; stagger-immune bosses and Zumin's brace excepted, dodges respected) |
 | Size | `1 + (physical multiplier − 1) × 0.25`, capped at 1.4: scales the area and the spikes |
 | Cooldown | 10 s |

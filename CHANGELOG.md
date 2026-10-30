@@ -3,6 +3,7 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-10-30
+- CraterSlam **inner hit**: anything within 4 studs of where the hammer lands (grows with size) takes ×1.5 damage (`innerRadius`, `innerMultiplier`).
 - CraterSlam now triggers **Rumble**: every hit on a staggerable target smashes for +20% with the BluntHit burst (`rumble = true` on the skill entry).
 - CraterSlam: size scaling halved (×0.25 per Physical Damage, cap 1.4, was ×0.5 / 1.75); spikes faster (eruption 180 studs/s, was 90; rise 0.1 s, was 0.18).
 - **The Commandment's F skill: CraterSlam** (placeholder name). The hammer slams down on frame 100 of its new animation and the ground erupts into a crater of GroundPike spikes: a ring around the hammer and a cone reaching further forward. Everything inside takes 20 Physical (scales with Physical Damage) and is staggered without fail; the area and spikes grow with Physical Damage (up to 1.75×). Cooldown 10 s. See [weapons/the-commandment.md](weapons/the-commandment.md).
