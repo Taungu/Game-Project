@@ -23,7 +23,7 @@ Things the design hasn't settled yet. Move an item out once it's decided and doc
 
 ## Weapons
 - WarHammer has no M1 combo. Bow, Crossbow, StraightSword, Dagger and BroadDagger have basic combos.
-- Weapon skills for SilverFlash, The Commandment, Than, DivineServant, Akhzarims Tenacity and Imperial Rifle.
+- Weapon skills for SilverFlash, Than, DivineServant, Akhzarims Tenacity and Imperial Rifle.
 
 ## Enemies & world
 - Brigand (MediumVarient) has no real attacks.
