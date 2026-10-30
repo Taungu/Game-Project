@@ -28,7 +28,7 @@ The M1s aren't a combo. They alternate a **shot** with a **follow-up** picked by
 `RifleAim` on the shot and leap shot, `RifleShot` + `RifleShotBoom` when firing, `RifleDashCloth` on side dashes, `SwingSword` on the slash. The explosion borrows `CommandmentGroundSmashLight` (placeholder).
 
 ## F skill: BayonetCharge (`WeaponSkills`, the `DashSlash` branch)
-A bayonet thrust dash, like Fahlon's Q.
+A bayonet thrust dash, like Fahlon's Q. The rifle comes off the back into his hands as the skill starts (`WeaponVisuals.DrawFor`) and goes back on the back afterwards.
 
 | | |
 |---|---|
