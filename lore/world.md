@@ -73,6 +73,8 @@ Glyphs are written **right to left**. The first glyph is the **root** (the verb)
   - Right hand **Ranah · Ithav · Lumet · Marek**: "destruction, given a great form, raised high, brought down".
   - Left hand **Velith · Ovin · Tzimra · Akhar**: "sent moving, binding, echoing out, on the other".
 
+**The Chastity's Javelin of God**: **Ranah · Ithav · Lumet · Ovin · Tzimra · Marek · Akhar**: "destruction, given form, raised high and shining, bound together, echoed out, brought down, upon the others". The sky lance's right-hand spell grown to a god's scale: Ovin binds it into the orb, Tzimra echoes it into a rain, and Akhar, written last, aims the whole storm at "the others", so it blankets the arena and only some lances seek a player. Written right to left, the finished line reads Akhar … Ranah.
+
 **Glyph images** (`rbxassetid://`)
 | Akhar | Velith | Shoren | Tzimra | Marek | Ovin | Kesh | Ranah | Lumet | Ithav |
 |---|---|---|---|---|---|---|---|---|---|
