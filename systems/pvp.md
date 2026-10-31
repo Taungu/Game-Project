@@ -29,12 +29,23 @@ The Navat at their entrance says: *"Eliminate those who follow the false prophet
 - Infestation is off in PVP.
 - **PVP Test** mode (testing only): random teams sharing one track, kill feed and Silver, no lives lost.
 
-## The Rehem in PVP (claiming the boss)
-The Rehem gives big rewards, so it's a race (`PathProgressionScript`, `BOSS_CONTEST_WINDOW`).
-- The first team whose Rehem comes due (path 27) **claims** it and goes to the boss path.
-- For **30 s** after the claim, the other team may still reach it too and **contest** it: both teams on the boss path is an Ambush, with the Rehem still in the fight.
-- After those 30 s, or once a team has **lost** an Ambush on the boss path, that team is **locked out** of the fight. It keeps getting first-stage paths until the other team has slain the Rehem, then moves straight on to the second stage (no fight, no boss rewards).
-- Story mode is unchanged. The Chastity (final boss) has no claim rule yet.
+## The main bosses in PVP (claiming the Rehem and The Chastity)
+Both main bosses give big rewards, so they're a race (`PathProgressionScript`, `BOSS_CONTEST_WINDOW`). The same rule for both:
+- The first team whose boss comes due (the Rehem at path 27, The Chastity at path 50 overall) **claims** it and goes to it.
+- For **30 s** after the claim, the other team may still reach it and **contest** it: both teams on the boss's path is an Ambush, with the boss still in the fight. If the contesting team wins the Ambush, the boss (which belonged to the losers' event) rises again for the winners.
+- After those 30 s, or after **losing** that Ambush, a team is **locked out**: no fight, no boss rewards. It keeps getting normal paths until the other team has slain the boss, then carries on: past the Rehem straight into the second stage; past The Chastity on through the second stage.
+- If both teams wipe in that Ambush, nobody is locked out and the race starts over.
+- A boss counts as slain when its killers walk out of its path (the exit stays locked until it's dead).
+- Slaying The Chastity doesn't end a PVP match: lives decide the winner (the Story stage end is Story-only).
+
+**Messages** (`MatchCountdownController`, the Ambush banner style):
+| When | Claiming / slaying team | Other team |
+|---|---|---|
+| Claimed | THE REHEM IS YOURS · "The Navats have 30 seconds to follow" | THE EMBRACERS REACHED THE REHEM · "30 seconds to reach it and fight for it" |
+| Window closed (other team didn't come) | — | THE REHEM IS OUT OF REACH · "Press on" |
+| Slain | THE REHEM HAS FALLEN | THE EMBRACERS SLEW THE REHEM |
+
+Sub-line on a kill: "The corrupted grounds lie open" (Rehem) / "Fight on" (Chastity). Story mode is unchanged.
 
 ## Planned
 Each Soul gets a locked **signature weapon** in PVP. Until those exist, every Soul is locked to its affinity's 3★, whatever it has equipped (session-only, never saved):
