@@ -3,6 +3,7 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-10-31
+- Pebbles cover the middle half of the path's real width (measured per cluster against the side barriers), leaving the edges bare; ~180 stones over the last 45 studs of Path version 5. Knobs `pebbleWidthShare`, `pebbleWidthProbe`, `pebbleWidthMax`, `pebblesPerStud`.
 - Pebbles spread wider: 2–4 per cluster (was 1–3), scattered 3 studs either side widening to 7 at the exit (was 1.4), ±2 studs along the path.
 - Pebbles only on the last 45 studs before each exit (`pebbleLastStretch`), a little closer together (every 5 studs, was 7).
 - Guide wind rides all the way to the exit (`windToExit`: each streak lives until it arrives, was ~40 studs), 8 streaks at once (was 4).
