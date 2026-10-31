@@ -3,6 +3,7 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-10-31
+- PVP boss messages rewritten as felt lines (no mechanics), nothing for the team that reaches the boss: "The grounds rumble in the wake of the beast of darkness" etc. (`BOSS_LINES` in `MatchCountdownController`).
 - **PVP: The Chastity uses the Rehem's claim rule** (claim, 30 s to contest, locked out after, carry on once she's slain; her death doesn't end the match). A team that wins the contest Ambush now gets the boss raised for it (it used to leave with the losers' event). Both-sides-wiped resets the race. **Boss messages** for claimed / out of reach / slain, both teams.
 - **Fix + PVP rule: claiming the Rehem.** A team that lost the fight on the Rehem's path was stuck on first-stage paths forever (its boss was marked done, but it never left the boss path, so it never reached the second stage). Now the first team due claims the Rehem; the other team has 30 s to contest it (an Ambush with the Rehem in it); after that, or after losing that Ambush, it's locked out and moves on to the second stage once the Rehem is slain. See [systems/pvp.md](systems/pvp.md).
 - Pebbles cover the middle half of the path's real width (measured per cluster against the side barriers), leaving the edges bare; ~180 stones over the last 45 studs of Path version 5. Knobs `pebbleWidthShare`, `pebbleWidthProbe`, `pebbleWidthMax`, `pebblesPerStud`.

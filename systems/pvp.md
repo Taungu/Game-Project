@@ -38,14 +38,15 @@ Both main bosses give big rewards, so they're a race (`PathProgressionScript`, `
 - A boss counts as slain when its killers walk out of its path (the exit stays locked until it's dead).
 - Slaying The Chastity doesn't end a PVP match: lives decide the winner (the Story stage end is Story-only).
 
-**Messages** (`MatchCountdownController`, the Ambush banner style):
-| When | Claiming / slaying team | Other team |
+**Messages** (`MatchCountdownController`, `BOSS_LINES`): no mechanics, only a felt line, one small line under the banner. Nothing for the team that reaches the boss.
+| When | Rehem | The Chastity |
 |---|---|---|
-| Claimed | THE REHEM IS YOURS · "The Navats have 30 seconds to follow" | THE EMBRACERS REACHED THE REHEM · "30 seconds to reach it and fight for it" |
-| Window closed (other team didn't come) | — | THE REHEM IS OUT OF REACH · "Press on" |
-| Slain | THE REHEM HAS FALLEN | THE EMBRACERS SLEW THE REHEM |
+| Other team reached it (shown to you) | "The grounds rumble in the wake of the beast of darkness" | "The skies burn gold above the corrupted grounds" |
+| Too late to contest (shown to you) | "The rumbling fades beyond your reach" | "The golden light withdraws beyond your reach" |
+| You slew it | "The beast of darkness falls silent" | "The golden light gutters out" |
+| The other team slew it | "A distant howl dies out. The beast of darkness has fallen" | "The burning skies fall dark" |
 
-Sub-line on a kill: "The corrupted grounds lie open" (Rehem) / "Fight on" (Chastity). Story mode is unchanged.
+Story mode is unchanged.
 
 ## Planned
 Each Soul gets a locked **signature weapon** in PVP. Until those exist, every Soul is locked to its affinity's 3★, whatever it has equipped (session-only, never saved):
