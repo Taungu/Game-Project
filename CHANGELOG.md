@@ -2,6 +2,9 @@
 
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
+## 2026-10-31
+- Docs: **the Opharim's language** written up (root and modifier glyphs, right-to-left grammar, example spells, DivineServant's incantations, glyph image ids) in [lore/world.md](lore/world.md#the-opharims-language), plus a [DivineServant page](weapons/divine-servant.md). Lore only, no Studio change.
+
 ## 2026-10-30
 - BayonetCharge now pulls the holstered rifle into his hands for the skill (weapon skills call `WeaponVisuals.DrawFor`, like the M1s; no-op for weapons without a holster).
 - **Imperial Rifle's F skill: BayonetCharge** (placeholder name). A bayonet thrust dash (fires f37, lands f105 into a roll, no endlag). The cut triggers **Trained Veteran** (Vulnerable, sharing the slash's 8 s per-target limit) and marks the target with **gunpowder** for 3 s: your next focused shot that connects explodes on them with the S leap shot's ground explosion. New `GunpowderMarks`; `DashSlash` gained `dashEaseOut`, `hybridScaling`, `dashSounds`, `hitSounds`, `veteran`, `gunpowderMark`. See [weapons/imperial-rifle.md](weapons/imperial-rifle.md).

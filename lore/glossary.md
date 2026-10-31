@@ -27,7 +27,7 @@ Game terms (mechanics and lore) in one place. Lore details: [world.md](world.md)
 | **Morale** | A stacking party-wide stat penalty for fleeing fights (–10% per stack, max 5). |
 | **Named Boss** | A boss that can only be met once. |
 | **Navats / Seedlings** | The faction opposing the Embracers (PVP Team B); Seedlings are its members. |
-| **Opharim** | A Cleanser's guardian angel that casts spells from written glyphs. |
+| **Opharim** | A Cleanser's guardian angel that casts spells from written glyphs ([its language](world.md#the-opharims-language)). |
 | **OverStatus** | Status effects that sit on top of movement control (Bleed, Blind, Slow, Vulnerable…). |
 | **Path / Node** | One walkable segment of the run (StartOfPath → EndOfPath). |
 | **Safe Haven** | A rest node every 5 paths: heal zone and Finn the craftsman. |

@@ -31,11 +31,52 @@
 - **Ishdam's vessel** is the **Pontif**.
 - **Blessed**: a genetic trait some Ishdarians (the human race) carry that lets them push essence out of the body. On its own it does little else.
 - **Cleansers**: Church soldiers who face what roots in the soil. A high Ministry rank grants a Cleanser a guardian angel, an **Opharim**. It is an invisible metaphysical being living in the **realm of purity**, where unseen things like gravity and heat exist. Opharim were made by Ishdam to serve his people and answer through him alone, bound by a pact granted by the Pontif.
-- **Casting**: Cleansers memorize incantations in a language they don't understand and write letters with their fingertips. Each letter (glyph) carries a broad concept of existence. The Opharim reads them as commands and spends its host's essence to cast. Letters combine like maths into complex spells; a single letter makes the Opharim execute its raw meaning. Glyph names: **Akhar, Velith, Shoren, Tzimra, Marek, Ovin, Kesh, Ranah, Lumet, Ithav**. (*Formula of Light*: "Write it right, and something will answer.")
+- **Casting**: Cleansers memorize incantations in a language they don't understand and write letters with their fingertips. Each letter (glyph) carries a broad concept of existence. The Opharim reads them as commands and spends its host's essence to cast. Letters combine like maths into complex spells; a single letter makes the Opharim execute its raw meaning. Glyph names: **Akhar, Velith, Shoren, Tzimra, Marek, Ovin, Kesh, Ranah, Lumet, Ithav**; meanings and grammar in [The Opharim's language](#the-opharims-language) below. (*Formula of Light*: "Write it right, and something will answer.")
 - **Congregants**: Church trainees drilled under Cleansers (*Congregant's Combat Wear*).
 - **Cleansing's Way of Flash**: a Cleanser fighting style first walked by the **Inquisitor Lukas**. A miracle opens the way, then a single precise strike lands before the horror can turn.
 - **Ziel**: had every quality of an Inquisitor but left to be a remote village priest. His flail held nothing together (*Ziel's Thrash*).
 - **Wanderers**: a lowest-rank role sent onto ground left behind after a cleansing (*Iron-Willed Plate*). NPCs address the player as "wanderer".
+
+## The Opharim's language
+Glyphs are written **right to left**. The first glyph is the **root** (the verb); each later glyph **modifies everything before it**, so order matters. Every glyph costs essence: longer spells are stronger but more draining. A miswritten glyph is carried out **literally** by the Opharim.
+
+**Root glyphs** (written alone = their raw meaning)
+| Glyph | Concept | Alone |
+|---|---|---|
+| **Ithav** | Creation / Form | Essence hardens into a crude solid shape |
+| **Ranah** | Destruction / Severance | A tearing burst |
+| **Shoren** | Protection / Enclosure | A shell around the caster |
+| **Velith** | Motion / Transfer | A violent push |
+| **Ovin** | Binding / Connection | Ties whatever's nearest to the caster |
+| **Kesh** | Purity / Cleansing | Burns away impurity: corruption, roots, Infestation |
+
+**Modifier glyphs**
+| Glyph | Concept | Effect on a spell | Alone |
+|---|---|---|---|
+| **Akhar** | The Other | Points the spell at a target away from the caster | A harmless flicker that marks someone |
+| **Tzimra** | Echo / Resonance | Repeats or spreads the spell in waves | An empty ringing pulse |
+| **Marek** | Weight / Descent | Heavier, downward, more force | The ground under the caster presses down |
+| **Lumet** | Ascension / Revelation | Raises, shines, reveals | A rising light that reveals what's hidden |
+
+**Example spells**
+| Spell | Result |
+|---|---|
+| Shoren · Akhar | A shield on an ally |
+| Ranah · Tzimra | A rippling shockwave |
+| Kesh · Marek | Purity driven into the ground (kills Corrupted Roots) |
+| Ovin · Akhar · Marek | Bind and pin the target |
+| Ithav · Lumet · Kesh | A rising pure form (the Opharim made visible) |
+
+**DivineServant's incantations** (its M1s; see [weapons/divine-servant.md](../weapons/divine-servant.md))
+- Lances 1–3: **Ranah · Velith · Akhar**: "destruction, sent moving, at the other".
+- Sky lance (hit 4), written with both hands from each side:
+  - Right hand **Ranah · Ithav · Lumet · Marek**: "destruction, given a great form, raised high, brought down".
+  - Left hand **Velith · Ovin · Tzimra · Akhar**: "sent moving, binding, echoing out, on the other".
+
+**Glyph images** (`rbxassetid://`)
+| Akhar | Velith | Shoren | Tzimra | Marek | Ovin | Kesh | Ranah | Lumet | Ithav |
+|---|---|---|---|---|---|---|---|---|---|
+| 137532715803241 | 104132163523581 | 106815032501599 | 91139700889685 | 119229408883280 | 90371197761789 | 126082411569612 | 123028081962679 | 116314471604999 | 85143674411489 |
 
 ## The Embracer, the Embracers and the Navats
 - **The Embracer**: the figure the player meets in the intro, in the void after being knocked out by **Valrek**. He presents the starter Souls. The player wakes in the **"Embracing Flush"** bar (the Lobby).
