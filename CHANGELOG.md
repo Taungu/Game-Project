@@ -2,6 +2,9 @@
 
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
+## 2026-11-01
+- **Fix: the Rehem getting stuck on small bumps.** All 31 of its parts were solid (torso, neck and the dragging tail snagged on any rise, and with no legs it couldn't step up). `RehemBossAI.Start` now makes only its HumanoidRootPart solid and the rest non-colliding + massless, like the Dohv / Wyvern / Akavish, and floats it at HipHeight (at least `MIN_HIP_HEIGHT` = 2). Its body-contact hits check part boxes, so they're unchanged.
+
 ## 2026-10-31
 - PVP boss messages rewritten as felt lines (no mechanics), nothing for the team that reaches the boss: "The grounds rumble in the wake of the beast of darkness" etc. (`BOSS_LINES` in `MatchCountdownController`).
 - **PVP: The Chastity uses the Rehem's claim rule** (claim, 30 s to contest, locked out after, carry on once she's slain; her death doesn't end the match). A team that wins the contest Ambush now gets the boss raised for it (it used to leave with the losers' event). Both-sides-wiped resets the race. **Boss messages** for claimed / out of reach / slain, both teams.
