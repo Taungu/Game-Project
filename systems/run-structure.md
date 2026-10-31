@@ -29,7 +29,7 @@ Driver: `ServerScriptService.PathProgressionScript`.
 ## Path guide (`PathGuideClient`, tuning in `PathGuideSettings`)
 Quiet guidance that doesn't look like guidance. Each player only sees their own.
 - **Pebbles:** on arriving at a path, a trail of small pale stones (ground colour mixed 55% toward pale stone, Slate) runs along the real walking route (client-side pathfinding) from where you stand to every exit, about every 7 studs. Always there. Where pathfinding finds no route (e.g. the Rehem's open arena), it falls back to a straight line along the ground.
-- **Guide wind:** once the path's fight is over (its exits open), 3 streaks of pale-gold wind (the ambient wind is white) drift along that route near you toward the exit, faster than the ambient wind. They stop within 14 studs of the exit. On a fork, the wind alternates between the routes.
+- **Guide wind:** once the path's fight is over (its exits open), 4 streaks of warm-gold wind (the ambient wind is white), about 60% solid at their thickest (the ambient ~25%), 1.8× as wide and brighter, drift along that route near you toward the exit, faster than the ambient wind. They stop within 14 studs of the exit. On a fork, the wind alternates between the routes.
 - **Server side:** `PathProgressionScript` (PATH GUIDE block) tags each team's current exits `GuideExit` (attributes `GuideTrack`, `GuideVisit`) and sets the players' `GuideTrack` / `GuideVisit` / `GuideOpen` every 0.5 s. An exit part with `NoGuide = true` is never guided to.
 
 ## Events (`ServerStorage.PathEvents`)
