@@ -26,6 +26,12 @@ Driver: `ServerScriptService.PathProgressionScript`.
   - **FinalBossPath(TheChastity)**: The Chastity's arena (not built yet). Scheduled like the Rehem, but counted **overall** (every path left counts, detours and Safe Havens too, unlike the Rehem's counter): once per run, the first normal pick after 50 paths, never random; a due Safe Haven comes first and a detour isn't interrupted. Needs `LockedEvent = ChastityEncounter`, the `PathNode` tag and an `EventAnchor!` in its middle (arena centre; optional `ArenaRadius`, default 135). Until it exists she appears on **whatever second-stage path comes up at path 50** (her encounter overrides that path's own locked event; the arena centre is its `EventAnchor!`).
   - **"Secound Stage"**: copies of the paths with some grass turned dark red (corrupted), matching the Lobby's maroon Tree of Knowledge.
 
+## Path guide (`PathGuideClient`, tuning in `PathGuideSettings`)
+Quiet guidance that doesn't look like guidance. Each player only sees their own.
+- **Pebbles:** on arriving at a path, a trail of small pale stones (ground colour mixed 55% toward pale stone, Slate) runs along the real walking route (client-side pathfinding) from where you stand to every exit, about every 7 studs. Always there. Where pathfinding finds no route (e.g. the Rehem's open arena), it falls back to a straight line along the ground.
+- **Guide wind:** once the path's fight is over (its exits open), 3 streaks of pale-gold wind (the ambient wind is white) drift along that route near you toward the exit, faster than the ambient wind. They stop within 14 studs of the exit. On a fork, the wind alternates between the routes.
+- **Server side:** `PathProgressionScript` (PATH GUIDE block) tags each team's current exits `GuideExit` (attributes `GuideTrack`, `GuideVisit`) and sets the players' `GuideTrack` / `GuideVisit` / `GuideOpen` every 0.5 s. An exit part with `NoGuide = true` is never guided to.
+
 ## Events (`ServerStorage.PathEvents`)
 - **CombatEvents**: lists of enemies with offsets from the anchor. The exit stays shut until they're all dead.
 - **SafeEvents**: merchants and NPCs (Benesh, Ross).

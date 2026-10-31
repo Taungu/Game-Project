@@ -3,6 +3,7 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-10-31
+- **Path guide**: a trail of pale pebbles along the walking route to every exit (always), and pale-gold guide wind drifting toward the exit once a path's fight is over. Client-only per player (`PathGuideClient`), tuning in `PathGuideSettings`, exits published by `PathProgressionScript`. See [systems/run-structure.md](systems/run-structure.md).
 - **The Chastity writes Javelin of God in Opharim glyphs**: Ranah · Ithav · Lumet · Ovin · Tzimra · Marek · Akhar appear one by one, right to left, in a line in front of her during her writing (frames 12–62), drawn like DivineServant's letters (1.6× size). Data in `ChastityAI` `JAVELIN.spell`; `WeaponMoves.GetGlyphTexture` exposes DivineServant's glyph list; `DivineServantClient` draws any spell sent as `OpharimSpell`.
 - Docs: **the Opharim's language** written up (root and modifier glyphs, right-to-left grammar, example spells, DivineServant's incantations, glyph image ids) in [lore/world.md](lore/world.md#the-opharims-language), plus a [DivineServant page](weapons/divine-servant.md). Lore only, no Studio change.
 
