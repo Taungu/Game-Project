@@ -29,6 +29,13 @@ The Navat at their entrance says: *"Eliminate those who follow the false prophet
 - Infestation is off in PVP.
 - **PVP Test** mode (testing only): random teams sharing one track, kill feed and Silver, no lives lost.
 
+## The Rehem in PVP (claiming the boss)
+The Rehem gives big rewards, so it's a race (`PathProgressionScript`, `BOSS_CONTEST_WINDOW`).
+- The first team whose Rehem comes due (path 27) **claims** it and goes to the boss path.
+- For **30 s** after the claim, the other team may still reach it too and **contest** it: both teams on the boss path is an Ambush, with the Rehem still in the fight.
+- After those 30 s, or once a team has **lost** an Ambush on the boss path, that team is **locked out** of the fight. It keeps getting first-stage paths until the other team has slain the Rehem, then moves straight on to the second stage (no fight, no boss rewards).
+- Story mode is unchanged. The Chastity (final boss) has no claim rule yet.
+
 ## Planned
 Each Soul gets a locked **signature weapon** in PVP. Until those exist, every Soul is locked to its affinity's 3★, whatever it has equipped (session-only, never saved):
 
