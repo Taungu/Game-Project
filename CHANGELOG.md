@@ -3,6 +3,7 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-11-01
+- Overhead bars bigger (6 studs wide, was 4.2; 2.6 above the head, was 2.2). The break is one quick red flash (0.1 s) that bursts straight from the red.
 - Overhead bar break reworked (the red tint didn't read and the halves didn't land): the bar now flashes as a solid bright-red silhouette 3 times, then bursts into pieces in its own colours that fly out and fall.
 - **Overhead bar break on death**: flashes red, shakes, then snaps in two and the halves fall away (CanvasGroups). The DevTesting dummies (`PlayerStyleBar = "Enemy"`) now show the enemy player bar (EnemyOverheadUI skips them) and play `PlayerKill` when it breaks, to simulate a PVP kill.
 - Overhead bars: the **border** marks enemies, not the fill. Allies lavender (the HUD's), enemy players a dark-red border (plate, rims, crest recoloured; groove kept plum for readability). Fill is the HUD red for everyone.
