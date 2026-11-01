@@ -69,7 +69,7 @@ Stat units: damage/resist/CDR/crit/pen/speed use 10 units = 1%. All bonuses are 
 | **Living Roots** | Invulnerability | 860 | 90 PhysRes, 450 Health | Returns 5% of physical damage taken to the attacker. Your health can't be stolen. | Iron-Willed Plate + Forest of Life Salve |
 | **Sturla's Rehem** | Invulnerability | 850 | 100 PhysRes, 650 Health | A hit over 20% of your max HP deals 20% less but **roots** you for 1 s | Iron-Willed Plate + Forest Cairn Stone |
 | **Cleansing's Way of Flash** | Momentum | 800 | 540 PhysDmg, 540 MagicDmg, 12.5% MoveSpd (halved from 25%) | After an ability, your next M1 deals +30% and gives +20% MoveSpd for 1 s (20 s cd) | Congregant's Combat Wear + Formula of Light |
-| **Core Outbreak** | Momentum | 1045 | (via passive) 650 PhysDmg, 20% AtkSpd, 10% MoveSpd, 200 Health | These stats grow 10% stronger per 1000 max Essence | Bavel Blank + Congregant's Combat Wear |
+| **Core Outbreak** | Momentum | 1045 | (via passive) 650 PhysDmg, 20% AtkSpd, 5% MoveSpd (halved from 10%), 200 Health | These stats grow 10% stronger per 1000 max Essence | Bavel Blank + Congregant's Combat Wear |
 | **Embracer's Contract** | Momentum | 915 | 550 adaptive Phys/Magic, 20% Health Steal | Damage goes to your dominant stat. Kills feed it: +50 per named boss, +25 per player or boss, +5 per intermediate enemy. | Dohv-Hide Harness + Congregant's Combat Wear |
 
 ## Epigraphs (the first line of each description)
