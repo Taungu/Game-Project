@@ -22,7 +22,7 @@ The Navat at their entrance says: *"Eliminate those who follow the false prophet
   - No new event is pulled. The path's monsters stay and fight whoever is closest.
   - Both teams are **locked in** (exits solid) until one team is wiped.
   - Only during an Ambush can the teams hurt each other. Teammates can never hurt each other.
-  - No respawns until it ends. The **losers** go back to their entrance (they keep items and levels and only lose time). Dead **winners** respawn on the ambush path.
+  - No respawns until it ends. The **losers** go to their own team's **Safe Haven** (SafeHaven / NavatSafeHaven) and respawn there: healed, items and levels kept, only time lost; any half-done detour (cave chain, field route) is dropped and they carry on along normal paths. (It used to be their entrance, and the Navats' separate entrance could leave them locked out of the path system.) Dead **winners** respawn on the ambush path.
 - **Lives:** **10 per player**, lost **only to enemy players**. A monster finishing someone an enemy player hit recently still counts as a player kill. The killer gets **100 Silver**. At 0 lives you're out.
 - **Monster deaths** outside an Ambush just respawn you after **10 s**.
 - The match ends when a whole team is out of lives. Everyone returns to the Lobby.
