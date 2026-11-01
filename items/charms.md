@@ -46,7 +46,7 @@ Stat units: damage/resist/CDR/crit/pen/speed use 10 units = 1%. All bonuses are 
 | Signet Ring of Isaiah | Destruction | 155 | +50% Essence Regen, 5% CDR | Hourglass Charm + Essence Mathakot |
 | Cleanser's Mantle | Invulnerability | 315 | 30 MagRes, 150 Health | Leather Wrap + 2 Vitality Charm |
 | Iron-Willed Plate | Invulnerability | 295 | 50 PhysRes, 150 Health | 2 Leather Wrap + Vitality Charm |
-| Congregant's Combat Wear | Momentum | 290 | 240 PhysDmg, 10% MoveSpd | Training Sword + 2 Ankle Weight |
+| Congregant's Combat Wear | Momentum | 290 | 240 PhysDmg, 5% MoveSpd (halved from 10%) | Training Sword + 2 Ankle Weight |
 
 ## Tier 3
 | Charm | Section | Price | Stats | Passive | Recipe |
@@ -68,7 +68,7 @@ Stat units: damage/resist/CDR/crit/pen/speed use 10 units = 1%. All bonuses are 
 | **Divine Restraints** | Invulnerability | 770 | 100 MagRes, 500 Health | Every magic hit you take burns enemies within 12 studs for 1% of your max HP over 3 s | Cleanser's Mantle + Iron-Willed Plate |
 | **Living Roots** | Invulnerability | 860 | 90 PhysRes, 450 Health | Returns 5% of physical damage taken to the attacker. Your health can't be stolen. | Iron-Willed Plate + Forest of Life Salve |
 | **Sturla's Rehem** | Invulnerability | 850 | 100 PhysRes, 650 Health | A hit over 20% of your max HP deals 20% less but **roots** you for 1 s | Iron-Willed Plate + Forest Cairn Stone |
-| **Cleansing's Way of Flash** | Momentum | 800 | 540 PhysDmg, 540 MagicDmg, 25% MoveSpd | After an ability, your next M1 deals +30% and gives +20% MoveSpd for 1 s (20 s cd) | Congregant's Combat Wear + Formula of Light |
+| **Cleansing's Way of Flash** | Momentum | 800 | 540 PhysDmg, 540 MagicDmg, 12.5% MoveSpd (halved from 25%) | After an ability, your next M1 deals +30% and gives +20% MoveSpd for 1 s (20 s cd) | Congregant's Combat Wear + Formula of Light |
 | **Core Outbreak** | Momentum | 1045 | (via passive) 650 PhysDmg, 20% AtkSpd, 10% MoveSpd, 200 Health | These stats grow 10% stronger per 1000 max Essence | Bavel Blank + Congregant's Combat Wear |
 | **Embracer's Contract** | Momentum | 915 | 550 adaptive Phys/Magic, 20% Health Steal | Damage goes to your dominant stat. Kills feed it: +50 per named boss, +25 per player or boss, +5 per intermediate enemy. | Dohv-Hide Harness + Congregant's Combat Wear |
 
