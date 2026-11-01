@@ -85,7 +85,7 @@ A party-wide penalty for **fleeing** a combat event: −10% to Phys/Magic Damage
 - An infested player turns into a **Host**.
 
 ## Footsteps (`FootstepSounds` data, `FootstepClient`)
-Every player character's steps sound like the ground under it (Roblox's own running sound is muted). **Timed by the animation**: a step plays when a foot touches down, i.e. reaches the bottom of its swing measured on the foot relative to the body (lowest 35% of its recent swing, `contactBand`; same foot at most every 0.2 s). So it follows every Soul's own walk, the shared fast walk and Roblox's default walk at any pace (including the slowed intro walk). A rig whose feet barely move falls back to one step per 3.6 studs. Each step is picked from the surface's variations (never the same one twice in a row, ±7% pitch), played at the character (3D) so other players' steps come from where they are.
+Every player character's steps sound like the ground under it (Roblox's own running sound is muted). **Timed by the animation**: a step plays when the two feet **trade places** under the body (the swinging foot comes down below the planted one by `swapMargin` 0.08 studs), twice per walk cycle, once per foot, so it follows every Soul's walk, the fast walk and the default walk at any pace. Steps are never closer than `minStepGap` (0.16 s) or `stride × gapPerSpeed / speed`. (The first version watched each foot's own lowest point and tapped on every wobble.) A rig whose feet barely move falls back to one step per 3.6 studs. Each step is picked from the surface's variations (never the same one twice in a row, ±7% pitch), played at the character (3D) so other players' steps come from where they are.
 
 | Surface | Materials | Where |
 |---|---|---|
