@@ -3,6 +3,7 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-11-01
+- Convoke's Called Forth cards now show each pull in its rarity border with a live view (Soul rig idling / weapon spinning), name and status below, instead of plain name boxes. New shared `ItemBoxVisuals` module (Lobby).
 - Convoke banner restyled to match its neighbours: translucent gradient body (lighter at the top, denser at the name plate) and a softer, thinner border, instead of a solid slab with a bright white frame.
 - Character Page: the background behind your character is blurred (depth of field focused on the copy, fades in on open, out on close).
 - Fix: Convoke's "Called Forth" cards were invisible. The results fade-in also faded the card template, so the cards were cloned see-through. UIMotion now never fades templates (`...Template`, `...Templates`, or `UIMotionSkip`; the Character Page's `WeaponSlot` got the attribute).

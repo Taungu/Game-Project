@@ -31,6 +31,7 @@ Redesigned 2026-10-29 (hard edges, no rounded corners):
   - Souls: "Depths Delver" (featured Zumin 2★) · "Lingers of Essence" (standard)
   - Weapons: "Cleanser's Silver" (featured SilverFlash 3★) · "Lingers of Arms" (standard)
 - **Call / Call 10.** Calling plays the Moon "ConvokeAnimation" scene (tree roots burst up, essence shoots skyward), then the "Called Forth" panel.
+- **Called Forth cards** look like the Character Page boxes: each Soul/weapon shows its **rarity border** (1StarBorder / 2StarBoarder / 3StarBorder / PersonalStarBorder) with a **live view** inside (the Soul's lobby rig playing its idle, or the weapon spinning), and the name, kind and NEW / Owned status underneath. Built by `ReplicatedStorage.ItemBoxVisuals` (`Decorate(box, kind, name)`); the Character Page still has its own copy of the same code.
 - **Odds:** relative weights 1★ 50 : 2★ 10 : 3★ 1. A featured item takes **50%** of pulls that land on its tier.
 - **Pity:** a 2★+ guaranteed within every **10** pulls; a 3★ guaranteed by **70**. Counters are separate per tab, carry across single calls and are saved (the Weapons tab's and the 3★ counters used to reset on every rejoin).
 - **Welcome:** every account gets 1650 Essence once, and its first Call 10 guarantees a 2★ weapon for the starting Soul plus a Gauntlet/Conjurer Soul ([economy](economy.md)).
