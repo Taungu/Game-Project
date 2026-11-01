@@ -3,6 +3,7 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-11-01
+- **UI motion** (`UIMotion`, both places; see [systems/ui-motion.md](systems/ui-motion.md)): the Soul whisper's smoothness across the UIs. Shop, merchant sell, small inventory, settings, buff badge, NPC dialogue (lines write themselves in, replies pop in turn), Convoke (banner flips, fading entrance, card reveal with names writing in), Character Page (tab cross-fades, quotes write in), and every lobby panel/button eases in when shown (`UIMotionAuto`).
 - Soul whispers reanimated: a soft plum haze, an accent line that grows from its middle with a moving sheen, the name drifting in, the line written letter by letter (each fades and rises in). It fades away instead of vanishing: the letters dissolve left to right over 1.4 s while the block drifts up, and the haze lingers.
 - **Soul whispers**: the equipped Soul speaks on the right side of the screen to hint at the cave (entering a Rejuvenating Field), the lake (after the Wyvern / the Abominable Akavish die) and the Abominable Akavish ("Good luck with that."). Data in `SoulWhisperLines`, sent by `SoulWhisper`, drawn by `SoulWhisperClient`.
 - **Imbedded Tree Totems** no longer sink and resurface at other platforms (whack-a-mole removed). Each rises once when a player comes near and stays stuck at its tree until it dies. In return the thorns fly twice as fast (`THORN_SPEED` 120, was 60; `THORN_LIFE` 1.2 s).
