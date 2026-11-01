@@ -3,6 +3,7 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-11-01
+- Soul whispers reanimated: a soft plum haze, an accent line that grows from its middle with a moving sheen, the name drifting in, the line written letter by letter (each fades and rises in). It fades away instead of vanishing: the letters dissolve left to right over 1.4 s while the block drifts up, and the haze lingers.
 - **Soul whispers**: the equipped Soul speaks on the right side of the screen to hint at the cave (entering a Rejuvenating Field), the lake (after the Wyvern / the Abominable Akavish die) and the Abominable Akavish ("Good luck with that."). Data in `SoulWhisperLines`, sent by `SoulWhisper`, drawn by `SoulWhisperClient`.
 - **Imbedded Tree Totems** no longer sink and resurface at other platforms (whack-a-mole removed). Each rises once when a player comes near and stays stuck at its tree until it dies. In return the thorns fly twice as fast (`THORN_SPEED` 120, was 60; `THORN_LIFE` 1.2 s).
 - **Hit kinds** (`ReplicatedStorage.HitKinds`): player weapon M1s and weapon skills are tagged **Cut** or **Blunt**. Blunt deals +5% to armored targets (Physical Resistance 100+), cut +5% to armorless ones (under 100). Magic gets no extra (it already ignores physical armor). Arrows, bolts, rifle shots and the rifle explosion are untagged. Applied in `PlayerCoreStats.ApplyResistance` (new 6th arg `hitKind`) before resistance; True damage skips it.
