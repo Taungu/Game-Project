@@ -33,7 +33,7 @@ A bayonet thrust dash, like Fahlon's Q. The rifle comes off the back into his ha
 | | |
 |---|---|
 | Animation | `rbxassetid://127743375990612`, 132 frames @60. Dash fires on **f37**, flies (body horizontal) until he lands on **f105** into a roll. No endlag: free on landing |
-| Dash | ~34 studs over f37–f105, launching at 2× and slowing into the landing (`dashEaseOut`, average `dashSpeed` 30). Box 5×5×7 attached in front; each target hit once |
+| Dash | ~41 studs over f37–f105, **front-loaded**: launches at ~144 studs/s and glides into the landing (`dashEaseOut`, `dashEasePower` 3, average `dashSpeed` 36); ~26 studs in the first 0.25 s. **Steers with the camera** from the press, through the windup and the thrust (`steerable`). A ring wave 2.2× the air dash's is left at the launch (`thrustWave`). Box 5×5×7 attached in front; each target hit once |
 | Hit | 22, hybrid (the stronger of Physical/Magic Damage, like the M1s), stagger 2. Sounds: dash cloth + sword swing on launch, `HitBlade` on the first cut |
 | Trained Veteran | The cut inflicts **Vulnerable**, sharing the slash M1's once-per-8-s-per-target limit (`VeteranVulnerableReady` attribute, read by both scripts) |
 | Gunpowder | Marks what it cuts for **3 s** (`GunpowderMarks`; "GUNPOWDER" label over them). Your next **focused shot** that connects with a marked target explodes on it, even if the shot killed it: the S leap shot's ground explosion centred on the target (12-stud blast, 20 damage, stagger 2, Imbalance on human-shaped bodies, dizzy blur/flash on players, its look, sound and shake). One shot uses the mark up; only the marker's shots detonate it. Data: WeaponMoves `gunpowder = { duration, explosionStep }` |
