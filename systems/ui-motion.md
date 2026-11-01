@@ -14,6 +14,7 @@ One shared client module (`ReplicatedStorage.UIMotion`, same copy in Lobby and S
 - Works on plain frames: it eases each descendant's own transparency (no CanvasGroup needed), so the authored look is kept. Interrupting (reopening mid-close) continues from the current fade.
 - Options: `time`, `drift` (Vector2 or false), `scale` (number or false), `skip` (sub-trees left alone), `force`, `delay`.
 - An object with its own `UIScale` (screen scaling, e.g. Settings) is never scaled by it.
+- **Templates are never faded**: anything named `...Template` / `...Templates`, or with attribute `UIMotionSkip = true` (the Character Page's `WeaponSlot`). Scripts clone templates, and a copy taken mid-fade would stay invisible. Give any new clone source one of those.
 
 ## Where it's used
 | Place | UI | Motion |
