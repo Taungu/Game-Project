@@ -3,6 +3,7 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-11-01
+- **Run flourish**: while the run (fast walk) animation plays, arms and legs carry the dash's limb trails and the body leans a little into turns / strafes (max 8°). `RunFlourishClient`, `MovementTuning.RunFlourish`.
 - Footsteps finally follow the feet: steps play at each heel strike (a leg at its furthest-forward point). The earlier versions measured foot height, which never changes on an R6 walk, so they always fell back to distance-based steps.
 - Footsteps: timing reworked (they tapped rapidly). A step is now the feet trading places under the body, twice per walk cycle, with a jitter dead-zone and a speed-scaled minimum gap.
 - Open PVP lobby: everyone readies up (Ready / Unready, names show who's ready). The countdown runs only with 2+ in and everyone ready; a new joiner or an un-ready pauses it.
