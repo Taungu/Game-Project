@@ -18,6 +18,19 @@
 - A hit counts on an enemy's `HitBox` part or any **visible** part; invisible parts (like the Dohv's attack zones) never count, and bullets fly through them.
 - **Bullets** (Imperial Rifle): the enemy the bullet's cast struck counts as hit on arrival even if it moved off the impact spot meanwhile (up to 30 studs away).
 
+## Hit kinds (`HitKinds`)
+What a weapon hit physically is, on top of its damage type. Applied in `PlayerCoreStats.ApplyResistance` (6th arg) before resistance; judged by the target's raw Physical Resistance points. True damage skips it.
+
+| Kind | Bonus | Weapons |
+|---|---|---|
+| **Cut** | +5% vs armorless (Physical Resistance < 100) | Dagger, BroadDagger, StraightSword, SavageGlaive, GreatAxe, IllThorn, SilverFlash, Than, Akhzarims Tenacity steps 1–3, Imperial Rifle slash (step 2) + Bayonet Charge |
+| **Blunt** | +5% vs armored (100+) | WarHammer, The Commandment, LeatherGloves, CleanserSilverGauntlets, Akhzarims Tenacity, SilverFlash steps 3–4, Than step 2 |
+| Untagged | none | Bow, Crossbow, rifle shots and explosion, DivineServant (magic already ignores physical armor) |
+
+- Per-step kinds follow each step's authored hit sound. Weapon skills use the weapon's base kind (`SKILLS` overrides: Imperial Rifle → Cut).
+- Bonuses are PLACEHOLDERS (`SETTINGS`). Class abilities and enemy attacks aren't tagged yet.
+- Armored by that line: Brigand Medium/Heavy, Tree Totems, Dohv, Wyvern, Abominable Akavish, Chastity, Rehem, Host, Sufferer. Armorless: Akavish, Zev, Light Brigands, Corrupted Dohv, Deceased.
+
 ## Abilities (E / Q / R)
 - Data in `ClassAbilities`; behaviour in `AbilityScript`. Bella and Zumin run their own kit modules.
 - Each has a **cooldown** (reduced by CDR), an **Essence cost**, a **busy duration** that locks out other actions, damage type, stagger points, status effects and VFX.

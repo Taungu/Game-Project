@@ -4,6 +4,7 @@
 - **Model:** `WeaponModels["The Commandment"]`. The grip `Value` CFrameValue sits on the model with the `AsC1` attribute (both places).
 - One Moon Animator animation (`rbxassetid://133268594507338`) is sliced into a **5-hit M1 combo** with two ground slams: a light one, and a heavy leap slam that cracks the ground.
 - F skill: **CraterSlam** (placeholder name), see below.
+- Hit kind: **Blunt** (+5% vs armored targets, see [combat](../systems/combat.md#hit-kinds-hitkinds)).
 - Passive: **Rumble**: a hit that staggers an enemy, or lands on one already staggered, smashes in as a heavy blunt blow for **+20%** damage.
 
 ## Combo
