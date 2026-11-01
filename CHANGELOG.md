@@ -3,6 +3,7 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-11-01
+- Fix: the craftsman (Finn / the Seedling) now opens on the **General** tab with every recipe; it used to open on Recommended (only your build's picks), which hid most of PVP's full library. Benesh keeps his own last tab.
 - Finn / the Seedling craftsman: PVP detection made stricter so PVP always gets the full recipe library (GameMode "PVP", PVP Test, or any player on a PVP team), never the Story book.
 - PVP: losing an Ambush now sends the team to its own Safe Haven (SafeHaven / NavatSafeHaven) instead of back to its entrance, which could lock the Navats out of the path system.
 - Footsteps now follow the animations: a step plays when a foot touches down in whatever walk is playing (each Soul's walk, the fast walk, the default walk), instead of every 3.6 studs (kept only as a fallback).
