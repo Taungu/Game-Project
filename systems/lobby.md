@@ -26,6 +26,7 @@ Redesigned 2026-10-29 (hard edges, no rounded corners):
 
 ## Convoke (gacha) (`ConvokeUI`, `ConvokeBanners`, Convoke section of `ServerScriptService.Script`)
 - Opening it whites out the screen and moves the camera to the **WorldInbetweenCamera** (the ConvokeAnimationPlace).
+- **Banner look**: see-through like the title bar and tab rail beside it: a lavender-to-plum gradient, 55% see-through at the top to 22% at the name plate (so the text reads), with a soft 1.5 px border (40% see-through) and a faint inner rim.
 - **Two tabs:** **Souls** and **Weapons**. Every banner pulls from the **whole pool** (souls *and* weapons); a banner just has a **featured** item.
   - Souls: "Depths Delver" (featured Zumin 2★) · "Lingers of Essence" (standard)
   - Weapons: "Cleanser's Silver" (featured SilverFlash 3★) · "Lingers of Arms" (standard)
