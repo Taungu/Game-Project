@@ -26,13 +26,14 @@ Redesigned 2026-10-29 (hard edges, no rounded corners):
 
 ## Convoke (gacha) (`ConvokeUI`, `ConvokeBanners`, Convoke section of `ServerScriptService.Script`)
 - Opening it whites out the screen and moves the camera to the **WorldInbetweenCamera** (the ConvokeAnimationPlace).
+- **Banner showcase** (no art): the featured item stands in the banner (a Soul's lobby rig `Workspace.<Soul>` playing its idle, or the weapon laid flat and gently floating) in front of two drifting wind beams (the path guide's `WindStreak` textures) in the item's colour (`ConvokeBanners.ITEM_THEMES`, suggested PLACEHOLDER colours; standard banners: essence lavender). Knobs: `SHOWCASE` in `ConvokeController`. **Zumin has no lobby rig yet** (`Workspace.Zumin`, like Raam/Bella/Fahlon/Luther), so Depths Delver shows only its beam until one is added.
 - **Banner look**: see-through like the title bar and tab rail beside it: a lavender-to-plum gradient, 55% see-through at the top to 22% at the name plate (so the text reads), with a soft 1.5 px border (40% see-through) and a faint inner rim.
-- **Two tabs:** **Souls** and **Weapons**. Every banner pulls from the **whole pool** (souls *and* weapons); a banner just has a **featured** item.
+- **Two tabs:** **Souls** and **Weapons**. Every banner pulls souls *and* weapons, but the **other kind is capped at 2★** (`OTHER_KIND_MAX_TIER`): a Souls banner never gives a 3★ weapon, a Weapons banner never a 3★ Soul. A banner has a **featured** item.
   - Souls: "Depths Delver" (featured Zumin 2★) · "Lingers of Essence" (standard)
   - Weapons: "Cleanser's Silver" (featured SilverFlash 3★) · "Lingers of Arms" (standard)
 - **Call / Call 10.** Calling plays the Moon "ConvokeAnimation" scene (tree roots burst up, essence shoots skyward), then the "Called Forth" panel.
 - **Called Forth cards** look like the Character Page boxes: each Soul/weapon shows its **rarity border** (1StarBorder / 2StarBoarder / 3StarBorder / PersonalStarBorder) with a **live view** inside (the Soul's lobby rig playing its idle, or the weapon spinning), and the name, kind and NEW / Owned status underneath. Built by `ReplicatedStorage.ItemBoxVisuals` (`Decorate(box, kind, name)`); the Character Page still has its own copy of the same code.
-- **Odds:** relative weights 1★ 50 : 2★ 10 : 3★ 1. A featured item takes **50%** of pulls that land on its tier.
+- **Odds:** relative weights 1★ 50 : 2★ 10 : 3★ 1, the same on every banner (a tier with nothing in that banner's pool is skipped). The **featured** item never raises a tier's rate: inside its tier it is **2×** as likely as any other single item (`FEATURED_WEIGHT`, PLACEHOLDER). E.g. SilverFlash among 6 three-star weapons: 2/7 ≈ 29% of 3★ weapon pulls (was 1/6 without the feature). With no 3★ Soul yet, the Souls banner has no 3★ at all; its 3★ pity settles for a 2★.
 - **Pity:** a 2★+ guaranteed within every **10** pulls; a 3★ guaranteed by **70**. Counters are separate per tab, carry across single calls and are saved (the Weapons tab's and the 3★ counters used to reset on every rejoin).
 - **Welcome:** every account gets 1650 Essence once, and its first Call 10 guarantees a 2★ weapon for the starting Soul plus a Gauntlet/Conjurer Soul ([economy](economy.md)).
 - **Price:** 165 Essence a pull, 1650 for Call 10; you can't call without enough. Balance and costs show on the page.
