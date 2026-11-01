@@ -28,3 +28,6 @@ One shared client module (`ReplicatedStorage.UIMotion`, same copy in Lobby and S
 | Lobby | Main lobby screen (`UIMotionAuto`) | Any panel/button on `ScreenGui` (inventory, stage select, ready up, host list, mode select…) eases in when it appears; the whole screen fades back in after leaving Convoke / the Character Page. Add names to its `WATCH` table for more |
 
 Already animated in their own way and left as they were: RunEndUI, MatchCountdown banners, CombatTag, Menu, ClassSelectCard.
+
+## Hover sound (`UIButtonSounds`)
+Every pressable plays `UIHover` on mouse-over, toned down: volume 0.35, at most one per 0.15 s, the same button stays silent for 1 s after, and sweeping across a row fades each tick (×0.7, floor 35%). Knobs at the top of the script.
