@@ -3,6 +3,7 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-11-01
+- Open PVP lobby: everyone readies up (Ready / Unready, names show who's ready). The countdown runs only with 2+ in and everyone ready; a new joiner or an un-ready pauses it.
 - **PVP: one open lobby** instead of hosting/joining parties. Pressing PVP joins the lobby server's open lobby (up to 6); with 2+ in, a 20 s countdown (5 s when full) ends in random teams and a teleport into one match. New window `PVPLobbyFrame` in the game's style; knobs `SessionConfig.PVPLobby`.
 - Finn / the Seedling craftsman: PVP detection made stricter so PVP always gets the full recipe library (GameMode "PVP", PVP Test, or any player on a PVP team), never the Story book.
 - PVP: losing an Ambush now sends the team to its own Safe Haven (SafeHaven / NavatSafeHaven) instead of back to its entrance, which could lock the Navats out of the path system.

@@ -13,8 +13,8 @@ The Navat at their entrance says: *"Eliminate those who follow the false prophet
 ## Open PVP lobby (Lobby: `SessionManager` "OPEN PVP LOBBY", `PVPLobbyFrame` / `PVPLobbyScript`; knobs `SessionConfig.PVPLobby`)
 Pressing **PVP** (after picking the stage) puts you straight into the server's **one open lobby**: no hosting, no joining a party.
 - Anyone on the lobby server can join, up to **6** (`maxPlayers`). Names pop in as people join.
-- With **2+** in (`minPlayers`), a **20 s** countdown runs (`fillTime`); more can still join. When the lobby fills it's cut to **5 s** (`fullTime`). Dropping under 2 stops it.
-- At 0 everyone is **shuffled into two random teams** (Embracers / Navats; Embracers get the extra player on odd counts). The window shows the draw for 2.5 s, then everyone is teleported into one reserved session server as a normal PVP match (separate entrances). A failed teleport restarts the countdown.
+- Everyone presses **Ready** (names show who's ready). With **2+** in (`minPlayers`) **and everyone ready**, a **20 s** countdown runs (`fillTime`); more can still join, but a new joiner (un-ready) or anyone un-readying pauses it. When the lobby fills it's cut to **5 s** (`fullTime`). Dropping under 2 stops it.
+- At 0 everyone is **shuffled into two random teams** (Embracers / Navats; Embracers get the extra player on odd counts). The window shows the draw for 2.5 s, then everyone is teleported into one reserved session server as a normal PVP match (separate entrances). A failed teleport un-readies everyone so they can try again.
 - Leave takes you out. Joining the open lobby drops you from any party you were in.
 - It's per lobby server (players on another lobby server have their own open lobby). Teleports can't be tested in Studio.
 - The old party queue below (`PVPQueue`) is still in the code but nothing opens it any more; **PVP Test** (dev button) still uses hosting.
