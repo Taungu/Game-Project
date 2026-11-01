@@ -19,7 +19,7 @@ Data: `ReplicatedStorage.EnemyDefinitions` (HP, base damage, EXP, stagger, resis
 | **Brigand (Heavy)** | 280 | 100 | 45 | 5 | 175 / 40 | 9 | Big two-handed sword: swings 24, spin 60. |
 | **Zev** | 100 | 80 | 15 | 1 | 40 / 10 | 5 | A lean beast with quick bites. Comes in packs. |
 | **Dohv** | 450 | 200 | 60 | 10 | 125 / 75 | 10; Attack3 14; Attack4 **BREAK** | A huge-headed beast. Swing 20%, bite 30%, combo 20%, and a finisher (outer 20% / inner 60%) that knocks you down (**Imbalance** + blur + flash). Roars. |
-| **Imbedded Tree Totem** | 90 | 60 | 20 | 2 | 150 / 0 | 2 | Pops out of platform edges and shoots thorns (15/60 each). |
+| **Imbedded Tree Totem** | 90 | 60 | 20 | 2 | 150 / 0 | 2 | Rises at a platform edge when you come near and stays stuck at that tree, shooting fast thorns (120 studs/s, 15/60 each). |
 | **Akavish** | 80 | 60 | 15 | 1 | 25 / 0 | 3 | A spider. The bite (15/60) adds **Sick**: the bite's final damage ×3 more over 20 s. Swarms in caves. |
 
 ### Bosses (first half)
@@ -49,7 +49,7 @@ Corrupted enemies (Deceased, Host, Sufferer, Dohv(Corrupted), Abominable Akavish
 | **BrigandAmbushEncounter** | Combat | First half | Three Brigands (Light/Medium/Heavy) seem to be talking; talking to them triggers an ambush. |
 | **ZevEncounter** | Combat | Any path | A pack of **5 Zevs** feeding on a dead Brigand, heads in. They wake when you get close or hit one. |
 | **DohvEncounter** | Combat | Any path | A Dohv. |
-| **TotemEncounter** | Combat | Locked to "Path version 5" | Totems pop in and out of TotemSpawn platforms. |
+| **TotemEncounter** | Combat | Locked to "Path version 5" | Each totem rises at its own TotemSpawn platform's tree and stays there. |
 | **AkavishEncounter** | Combat | Locked to the caves | 3 Akavish feeding on a corpse; they wake together within 30 studs. |
 | **WyvernEncounter** | Boss | Locked to the Wyvern Nest | The Wyvern rests mid-chamber facing away from the entrance. |
 | **FleeingBeastsEncounter** | Combat | The path right before the Rehem | Dohvs and Zevs flee **past** the party toward the start, running from what's ahead. They don't fight back; kill what you can. |

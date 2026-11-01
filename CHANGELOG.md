@@ -3,6 +3,7 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-11-01
+- **Imbedded Tree Totems** no longer sink and resurface at other platforms (whack-a-mole removed). Each rises once when a player comes near and stays stuck at its tree until it dies. In return the thorns fly twice as fast (`THORN_SPEED` 120, was 60; `THORN_LIFE` 1.2 s).
 - **Hit kinds** (`ReplicatedStorage.HitKinds`): player weapon M1s and weapon skills are tagged **Cut** or **Blunt**. Blunt deals +5% to armored targets (Physical Resistance 100+), cut +5% to armorless ones (under 100). Magic gets no extra (it already ignores physical armor). Arrows, bolts, rifle shots and the rifle explosion are untagged. Applied in `PlayerCoreStats.ApplyResistance` (new 6th arg `hitKind`) before resistance; True damage skips it.
 - Getting hit now plays one of the existing hit markers by the hit's damage type (Physical: `HitBlade`, Magic: `OpharimLanceImpact`, True: `ThornBurstImpact`) at 70% of its loudness, instead of the pitched-down fist sound (`PlayerHurt`, removed). `SoundEffects.GetVolume` added.
 - BayonetCharge's landing dust now kicks up as he touches down (f103, `dustAt`), where he lands. It used to wait for the end of the roll (f132), since the dash now carries through it.
