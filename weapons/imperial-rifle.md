@@ -28,12 +28,12 @@ The M1s aren't a combo. They alternate a **shot** with a **follow-up** picked by
 `RifleAim` on the shot and leap shot, `RifleShot` + `RifleShotBoom` when firing, `RifleDashCloth` on side dashes, `SwingSword` on the slash. The explosion borrows `CommandmentGroundSmashLight` (placeholder).
 
 ## F skill: BayonetCharge (`WeaponSkills`, the `DashSlash` branch)
-A bayonet thrust dash, like Fahlon's Q. The rifle comes off the back into his hands as the skill starts (`WeaponVisuals.DrawFor`) and goes back on the back afterwards.
+A bayonet thrust dash, like Fahlon's Q. Free again once the landing roll ends (f132). The rifle comes off the back into his hands as the skill starts (`WeaponVisuals.DrawFor`) and goes back on the back afterwards.
 
 | | |
 |---|---|
-| Animation | `rbxassetid://127743375990612`, 132 frames @60. Dash fires on **f37**, flies (body horizontal) until he lands on **f105** into a roll. No endlag: free on landing |
-| Dash | ~41 studs over f37–f105, **front-loaded**: launches at ~144 studs/s and glides into the landing (`dashEaseOut`, `dashEasePower` 3, average `dashSpeed` 36); ~26 studs in the first 0.25 s. **Steers with the camera** from the press, through the windup and the thrust (`steerable`). A ring wave 2.2× the air dash's is left at the launch (`thrustWave`). Box 5×5×7 attached in front; each target hit once |
+| Animation | `rbxassetid://127743375990612`, 132 frames @60. Dash fires on **f37**, flies (body horizontal) until he lands on **f105** into a roll; the dash carries through the roll to **f132** |
+| Dash | **Full speed through the flight**: 48 studs/s from f37 until he lands at f105 (~55 studs, `dashHoldTime`), then the landing roll eases it to a stop at the animation's end, f132 (~7 more, `dashStopPower` 2): ~62 studs, busy until f132. **Steers with the camera** from the press, through the windup and the thrust (`steerable`). A ring wave 2.2× the air dash's is left at the launch (`thrustWave`). Box 5×5×7 attached in front; each target hit once |
 | Hit | 22, hybrid (the stronger of Physical/Magic Damage, like the M1s), stagger 2. Sounds: dash cloth + sword swing on launch, `HitBlade` on the first cut |
 | Trained Veteran | The cut inflicts **Vulnerable**, sharing the slash M1's once-per-8-s-per-target limit (`VeteranVulnerableReady` attribute, read by both scripts) |
 | Gunpowder | Marks what it cuts for **3 s** (`GunpowderMarks`; "GUNPOWDER" label over them). Your next **focused shot** that connects with a marked target explodes on it, even if the shot killed it: the S leap shot's ground explosion centred on the target (12-stud blast, 20 damage, stagger 2, Imbalance on human-shaped bodies, dizzy blur/flash on players, its look, sound and shake). One shot uses the mark up; only the marker's shots detonate it. Data: WeaponMoves `gunpowder = { duration, explosionStep }` |
