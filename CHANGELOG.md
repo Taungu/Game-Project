@@ -3,6 +3,7 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-11-01
+- Character Page: the background behind your character is blurred (depth of field focused on the copy, fades in on open, out on close).
 - Fix: Convoke's "Called Forth" cards were invisible. The results fade-in also faded the card template, so the cards were cloned see-through. UIMotion now never fades templates (`...Template`, `...Templates`, or `UIMotionSkip`; the Character Page's `WeaponSlot` got the attribute).
 - Button hover sound toned down (`UIButtonSounds`, both places): volume 0.35 (was 0.6), at most one every 0.15 s, silent when re-entering the same button within 1 s, and sweeping across several buttons fades each tick softer (×0.7, down to 35%).
 - **UI motion** (`UIMotion`, both places; see [systems/ui-motion.md](systems/ui-motion.md)): the Soul whisper's smoothness across the UIs. Shop, merchant sell, small inventory, settings, buff badge, NPC dialogue (lines write themselves in, replies pop in turn), Convoke (banner flips, fading entrance, card reveal with names writing in), Character Page (tab cross-fades, quotes write in), and every lobby panel/button eases in when shown (`UIMotionAuto`).

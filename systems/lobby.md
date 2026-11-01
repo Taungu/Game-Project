@@ -14,6 +14,7 @@ Join → **Menu** (`MenuUI`, EngravedButton style: Balthazar font, lavender glow
 - Then a push into his void and you wake in the bar.
 
 ## Character Page: "Inner Core" (`CharacterPageUI`)
+- **Background blur**: while the page is open a depth-of-field (`CharacterPageBlur`, `PAGE_BLUR` in the controller) keeps your character copy sharp and blurs the inner world behind it (far 0.55, 5 studs in focus, fades in 0.9 s). Its focus follows the copy every frame, so the Weapon tab camera works too.
 Redesigned 2026-10-29 (hard edges, no rounded corners):
 - **Tab rail** (far left, the old top selector stood up): **Weapons**, **Armory**, **Mastery** ([Soul Mastery](soul-mastery.md); takes over the whole left panel). A side marker slides to the open tab. Armory and Mastery use placeholder letters until they get icon art (swap `Symbol.Image`). Opens on **Armory**.
 - **Left panel**: the equipped Soul's affinity icon (`AffinityIcons`), name, title (`ClassDefinitions.GetTitle`), stars, and **stats** (Health, Max Essence at level 1, Phys/Magic Dmg, Phys/Magic Res as % blocked, CDR, Move Speed; Crit/Atk Speed/Pen only when an Artifact gives them). Equipped Artifacts show as green **+** amounts. Below: the open tab's content.
