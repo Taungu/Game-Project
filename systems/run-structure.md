@@ -21,6 +21,16 @@ Driver: `ServerScriptService.PathProgressionScript`.
 - Special routes:
   - **Rejuvenating Field** (a RouteNode via a SpecialExit) → **CaveEntrance** → cave paths in **random order** → **Wyvern Nest** (boss). Players leave through the same opening they came in by. Killing the Wyvern **clears the cave**: the party goes **back to the field they came from** (not the random paths), still on the route (no safe haven, doesn't count as a path). After that, the field's CaveEntrance is a solid wall for that team. The field's own EndOfPath leads back to the forest paths.
   - **The lake** (`RejuvenatingLake`): press **G** at the field's water ("Touch the water") to be **healed fully** (health and Essence) and **levelled up once**. Only once your team has cleared the cave. **Twice per run per player**: once before the Rehem and once after it. Lines are placeholders.
+  - **Soul whispers** (`SoulWhisperLines` data, `SoulWhisper` server helper, `SoulWhisperClient` UI): the player is a vessel, and the equipped Soul speaks up on the right side of the screen (its name in lavender, the line typed out in italic Accanthis, held 4.5 s, faded) to hint at what the game doesn't spell out:
+
+    | When | Line |
+    |---|---|
+    | First time a team enters a Rejuvenating Field with its cave uncleared (first half only), 3 s after | "I feel a formidable presence in the cave." |
+    | The Wyvern dies (2.5 s after) | "Well fought. You seem like you could use a sip, the lake seems clean enough." |
+    | A player first comes within 110 studs of the Abominable Akavish | "Good luck with that." |
+    | The Abominable Akavish dies (2.5 s after) | "Wash yourself, you've earned it." |
+
+    Lines queue, never overlap. `PER_SOUL` can give a Soul its own wording later; for now every Soul says the same.
   - **After the Rehem** the same detour (PathVersion3 (corrupted) → Path version 5 (corrupted)) leads to **RejuvenatingField(Corrupted)** instead. Its cave entrance is blocked by the Corrupted Roots; the **Abominable Akavish** waits there instead (the second stage's Wyvern). The field's exit stays shut until it's dead, and killing it unlocks that field's lake (`LakeUnlockedBy = "Event"`), which gives the after-Rehem claim.
   - **SecondHalfBossPath(TheRehem)**: the Rehem arena.
   - **FinalBossPath(TheChastity)**: The Chastity's arena (not built yet). Scheduled like the Rehem, but counted **overall** (every path left counts, detours and Safe Havens too, unlike the Rehem's counter): once per run, the first normal pick after 50 paths, never random; a due Safe Haven comes first and a detour isn't interrupted. Needs `LockedEvent = ChastityEncounter`, the `PathNode` tag and an `EventAnchor!` in its middle (arena centre; optional `ArenaRadius`, default 135). Until it exists she appears on **whatever second-stage path comes up at path 50** (her encounter overrides that path's own locked event; the arena centre is its `EventAnchor!`).
