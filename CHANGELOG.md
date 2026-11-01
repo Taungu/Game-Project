@@ -3,6 +3,7 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-11-01
+- Overhead bars: the **border** marks enemies, not the fill. Allies lavender (the HUD's), enemy players a dark-red border (plate, rims, crest recoloured; groove kept plum for readability). Fill is the HUD red for everyone.
 - **Player overhead health bars**: other players show a copy of the HUD health bar over their head instead of Roblox's default (allies HUD red, enemy players in PVP darker blood red). `PlayerOverheadBars`, `OverheadBarSettings`.
 - **Fix: the Rehem getting stuck on small bumps.** All 31 of its parts were solid (torso, neck and the dragging tail snagged on any rise, and with no legs it couldn't step up). `RehemBossAI.Start` now makes only its HumanoidRootPart solid and the rest non-colliding + massless, like the Dohv / Wyvern / Akavish, and floats it at HipHeight (at least `MIN_HIP_HEIGHT` = 2). Its body-contact hits check part boxes, so they're unchanged.
 
