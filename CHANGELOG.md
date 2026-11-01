@@ -3,6 +3,7 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-11-01
+- Getting hit now plays one of the existing hit markers by the hit's damage type (Physical: `HitBlade`, Magic: `OpharimLanceImpact`, True: `ThornBurstImpact`) at 70% of its loudness, instead of the pitched-down fist sound (`PlayerHurt`, removed). `SoundEffects.GetVolume` added.
 - BayonetCharge's landing dust now kicks up as he touches down (f103, `dustAt`), where he lands. It used to wait for the end of the roll (f132), since the dash now carries through it.
 - BayonetCharge holds full speed (48 studs/s) through the whole flight and only slows during the landing roll, stopping at the animation's end (f132): ~62 studs, busy until f132 (`dashHoldTime`, `dashStopPower`; replaces the front-loaded ease).
 - **BayonetCharge** (Imperial Rifle F): steers with the camera from the press through the thrust (it used to lock to your facing at launch); much faster launch (144 studs/s, front-loaded ease `dashEasePower` 3, ~41 studs, was 60 studs/s / ~34); the air dash's ring wave, 2.2× bigger, at the start of the thrust (`thrustWave`, drawn by CameraLockOnScript, kind "Thrust"). `GetLongestSteerWindow` now counts a dash's windup.
