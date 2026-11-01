@@ -3,6 +3,7 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-11-01
+- **Footsteps** by ground (`FootstepSounds`, `FootstepClient`): grass, dirt, gravel, cave stone and wood, chosen from the ground's Material (override with attribute `FootstepSurface`), several variations each, 3D for other players. The entrance's Rock unions are tagged Gravel. Roblox's default running sound is muted.
 - Banner showcase: the wind is now only the wave, running horizontally as a real 3D beam behind the banner (the flat UI images showed the textures' black background as a bar; the streak layer is gone). Weapons lie with their broad face to the camera (SilverFlash showed its edge).
 - **Convoke banners fixed**: the featured item no longer takes 50% of its tier; it's just 2× as likely as any other item inside its tier (`FEATURED_WEIGHT`), tier rates unchanged. Souls banners can't give 3★ weapons and Weapons banners can't give 3★ Souls (`OTHER_KIND_MAX_TIER` = 2).
 - **Banner showcase**: banners show the featured Soul's rig (idle) or weapon (flat, floating) over drifting wind beams in the item's colour (`ITEM_THEMES`, placeholder colours) instead of banner art.

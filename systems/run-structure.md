@@ -83,3 +83,17 @@ A party-wide penalty for **fleeing** a combat event: −10% to Phys/Magic Damage
 - **Dev revives** (developers in `DevAccess` only): a top-left toggle turns revives on for the run; every death then respawns after 3 s with no lives lost and no defeat.
 - Characters are spawned by hand in Story (`CharacterAutoLoads` off).
 - An infested player turns into a **Host**.
+
+## Footsteps (`FootstepSounds` data, `FootstepClient`)
+Every player character's steps sound like the ground under it (Roblox's own running sound is muted). One step per 3.6 studs walked, picked from the surface's variations (never the same one twice in a row, ±7% pitch), played at the character (3D) so other players' steps come from where they are.
+
+| Surface | Materials | Where |
+|---|---|---|
+| Grass | Grass, LeafyGrass | the forest paths |
+| Dirt | Ground, Mud, Sand… (and anything unlisted) | path dirt |
+| Gravel | Pebble, or attribute `FootstepSurface = "Gravel"` | the entrance's grey Rock unions are tagged Gravel |
+| Stone | Rock, Slate, Sandstone, Basalt, Concrete… | the caves, Wyvern Nest |
+| Wood | Wood, WoodPlanks | bridges, house floors |
+
+- No naming needed: the ground's Material decides. To override one spot, give the part (or its model) `FootstepSurface` = a surface name.
+- Sounds are free Creator Store picks (PLACEHOLDER; Openverse didn't respond when this was built): grass and wood by Robloxmastermanyay, stone by YuvoNet, dirt/gravel/wood by Diman_x86. Swap ids in `SURFACES`.
