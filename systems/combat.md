@@ -94,6 +94,7 @@ Damage numbers (`DamageIndicator`), enemy overhead health and status markers (`E
 - **Feedback sounds**: `Dodge`, `ImbalanceFall`, getting hit plays an existing hit marker by damage type (Physical `HitBlade`, Magic `OpharimLanceImpact`, True `ThornBurstImpact`; `HURT_SOUNDS` in `PlayerFeedbackSounds`), `PlayerDown`, `EssenceAbsorb`, `SafeHavenHeal`; per-skill cast sounds via `ClassAbilities` `CAST_SOUNDS` (`AbilityCastSounds`).
 
 ## Run flourish (`RunFlourishClient`, tuning `MovementTuning.RunFlourish`)
+- **Run pace:** the run plays faster the further your movement-speed buff is past its +20% trigger: `rate = 1 + (speed / triggerSpeed − 1) × rateScale`, capped at `maxRate` (`ClassAnimations` FAST_WALK; rateScale 1 keeps the legs in step with the ground). +30% → 1.08×, +40% → 1.17×, +60% → 1.33×, +100% → 1.6×. Footsteps follow automatically.
 While a character's **run animation** plays (the shared fast walk, `ClassAnimations.GetFastWalk()`, swapped in by `ClassMovementAnimations` once the movement-speed buff passes its threshold; 3★ Souls have none):
 - its **arms and legs carry the dash's limb trails** (`BodyTrail`'s texture and lavender colour, a touch softer: 0.5 start transparency), on for as long as it runs and fading 0.25 s after;
 - the body **leans a little into its turns** (2.2° per rad/s of turning) and toward sideways movement when strafing on lock-on (7° fully sideways), capped at **8°**, easing in and out.

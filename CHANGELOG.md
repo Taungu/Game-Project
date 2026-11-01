@@ -3,6 +3,7 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-11-01
+- The run (fast walk) plays faster the further the speed buff is past its trigger (+40% → 1.17×, capped 1.6×), keeping the legs in step with the ground (`ClassAnimations.GetFastWalkRate`).
 - Mobility charms halved: Congregant's Combat Wear 10% → 5% MoveSpd, Cleansing's Way of Flash 25% → 12.5% MoveSpd, Core Outbreak 10% → 5% MoveSpd (before its Essence scaling) (descriptions updated; prices and Cleansing's 20% speed-burst passive unchanged).
 - **Run flourish**: while the run (fast walk) animation plays, arms and legs carry the dash's limb trails and the body leans a little into turns / strafes (max 8°). `RunFlourishClient`, `MovementTuning.RunFlourish`.
 - Footsteps finally follow the feet: steps play at each heel strike (a leg at its furthest-forward point). The earlier versions measured foot height, which never changes on an R6 walk, so they always fell back to distance-based steps.
