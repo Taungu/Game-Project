@@ -56,7 +56,7 @@ What a weapon hit physically is, on top of its damage type. Applied in `PlayerCo
 | **Aerial** | Immobility | 0.8 s | Launched upward (50 studs/s), then held. |
 | **Imbalance** | Immobility | 2 s (callers set their own) | The knockdown: thrown off balance and ragdolled onto the floor, paired with a screen blur. Applied by every ragdoll in the game: grab releases (Light Brigand, Bella's Q, ThornBurst, the Host), Dohv's finisher, the Rehem and the Wyvern. Outranks Stun, ranks under Stagger. |
 | **Stagger** | Immobility | 1 s | The stagger payoff. Top priority, can't be preempted. |
-| **Vulnerable** | OverStatus | ≤15 s | Bursts early after taking 10% max HP of damage (+5% max HP bonus damage). Fahlon's mark. |
+| **Vulnerable** | OverStatus | ≤15 s | Bursts early after taking 10% max HP of damage (+5% max HP bonus damage). Fahlon's mark, the rifle's Trained Veteran. **Protection:** once made Vulnerable, a target can't be made Vulnerable again (by anyone, refreshes included) for **30 s** from that application (`reapplyCooldown`). |
 | **Bleed** | OverStatus | 5 s | DoT of 0.5% max HP per second, up to 3 stacks. |
 | **Sick** | OverStatus | 20 s | Akavish poison: the bite's damage ×3 over its duration. |
 | **Blind** | OverStatus | 3 s | Outward-facing: the blinded character's hits still connect but deal no damage and apply no statuses ("Miss"). Self-effects are untouched. |
