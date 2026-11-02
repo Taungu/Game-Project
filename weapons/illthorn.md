@@ -33,4 +33,4 @@
 Cooldown **3 s**.
 
 ## Passive: SiphoningLife
-A ThornBurst unleashed at **max marks (6)** heals you for **20%** of its damage and coats the blade in the victim's blood for **2 s**. While coated, your slices reach **2.5 studs** further and deal **True** damage.
+**Every ThornBurst that lands** (any number of marks; it used to need max marks) heals you for **20%** of its damage and coats the blade in the victim's blood for **2 s**. While coated, your slices swing **50% faster** (`m1SpeedBonus`: the whole swing (cooldown, hit timing, animation) takes 1/1.5 the time), reach **2.5 studs** further and deal **True** damage.
