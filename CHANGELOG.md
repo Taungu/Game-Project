@@ -3,6 +3,7 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-11-02
+- DEV panel: **Soul switch** in PVP Test (and Studio). Pick any Soul mid-run; you respawn on the spot as it. Session only, never saved.
 - IllThorn buff (passive, not numbers): SiphoningLife now triggers on every ThornBurst that lands (no longer needs 6 marks), and coated slices swing 50% faster for the coat's 2 s.
 - Vulnerable protection: a target made Vulnerable can't be made Vulnerable again for 30 s (any source, refreshes included; `StatusEffects.Vulnerable.reapplyCooldown`).
 - Imperial Rifle ~12% weaker now it has its F skill: shot 24 → 21, bayonet slash 18 → 16, leap-shot explosion (and the gunpowder blast) 20 → 18, Bayonet Charge 22 → 19.
