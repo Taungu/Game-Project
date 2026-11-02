@@ -2,6 +2,9 @@
 
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
+## 2026-11-02
+- Imperial Rifle ~12% weaker now it has its F skill: shot 24 → 21, bayonet slash 18 → 16, leap-shot explosion (and the gunpowder blast) 20 → 18, Bayonet Charge 22 → 19.
+
 ## 2026-11-01
 - The run (fast walk) plays faster the further the speed buff is past its trigger (+40% → 1.17×, capped 1.6×), keeping the legs in step with the ground (`ClassAnimations.GetFastWalkRate`).
 - Mobility charms halved: Congregant's Combat Wear 10% → 5% MoveSpd, Cleansing's Way of Flash 25% → 12.5% MoveSpd, Core Outbreak 10% → 5% MoveSpd (before its Essence scaling) (descriptions updated; prices and Cleansing's 20% speed-burst passive unchanged).
