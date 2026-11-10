@@ -3,7 +3,7 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-11-10
-- **ConjuredPebble** (placeholder name): the 1★ Conjurer weapon and the affinity's default. No model: a pebble grows in the right hand for 0.5 s and is thrown at 1.0 s; 8 Magic, 1.2 s between throws, level with the Bow. Reuses the rifle's projectile path with a new `conjure` table; drawn by `ConjuredPebbleClient` (CombatScript sends `ConjureGrow`). In the Lobby it has no tier yet (not in Convoke).
+- **ConjuredPebble** (placeholder name): the 1★ Conjurer weapon and the affinity's default. No model: a pebble grows in the right hand for 0.5 s and leaves it on f46 of the throw animation (one throw per second); 7 Magic, level with the Bow. Reuses the rifle's projectile path with a new `conjure` table; drawn by `ConjuredPebbleClient` (CombatScript sends `ConjureGrow`). In the Lobby it has no tier yet (not in Convoke).
 Docs caught up with Studio. The dated entries below (3–5 Nov) come from dated notes in the code. The ones here were found in the survey without a date.
 - New weapon pages: [SilverFlash](weapons/silverflash.md) and [Akhzarims Tenacity](weapons/akhzarims-tenacity.md).
 - **IllThorn**: ThornBurst cooldown 3 → 4 s; the wielder can't be hit from the stab until the release; the blood coat lasts 1.5 s (was 2) and coated slices leave two Thorn Marks. The coat's extra reach shows on the blade (`BloodCoatExtension`).
