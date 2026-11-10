@@ -7,6 +7,8 @@
 | E / Q / R | Class abilities (`AbilityInputScript` → `AbilityScript`, or the class's kit module) |
 | F | Weapon skill (`WeaponSkillScript`) |
 | Right click | Dodge (`CameraLockOnScript` client slide + `DodgeServerScript` i-frames) |
+| Right click twice | Roll (a second tap during the dodge) |
+| Right click in the air | Air dash |
 | Lock-on | `CameraLockOnScript` (respects Grabbed / FacingLocked) |
 
 ## M1 combos (`WeaponMoves`)
@@ -35,10 +37,15 @@ What a weapon hit physically is, on top of its damage type. Applied in `PlayerCo
 - Data in `ClassAbilities`; behaviour in `AbilityScript`. Bella and Zumin run their own kit modules.
 - Each has a **cooldown** (reduced by CDR), an **Essence cost**, a **busy duration** that locks out other actions, damage type, stagger points, status effects and VFX.
 - Abilities belong to the **character**; weapon skills belong to the **weapon**.
+- **Soul ability power:** class abilities deal **+4% per level above 1** (L10 ×1.36, L15 ×1.56, L20 ×1.76) on top of the normal stat scaling. Weapons don't get it, so late fights lean on the Soul's kit ([stats](stats-and-levels.md)).
+- Running cooldowns can be shortened from anywhere through `CooldownReduction` (DivineServant's OverflowingSynapse). A player's own endlag goes through `EndlagRecovery` (Akhzarims Tenacity's Relentless Pursuit halves it).
 
 ## Dodge
-- Right-click slide. The server grants a short **i-frame** window (a perfect dodge).
-- A **streak system**: several dodges back to back, then a cooldown. The streak resets if you wait.
+- Right-click slide. The server grants a **0.2 s i-frame** window (a perfect dodge).
+- A **streak system**: up to 5 dodges back to back, then a 3 s cooldown. The streak resets after 2 s without dodging.
+- **Roll** (`MovementTuning.Roll`): a second tap within 0.35 s cuts the slide short and rolls instead: 9 studs over 0.35 s, with its own 0.2 s dodge frame (a perfect dodge counts). It still costs a dodge.
+- **Air dash** (`MovementTuning.AirDash`): dodging while airborne is a 6-stud push in the held direction that holds your height, with **no i-frames**. Once per jump, 2 s cooldown. It leaves a ring wave behind and the body spins on sideways dashes.
+- Flash colours: white = dodge frame, lavender = perfect dodge, dark blue = roll / air dash. Rolls and air dashes also leave thin lavender streaks off the limbs. Other players see them through `AirDashVfxRelay`.
 - Some kits replace it: Authan's Plunging Footwork (Zumin's dash), and BroadDagger's EnhancedDodge as its F.
 
 ## Stagger (`StaggerSystem`)
@@ -67,7 +74,8 @@ What a weapon hit physically is, on top of its damage type. Applied in `PlayerCo
 | **Hemorrhage** | StatusAmplifier | — | Turns Bleed into a pool of 10% of physical hits, burst at the end (Luther). |
 
 - **Immobility** effects fight for control of WalkSpeed. Only one is in control at a time, by priority (Daze < Aerial < Stun < Imbalance < Stagger), and it shows as the marker above the head. Imbalance's ragdoll physics always happens, even when Stagger holds the marker.
-- **OverStatus** effects are tracked independently, can stack with each other, and render on the target.
+- **OverStatus** effects are tracked independently and can stack with each other.
+- **Every status shows above the head** of enemies and players alike (`StatusOverheadClient`): a row of chips, one per active effect in its own colour, the immobility effect first; Bleed shows its stacks. A second row shows your own IllThorn Thorn Marks. It reads replicated attributes only and replaced the old on-body status text.
 - **Immobilizing** (for resist passives like Zumin's): Stun, Daze, Aerial, Imbalance, Stagger, Rooted.
 - `"Ragdoll"` is the old name of Imbalance and still works as an alias in `StatusEffectManager.Apply`. Death ragdolls (`RagdollCorpse`) aren't a status effect.
 
@@ -86,7 +94,7 @@ Several moves grab and hold a target: the Light Brigand, Bella's Injection, the 
 - When full, the player dies on the spot and becomes a **Host** (`HostSpawner`). Solo, that's game over. Zumin's brace blocks build-up.
 
 ## Hit feedback
-Damage numbers (`DamageIndicator`), enemy overhead health and status markers (`EnemyOverheadUI`), screen shake (`ScreenShakeScript`), blood hit reactions (`BloodSplatterVFX`), the boss health bar (`BossHealthBar`: a skinny bar across the top in the same colour scheme as the other health bars: the enemy bar's fill, gradient and plum outline, read live from `StarterGui.EnemyHealthBar`, plus the player bar's groove colour and the pink damage trail. The boss name sits small and left-aligned above it, with health numbers below. No black strokes; the text uses a soft purple shadow instead. One decorative notch. Shows while a listed boss is awake), combat music.
+Damage numbers (`DamageIndicator`), enemy overhead health (`EnemyOverheadUI`), status chips (`StatusOverheadClient`), screen shake (`ScreenShakeScript`; `CameraShakeState` shares the offset with `CameraLockOnScript`, so shakes also show under Shift Lock and lock-on), blood hit reactions (`BloodSplatterVFX`), the boss health bar (`BossHealthBar`: a skinny bar across the top in the same colour scheme as the other health bars: the enemy bar's fill, gradient and plum outline, read live from `StarterGui.EnemyHealthBar`, plus the player bar's groove colour and the pink damage trail. The boss name sits small and left-aligned above it, with health numbers below. No black strokes; the text uses a soft purple shadow instead. One decorative notch. Shows while a listed boss is awake), combat music.
 
 - **Player overhead bars** (`PlayerOverheadBars`, tuning in `OverheadBarSettings`): every other player gets a live copy of your HUD health bar over their head (plate, groove, fills draining toward the crest, white damage chips) instead of Roblox's default bar. The red fill is the same for everyone; the **border** tells sides apart: allies keep the HUD's lavender border, enemy players (the other team in PVP) get it recoloured dark red (`enemyBorder`: every piece keeps its own light/dark shading, turned red). The groove behind the fill stays plum on both, so the health stays readable. **On death the bar breaks:** the whole bar flashes solid bright red once (0.1 s) and bursts straight from the red into 22 pieces in its own colours that fly out, spin, fall and fade (0.85 s) (`breakFlash*`, `shard*` knobs). Test dummies with attribute `PlayerStyleBar = "Enemy"` (TankDummy, BellaDummy) get this bar instead of the monster bar, and their break plays the PVP kill sound (`dummyBreakSound`) so a kill can be simulated in Studio. Restyling the HUD bar restyles these too.
 - **Hitstop** (`HitStop`, tuning in `HitFeel`, lengths in `WeaponMoves` `HIT_STOPS`): once per swing, on the first real hit, the attacker's M1 track and the struck enemy's animations freeze, then play faster for `catchUpTime` to win the time back, so hitboxes, slice ends and cooldowns (all on CombatScript's clock) stay in sync. Server-side because M1 tracks are server-played. Ranged weapons have none; PVP victims and `noVictimFreeze` bosses don't freeze.

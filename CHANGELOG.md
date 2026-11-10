@@ -2,6 +2,38 @@
 
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
+## 2026-11-10
+Docs caught up with Studio. The dated entries below (3–5 Nov) come from dated notes in the code. The ones here were found in the survey without a date.
+- New weapon pages: [SilverFlash](weapons/silverflash.md) and [Akhzarims Tenacity](weapons/akhzarims-tenacity.md).
+- **IllThorn**: ThornBurst cooldown 3 → 4 s; the wielder can't be hit from the stab until the release; the blood coat lasts 1.5 s (was 2) and coated slices leave two Thorn Marks. The coat's extra reach shows on the blade (`BloodCoatExtension`).
+- **Late-game Health growth**: from level 11 Health grows at ×0.8 instead of ×0.4 (level 20 = ×10.9 base, was ×7.6), so late fights aren't decided by a few M1s.
+- **Soul ability power**: class abilities deal +4% per level above 1 (L20 ×1.76); weapons don't get it.
+- **Status chips above heads** (`StatusOverheadClient`): every status effect on enemies and players, plus your own Thorn Marks, replacing the old on-body text.
+- **Roll and air dash** documented in [combat](systems/combat.md#dodge): double-tap roll (9 studs), air dash (6 studs, no i-frames, once per jump, 2 s cooldown), dark-blue mobility flash, limb streaks.
+- Screen shakes now also show under Shift Lock and lock-on (`CameraShakeState`).
+- Fixed-size UI text follows the screen height on every device (`UIScreenFit`). Ambient wind streaks around your own character (`WindStreaksClient`).
+- SilverFlash FlashMode cooldown 13 s (was 16, then 10). Akhzarims Tenacity GutPunch cooldown 5 s (was 10).
+- Noted: the Lobby's `WeaponSkills` / `WeaponMoves` copies don't have the 3★ skills or the 4 November numbers. No default (1★) Conjurer weapon exists yet.
+
+## 2026-11-05
+- **Zumin's Brace and Vengeance is a double tap**: releasing Q ends the brace and stores the soaked damage; a second tap unleashes Vengeance whenever he likes, and the cooldown starts then. He vents steam while a charge is stored, thicker the more he soaked (`ZuminSteamClient`).
+- **Akhzarims Tenacity F: GutPunch.** A gut punch (18) that stuns for the victim animation's length, then Slows 2 s. A target left under 5% health is executed: impaled on the right arm, then thrown behind. Bigger monsters are just stunned or killed.
+- Relentless Pursuit: an execution sends the heart racing (the +20% damage bonus for 5 s, a beat every 0.4 s).
+
+## 2026-11-04
+- **3★ balance pass**: every 3★ now sits at about the Imperial Rifle's ~21.8 M1 DPS with passives counted, Heavy a little above. SilverFlash 10/10/11/11/16 → 11/11/12/12/17. IllThorn 7/7/8 → 8/8/9. The Commandment 16/18/15/16/30 → 22/25/21/22/(23 + 18 Magic). DivineServant 10/10/11/19 → 14/14/15/25. Akhzarims Tenacity 9/9/11/11/16 → (6+5)/(6+5)/(7+6)/13/19.
+- **Every 3★ should be hybrid in some way** (new design rule, see [weapons](weapons/README.md#design-rules)).
+- **SilverFlash**: Inner Sensation's True hit scales off Physical and Magic added together; Magic from charms counts ×3.5 on its Magic counterpart.
+- **SilverFlash F: FlashMode.** 2 s: +100% move speed, every M1 a lucky swing, every incoming hit dodged. The mode's M1 damage is held back and lands at the end at 50% (`FlashModeStash`). Half-inverted world, souls shown through bodies, frozen afterimages.
+- **Akhzarims Tenacity** goes hybrid: hits 1–3 are part Physical, part Magic (same totals); each heartbeat sends out a Magic pulse (20 base, 7 studs); Magic from charms quickens the heartbeat. The server now times the heartbeat (`WeaponHeartbeat`).
+- **The Commandment** goes hybrid: the leap slam is 23 Physical + 18 Magic and raises a small ring of spikes; CraterSlam's inner circle stays Physical while its spikes deal Magic (charm Magic ×3.5). The short-lived magic-into-physical conversion is gone.
+- **CraterSlam is charge and release**: hold F to the top of the windup, release to slam. The charge sets size (×0.35–1) and damage (×0.5–1); no stat-based size growth. The wielder flashes white as the charge starts.
+- The **roll** gets a dodge frame of its own (0.2 s; a perfect dodge counts).
+
+## 2026-11-03
+- **PVP Test is open to everyone** (it used to be hidden outside Studio for non-developers).
+- Fahlon's Retreating Leap i-frames 1 s → 0.25 s (PVP balance: only the takeoff is safe).
+
 ## 2026-11-02
 - DEV Soul switch fixed and opened to every mode: the Session's `ClassDefinitions` lacked `GetAllClasses` (the Lobby has it), so the Soul list never loaded. Added it; the switch is no longer limited to PVP Test.
 - DEV panel: **Soul switch** in PVP Test (and Studio). Pick any Soul mid-run; you respawn on the spot as it. Session only, never saved.

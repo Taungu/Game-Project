@@ -21,14 +21,16 @@ Where things live, for quick navigation. ~185 live scripts (plus backups in Serv
 | `NPCDefinitions` | NPC idle animations + dialogue trees |
 | `SoundEffects` | Every sound: volume, speed, variants, reverb/echo/eq, fades |
 | `SessionConfig` | Modes (Story/PVP/PVPTest), place IDs, stages |
-| `CharmRecommendations`, `ItemTooltip`, `ItemUIHelper` | Shop/UI helpers |
+| `CharmRecommendations`, `ItemTooltip`, `ItemUIHelper`, `ItemPressMechanics` | Shop/UI helpers |
+| `MovementTuning` | Roll, air dash, mobility flash, body streaks, run flourish |
+| `CameraShakeState` | The current screen-shake offset, shared by `ScreenShakeScript` and `CameraLockOnScript` |
 | Folders | `WeaponModels`, `ClassWeapons`, `ClassOutfits`, `VFXModels`, `HitboxModels`, `Enemies`, `Allies`, `DeceasedWeapons`, `SafeEventProps` |
 
 ## ServerScriptService
 | Area | Scripts / modules |
 |---|---|
 | Player setup & data | `Script` (class/weapon equip), `SessionServerScript`, `SessionPartyState`, `SpecialCharacterLooks` (Authan/Hayut looks), `WeaponVisuals`, `ClassWeaponVisuals` |
-| Combat | `CombatScript` (M1), `AbilityScript` (E/Q/R), `WeaponSkillScript` (F), `BellaKit`, `ZuminKit`, `ThornMarks`, `HitScan`, `HitboxAnchor`, `EnemyHitRewind`, `CombatSource`, `HitReaction`, `DodgeServerScript`, `PVPRules` |
+| Combat | `CombatScript` (M1), `AbilityScript` (E/Q/R), `WeaponSkillScript` (F), `BellaKit`, `ZuminKit`, `ThornMarks`, `HitScan`, `HitboxAnchor`, `EnemyHitRewind`, `CombatSource`, `HitReaction`, `DodgeServerScript`, `PVPRules`, `CooldownReduction`, `EndlagRecovery`, `WeaponHeartbeat` (Akhzarims Tenacity's heartbeat), `FlashModeStash` (SilverFlash's held damage), `BloodCoatExtension` (IllThorn's coated blade), `AirDashVfxRelay` |
 | Stats | `PlayerCoreStats`, `PlayerUniqueStats`, `PlayerLevelState`, `PlayerExpState`, `PlayerDamageReduction`, `PlayerDamageBonus`, `PlayerInvulnerability`, `PlayerPassiveBuffs`, `MoraleSystem`, `CharacterStatsService` |
 | Status | `StatusEffectManager`, `StaggerSystem`, `PlayerInfestation` |
 | Run | `PathProgressionScript` (nodes, events, safe havens, PVP tracks/Ambush), `RunProgressState`, `EncounterControllers/*` (BrigandAmbush, ZevFeast, DohvCharge, TotemGrove, RehemBoss, WyvernNest, FleeingBeasts, RootEmergence, BrigandHost, CleanserSquad) |
@@ -38,7 +40,7 @@ Where things live, for quick navigation. ~185 live scripts (plus backups in Serv
 | Safety | `FreezeWatchdog`, `AnimationLoopGuard`, `PreloadManifestServer`, `SoundPrep`, `DevTestingStudioOnly` |
 
 ## StarterPlayerScripts (client)
-`M1InputScript`, `AbilityInputScript`, `CameraLockOnScript` (lock-on + dodge), `ScreenShakeScript`, `ThornBurstClient`, `ThornMarksClient`, `GrabDoubleClient`, `DivineServantClient`, `ProjectileVfxClient`, `BellaKitClient`, `ZuminKitClient`, `RehemClient`, `BossHealthBar`, `EssenceOrbClient`, `SessionIntro`, `ForestAmbience`, `ForestMusic`, `CombatMusic`, `UIButtonSounds`, `SFXVolumeGroup`, `SoundPreloader`, `AnimationPreloader`, `UIResolutionScaler`, `MuteWalkingSound`, `DisableResetButton`, `FreezeWatchdogClient`.
+`M1InputScript`, `AbilityInputScript`, `CameraLockOnScript` (lock-on + dodge), `ScreenShakeScript`, `ThornBurstClient`, `ThornMarksClient`, `GrabDoubleClient`, `DivineServantClient`, `ProjectileVfxClient`, `BellaKitClient`, `ZuminKitClient`, `RehemClient`, `BossHealthBar`, `EssenceOrbClient`, `SessionIntro`, `ForestAmbience`, `ForestMusic`, `CombatMusic`, `UIButtonSounds`, `SFXVolumeGroup`, `SoundPreloader`, `AnimationPreloader`, `UIResolutionScaler`, `MuteWalkingSound`, `DisableResetButton`, `FreezeWatchdogClient`, `StatusOverheadClient` (status chips and thorn marks above heads), `SilverFlashModeClient`, `ZuminSteamClient`, `WeaponIdleVfxClient`, `WindStreaksClient` (ambient wind, own client only), `UIScreenFit` (text size follows the screen), `ArtifactReveal`, `RecipePageUI`, `DevRevivesToggle`.
 
 ## Workspace (world)
 EntranceToNorthForest, EntranceToNorthForest(NavatSide), PathVersion1–4, "Path version 5", CavePath1–2, WyvernNest, RejuvenatingField, SafeHaven, NavatSafeHaven, SecondHalfBossPath(TheRehem), "Secound Stage", Garrison (NPC), DevTesting folder.

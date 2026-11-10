@@ -17,7 +17,7 @@ Pressing **PVP** (after picking the stage) puts you straight into the server's *
 - At 0 everyone is **shuffled into two random teams** (Embracers / Navats; Embracers get the extra player on odd counts). The window shows the draw for 2.5 s, then everyone is teleported into one reserved session server as a normal PVP match (separate entrances). A failed teleport un-readies everyone so they can try again.
 - Leave takes you out. Joining the open lobby drops you from any party you were in.
 - It's per lobby server (players on another lobby server have their own open lobby). Teleports can't be tested in Studio.
-- The old party queue below (`PVPQueue`) is still in the code but nothing opens it any more; **PVP Test** (dev button) still uses hosting.
+- The old party queue below (`PVPQueue`) is still in the code but nothing opens it any more; **PVP Test** still uses hosting.
 
 ### (Old) Matchmaking (Lobby: `SessionManager`, `PVPQueue`, `PVPTeamBuilder`)
 - Queue as **solo, duo or trio**. A **global queue** across all lobby servers (MemoryStore). Groups are never split.
@@ -36,7 +36,7 @@ Pressing **PVP** (after picking the stage) puts you straight into the server's *
 - **Monster deaths** outside an Ambush just respawn you after **10 s**.
 - The match ends when a whole team is out of lives. Everyone returns to the Lobby.
 - Infestation is off in PVP.
-- **PVP Test** mode (testing only): random teams sharing one track, kill feed and Silver, no lives lost.
+- **PVP Test** mode: random teams sharing one track, kill feed and Silver, no lives lost. **Open to every player since 2026-11-03** (it used to be hidden outside Studio for non-developers). The DEV panel, dev revives and test dummies stay developer/Studio only.
 
 ## The main bosses in PVP (claiming the Rehem and The Chastity)
 Both main bosses give big rewards, so they're a race (`PathProgressionScript`, `BOSS_CONTEST_WINDOW`). The same rule for both:

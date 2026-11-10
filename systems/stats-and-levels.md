@@ -34,11 +34,13 @@ final = classBase × levelMultiplier × (1 + itemPercent) × morale  +  flatItem
 | Stat | Growth | Notes |
 |---|---|---|
 | Physical / Magic Damage | ×3 | Level-20 Raam M1 ≈ 2.3× level-1 damage |
-| Health | ×0.4 | Every class ≈ 1k HP at level 20 with no items (~7.6× base) |
+| Health | ×0.4 (levels 1–10), **×0.8 from level 11** | Late-game growth (`STAT_GROWTH_LATE`), so late fights aren't decided by a few M1s. ×4.3 base at level 10, ×7.6 at 15, ×10.9 at 20: about 1.3k–2k HP at level 20 with no items (Zumin ~3.1k with his Health affinity) |
 | Essence, Essence Regen | ×1 | |
 | Move Speed, Attack Speed, CDR | ×0.25 | |
 | Phys / Magic Res | ×0.15 | Percent-type stats barely grow |
 | Armor/Magic Pen, Crit Chance | 0 | Items only |
+
+- **Soul ability power** (`ABILITY_POWER_PER_LEVEL` = 0.04): class abilities (Q, E, R and the kits' moves) deal +4% per level above 1, on top of the stat scaling they share with M1s: L10 ×1.36, L15 ×1.56, L20 ×1.76. Weapons (M1 and F) don't get it. Applied by `PlayerCoreStats.ApplyAbilityDamageBonus`.
 
 - **EXP to next level** (a table, `LevelDefinitions.EXP_TABLE`; **37,720** in total to reach 20):
 

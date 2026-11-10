@@ -1,6 +1,6 @@
 # Code map: Lobby "Servitude" (placeId 137556040934447)
 
-The Lobby carries its own copies of the shared data modules (ClassDefinitions, WeaponDefinitions, WeaponMoves, ClassAbilities, ClassBaseStats, LevelDefinitions, StatusEffects, SoundEffects…). They've **drifted behind** the Session's. The Lobby needs class/weapon identity (names, tiers, models, grips) to be correct; combat numbers matter mostly in the Session.
+The Lobby carries its own copies of the shared data modules (ClassDefinitions, WeaponDefinitions, WeaponMoves, ClassAbilities, ClassBaseStats, LevelDefinitions, StatusEffects, SoundEffects…). They've **drifted behind** the Session's. The Lobby needs class/weapon identity (names, tiers, models, grips) to be correct; combat numbers matter mostly in the Session. As of 2026-11-10 the Lobby's `WeaponSkills` has none of the 3★ F skills (ThornBurst, BayonetCharge, CraterSlam, FlashMode, GutPunch) and its `WeaponMoves` doesn't have the 4 November balance numbers.
 
 | Area | Where |
 |---|---|

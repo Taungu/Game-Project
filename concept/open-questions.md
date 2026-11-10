@@ -16,14 +16,14 @@ Things the design hasn't settled yet. Move an item out once it's decided and doc
 ## Characters
 - Authan's real kit (he uses Fahlon's E/Q/R as a placeholder; only his passive is his own).
 - Hayut's kit and weapon (dev character, Fahlon copy with test E).
-- A Conjurer Soul. DivineServant exists, but no Conjurer class does.
+- A Conjurer Soul. DivineServant exists, but no Conjurer class does. There's also **no default (1★) Conjurer weapon**: DivineServant is 3★ and not a default, so a Conjurer Soul would start with nothing equipped until one exists.
 - Fahlon's **Affinity Stat** (deliberately undecided).
 - Luther's Anemic: should a naturally expiring Bleed count as a "burst"? Today it does (`forcedBurstsOnly = false`).
 - PVP signature weapons per character (for now PVP locks each character to their affinity's 3★ weapon).
 
 ## Weapons
 - WarHammer has no M1 combo. Bow, Crossbow, StraightSword, Dagger and BroadDagger have basic combos.
-- Weapon skills for SilverFlash, Than, DivineServant, and Akhzarims Tenacity.
+- Weapon skills for DivineServant and WarHammer (Than has none either). Final names for BayonetCharge, CraterSlam, FlashMode and GutPunch (placeholders).
 
 ## Enemies & world
 - Brigand (MediumVarient) has no real attacks.

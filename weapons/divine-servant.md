@@ -4,10 +4,10 @@
 - **What it is:** an **Opharim**, a Cleanser's guardian angel ([lore](../lore/world.md#the-church-cleansers-and-opharim)). Worn on the **torso**, not held; it pulses its emitters. The wielder writes glyphs with their fingertips and the Opharim casts them.
 - **Used by:** the Cleanser spellcaster NPC (`CleanserAI`), and Authan for testing.
 - **F skill:** none yet.
-- **Passive: OverflowingSynapse**: each cast takes **1 s** off every cooldown that's counting down.
+- **Passive: OverflowingSynapse**: each cast takes **1 s** off every cooldown that's counting down (E/Q/R and F, wherever they're kept: `CooldownReduction`).
 
 ## M1: written incantations
-A 4-hit combo, all **Magic**: 10 / 10 / 11 / 19, swing cooldowns 0.72 / 0.62 / 0.73 / 1.1 s. Each hit is a written spell ([the Opharim's language](../lore/world.md#the-opharims-language)):
+A 4-hit combo, all **Magic**: 14 / 14 / 15 / 25 (was 10 / 10 / 11 / 19 before the 2026-11-04 balance pass; now ~21.5 DPS), swing cooldowns 0.72 / 0.62 / 0.73 / 1.1 s. Each hit is a written spell ([the Opharim's language](../lore/world.md#the-opharims-language)):
 
 | Hits | Incantation | Reads |
 |---|---|---|
