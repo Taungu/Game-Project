@@ -20,6 +20,7 @@ A weapon provides the **M1 combo** and, at 2★+, an **F weapon skill**. Every 3
 | **LeatherGloves** | Gauntlet | 1★ | ✔ (Zumin) | 2 | 6 / 6 | 0.45 / 1.0 | 0.8 | — |
 | **CleanserSilverGauntlets** | Gauntlet | 2★ | | 3 | 5 / 5 / 8 | 0.35 / 0.3 / 0.6 | 1 | **CleanserKick** |
 | **Akhzarims Tenacity** | Gauntlet | 3★ | | 5 | 6 + 5 Magic / 6 + 5 Magic / 7 + 6 Magic / 13 / 19 | 0.35 / 0.55 / 0.6 / 0.37 / 1.45 | 1.3 (step 5: 2.6) | **GutPunch** · [details](akhzarims-tenacity.md) |
+| **ConjuredPebble** (placeholder name) | Conjurer | 1★ | ✔ (Conjurer default) | 1 (conjure + throw) | 8 **Magic** | 1.2 | 0.5 | — |
 | **DivineServant** | Conjurer | 3★ | | 4 (3 lances + sky lance) | 14 / 14 / 15 / 25 **Magic** | 0.72 / 0.62 / 0.73 / 1.1 | 1 | — · [details](divine-servant.md) |
 | **Than** | Authan | Personal | ✔ (Authan) | 5 | 9 / 8 / 9 / 9 / 14, each + the same again as Magic | 0.65 / 0.95 / 0.52 / 0.65 / 1.38 | 1.5 | — |
 
@@ -41,6 +42,7 @@ Passive names and descriptions come from `WeaponMoves.GetPassiveInfo` (for the p
 
 ## Weapon notes
 - **SilverFlash** ([page](silverflash.md)): the first pullable 3★ weapon. A Cleanser's silver blade, featured on the "Cleanser's Silver" Weapons banner. 5-hit combo sliced from one animation; the dash hit is the strongest.
+- **ConjuredPebble** (placeholder name): the 1★ Conjurer weapon and the affinity's default, with **no model**. One M1: a pebble grows in the right hand for 0.5 s (glowing essence hardening into stone), then is thrown at 1.0 s. The server casts it like the rifle's bullet (110 studs/s, range 70, a 3-stud hit where it lands; `projectiles` with a `conjure` table); `ConjuredPebbleClient` draws the growth, the flight and the chips. You can walk at ×0.6 while casting. Balance: level with the Bow. The throw animation is a placeholder (Bella's Toxin Waste throw) until Lukas's is in. Session: tier 1. Lobby: no tier yet, so it isn't in Convoke.
 - **DivineServant** ([page](divine-servant.md)): the first Conjurer weapon, an **Opharim**. It's worn on the **torso**, not held, and pulses its emitters. The wielder writes an incantation and the Opharim fires lances; hit 4 is a "sky lance". No Conjurer Soul exists yet. The Cleanser spellcaster NPC uses it. It's 3★ and in the Convoke pool.
 - **Akhzarims Tenacity** ([page](akhzarims-tenacity.md)): 3★ Gauntlet with **no physical model** (`noModel`); like the Opharim, VFX make up for it. One animation sliced into 5 hits: impale, two claw swings, two kicks. Hit 5 is a lunging slam along the ground.
 - **Imperial Rifle**: 3★ Artillery rifle with a bayonet. Its M1s alternate a shot with a follow-up chosen by the held key ([details](imperial-rifle.md)). The S leap shot's ground explosion inflicts **Imbalance** (1 s) on human-shaped enemies. It holsters on the back after 3 s idle.

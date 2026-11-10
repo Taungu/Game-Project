@@ -16,7 +16,7 @@ Things the design hasn't settled yet. Move an item out once it's decided and doc
 ## Characters
 - Authan's real kit (he uses Fahlon's E/Q/R as a placeholder; only his passive is his own).
 - Hayut's kit and weapon (dev character, Fahlon copy with test E).
-- A Conjurer Soul. DivineServant exists, but no Conjurer class does. There's also **no default (1★) Conjurer weapon**: DivineServant is 3★ and not a default, so a Conjurer Soul would start with nothing equipped until one exists.
+- A Conjurer Soul. DivineServant exists, but no Conjurer class does. The default (1★) Conjurer weapon now exists (ConjuredPebble, placeholder name); a 2★ Conjurer weapon is still missing.
 - Fahlon's **Affinity Stat** (deliberately undecided).
 - Luther's Anemic: should a naturally expiring Bleed count as a "burst"? Today it does (`forcedBurstsOnly = false`).
 - PVP signature weapons per character (for now PVP locks each character to their affinity's 3★ weapon).
