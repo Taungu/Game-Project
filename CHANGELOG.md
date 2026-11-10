@@ -3,6 +3,7 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-11-10
+- ConjuredPebble keeps only 25% of the Magic Damage bonus (`m1StatScaling = 0.25`): it was doing too much, and mages aren't meant to deal a lot of M1 damage.
 - ConjuredPebble's look: a clump of square chunks instead of a smooth ball, a small air wave off the hand at the throw, and a trail behind it in flight (`conjure.chunks`, `throwWave`, `trail` in `WeaponMoves`).
 - **ConjuredPebble** (placeholder name): the 1★ Conjurer weapon and the affinity's default. No model: a pebble grows in the right hand for 0.5 s and leaves it on f46 of the throw animation (one throw per second); 7 Magic, level with the Bow. Reuses the rifle's projectile path with a new `conjure` table; drawn by `ConjuredPebbleClient` (CombatScript sends `ConjureGrow`). In the Lobby it has no tier yet (not in Convoke).
 Docs caught up with Studio. The dated entries below (3–5 Nov) come from dated notes in the code. The ones here were found in the survey without a date.
