@@ -3,6 +3,7 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-11-11
+- Ziel's R: he can act the instant he lands (it was blocked for the maces' 0.35 s swing), so the landing combos straight into a Q or an E.
 - **Ziel balance** (weighed against Bella): Q 32 → 14 outer, inner ×1.5 → ×2.5 (48 → 35): the burst lives in the sweet spot. E 26 → 14 (burn 13 → 7): CC and set-up first. R plant 8 → 3, flourish 18 → 7 (78 → 30 over three charges): mobility first.
 - Ziel: he can walk at half speed while holding the Q (`holdWalkMultiplier`), and the R no longer holds him after landing (no endlag, no body spin; the maces still swing round him).
 - Ziel's **R** (placeholder name Twin Penance): three charges. Two chained maces plant 16 studs out (8 Magic along each chain), he's pulled to them and spins once (18 Magic, radius 10.5). The ability bar can now hide a slot's charge count.
