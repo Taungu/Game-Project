@@ -3,6 +3,7 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-11-11
+- Ziel's **E** (placeholder name Lesser Javelin): hold to aim a 30 × 8 rectangle, release for a flurry of lances (26 Magic over 5 waves, Slow 2 s), then the ground burns 3 s for 50% of the move's damage. The Chastity's Javelin of God, small and fast.
 - Ziel's Q: an **inner circle** (radius 3, where the mace's head lands) deals ×1.5, shown on the indicator; the slam leaves a crater of rocks around it and a few little craters nearby (`innerRadius`, `innerMultiplier`, `vfx.crater`).
 - **Ziel** is the "Gifted Sinner", and has his Q (placeholder name Penitent's Flail): hold to aim a circle that slides away from him (8 → 42 studs over 2.2 s), release to throw a chain flail whose mace slams down on it (32 Magic, radius 9). New `ZielKit` + `ZielKitClient`; cloudy-yellow visuals drawn in code, no animations.
 - **Ziel**, the first Conjurer Soul: the basics wired in both places (identity, placeholder stats, empty kit and animations, Affinity Stat, PVP lock to DivineServant). Unreleased: a new `unreleased` flag in the Lobby's `ClassDefinitions` keeps him out of Convoke and the welcome Call 10. See [characters/ziel.md](characters/ziel.md).
