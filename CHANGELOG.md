@@ -2,6 +2,9 @@
 
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
+## 2026-11-11
+- Zumin's stored-Vengeance steam turned down so it stays semi-transparent: at full, 10 puffs a second per vent at 0.7 transparency (was 30 at 0.35). `ClassAbilities.Zumin.Q.steam`.
+
 ## 2026-11-10
 - ConjuredPebble keeps only 25% of the Magic Damage bonus (`m1StatScaling = 0.25`): it was doing too much, and mages aren't meant to deal a lot of M1 damage.
 - ConjuredPebble's look: a clump of square chunks instead of a smooth ball, a small air wave off the hand at the throw, and a trail behind it in flight (`conjure.chunks`, `throwWave`, `trail` in `WeaponMoves`).
