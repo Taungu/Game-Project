@@ -3,6 +3,7 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-11-11
+- **Ziel**, the first Conjurer Soul: the basics wired in both places (identity, placeholder stats, empty kit and animations, Affinity Stat, PVP lock to DivineServant). Unreleased: a new `unreleased` flag in the Lobby's `ClassDefinitions` keeps him out of Convoke and the welcome Call 10. See [characters/ziel.md](characters/ziel.md).
 - Zumin's stored-Vengeance steam turned down so it stays semi-transparent: at full, 10 puffs a second per vent at 0.7 transparency (was 30 at 0.35). `ClassAbilities.Zumin.Q.steam`.
 
 ## 2026-11-10

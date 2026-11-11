@@ -67,4 +67,5 @@ Each Soul gets a locked **signature weapon** in PVP. Until those exist, every So
 | Bella | IllThorn |
 | Luther | SilverFlash |
 | Zumin | Akhzarims Tenacity |
+| Ziel | DivineServant |
 | Authan | Than |

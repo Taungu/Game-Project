@@ -11,7 +11,7 @@ The Lobby carries its own copies of the shared data modules (ClassDefinitions, W
 | Intro cutscene | `ReplicatedStorage.IntroCutscene`, `ServerScriptService.IntroCutsceneTracks`, Moon saves in `ServerStorage.MoonAnimator2Saves` |
 | Class selection scene | `ReplicatedStorage.ClassSelectionScene`, `StarterGui.ClassSelectCard.ClassSelectCardController` |
 | Character Page (Inner Core) | `StarterGui.CharacterPageUI.CharacterPageController` |
-| Convoke | `StarterGui.ConvokeUI.ConvokeController`, `ReplicatedStorage.ConvokeBanners`, `ServerScriptService.ConvokeAnimationExport` |
+| Convoke | `StarterGui.ConvokeUI.ConvokeController`, `ReplicatedStorage.ConvokeBanners`, `ServerScriptService.ConvokeAnimationExport`. A Soul marked `unreleased = true` in `ClassDefinitions` (Ziel) is never pulled (`ClassDefinitions.IsReleased`). |
 | Party UI | `ScreenGui.ReadyUpFrame`, `HostListFrame`, stage/mode select |
 | HUD (shared look) | `HotbarUI`, `HealthBarUI`, `AbilityUI`, `BuffUI` |
 | Button style | `ReplicatedStorage.EngravedButton` |
