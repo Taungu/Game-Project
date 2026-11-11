@@ -9,7 +9,7 @@ Code calls them **classes**. Convoke and the Character Page call them **Souls**.
 | **Luther** | Champion of Vonrow | Medium | 2★ | Starter pick | StraightSword | Bleed/burst duelist, spends health | [luther.md](luther.md) |
 | **Bella** | Substance Fanatic | Light | 2★ | Starter pick | Dagger | Assassin-mage with rotating vials, hybrid scaling | [bella.md](bella.md) |
 | **Zumin** | Depths Delver | Gauntlet | 2★ | Convoke only (not a starter) | LeatherGloves | Counter-puncher tank | [zumin.md](zumin.md) |
-| **Ziel** | Gifted Sinner | Conjurer | 2★ (placeholder) | Unreleased (dev accounts only) | ConjuredPebble | In progress: caster; Q and E exist so far | [ziel.md](ziel.md) |
+| **Ziel** | Gifted Sinner | Conjurer | 2★ (placeholder) | Unreleased (dev accounts only) | ConjuredPebble | In progress: caster; Q, E and R exist; no passive yet | [ziel.md](ziel.md) |
 | **Authan** | — | Authan (any weapon) | Personal | Lukas's account only | Than | Lukas's own character | [authan.md](authan.md) |
 | **Hayut** | Ancient Conduit | Conduit | Personal | Dev character (Session only) | none | Test bed | [hayut.md](hayut.md) |
 

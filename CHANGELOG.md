@@ -3,6 +3,7 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-11-11
+- Ziel's **R** (placeholder name Twin Penance): three charges. Two chained maces plant 16 studs out (8 Magic along each chain), he's pulled to them and spins once (18 Magic, radius 10.5). The ability bar can now hide a slot's charge count.
 - Ziel's **E** (placeholder name Lesser Javelin): hold to aim a 30 × 8 rectangle, release for a flurry of lances (26 Magic over 5 waves, Slow 2 s), then the ground burns 3 s for 50% of the move's damage. The Chastity's Javelin of God, small and fast.
 - Ziel's Q: an **inner circle** (radius 3, where the mace's head lands) deals ×1.5, shown on the indicator; the slam leaves a crater of rocks around it and a few little craters nearby (`innerRadius`, `innerMultiplier`, `vfx.crater`).
 - **Ziel** is the "Gifted Sinner", and has his Q (placeholder name Penitent's Flail): hold to aim a circle that slides away from him (8 → 42 studs over 2.2 s), release to throw a chain flail whose mace slams down on it (32 Magic, radius 9). New `ZielKit` + `ZielKitClient`; cloudy-yellow visuals drawn in code, no animations.
