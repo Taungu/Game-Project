@@ -3,7 +3,7 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-11-12
-- Ziel's `ClassAnimations` (both places): idle `76861990864361`, jump `75265926269215`, passive `70581799346883`. Walk and death are still the defaults.
+- Ziel's `ClassAnimations` (both places): idle `76861990864361`, jump `75265926269215`, passive `70581799346883`, walk `122948945550363`. Death is still the default.
 - Ziel R spin: the Cleave's air slashes (`SlashAir`, `SlashAir2`) are skipped too.
 - Ziel tuning: the R spin's Cleave slashes are now 0.55× size and much fainter (`faint` 0.55, Raam's own fade and glow). The E marks' heat glow is now the image itself, tinted yellow and a little larger, instead of a neon disc, so there are no flat yellow circles.
 - Ziel passive **Quiet Absolution** (placeholder name): every 15 s out of combat he prays (animation `70581799346883`). A fire on his left hand goes into his heart at f27, he flashes pastel yellow, and he heals 5% max HP over 4 s. Only combat or death cuts it; his skills don't, so he can flee with the R and keep healing. Data: `ClassAbilities` Ziel `Passive`.
