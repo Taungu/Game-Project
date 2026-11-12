@@ -9,7 +9,8 @@ Code calls them **classes**. Convoke and the Character Page call them **Souls**.
 | **Luther** | Champion of Vonrow | Medium | 2★ | Starter pick | StraightSword | Bleed/burst duelist, spends health | [luther.md](luther.md) |
 | **Bella** | Substance Fanatic | Light | 2★ | Starter pick | Dagger | Assassin-mage with rotating vials, hybrid scaling | [bella.md](bella.md) |
 | **Zumin** | Depths Delver | Gauntlet | 2★ | Convoke only (not a starter) | LeatherGloves | Counter-puncher tank | [zumin.md](zumin.md) |
-| **Ziel** | Gifted Sinner | Conjurer | 2★ (placeholder) | Unreleased (dev accounts only) | ConjuredPebble | In progress: caster; Q, E and R exist; no passive yet | [ziel.md](ziel.md) |
+| **Ziel** | Gifted Sinner | Conjurer | 2★ (placeholder) | Unreleased (dev accounts only) | ConjuredPebble | Caster: chain flail Q, javelin E, twin-chain R, healing prayer passive | [ziel.md](ziel.md) |
+| **Roran** | — | Medium | 3★ (standard) | Unreleased (dev accounts only) | StraightSword | Empty shell: registered, no kit yet | [roran.md](roran.md) |
 | **Authan** | — | Authan (any weapon) | Personal | Lukas's account only | Than | Lukas's own character | [authan.md](authan.md) |
 | **Hayut** | Ancient Conduit | Conduit | Personal | Dev character (Session only) | none | Test bed | [hayut.md](hayut.md) |
 
@@ -26,6 +27,7 @@ Units: damage, resistance, CDR and movement speed use **10 units = 1%**. Health 
 | Bella | 130 | 25 | 25 | 0 | 0 | 10 | 0 | 200 | 12 | 1.0 |
 | Zumin | 250 | 10 | 0 | 50 | 50 | 10 | 0 | 175 | 20 | 1.0 |
 | Ziel | 120 | 0 | 25 | 0 | 0 | 10 | 0 | 175 | 12 | 1.0 |
+| Roran | 150 | 25 | 0 | 25 | 15 | 10 | 0 | 175 | 15 | 1.0 |
 | Authan | 150 | 40 | 30 | 0 | 0 | 10 | 100 | 100 | 12 | 1.14 |
 | Hayut | 120 | 0 | 30 | 20 | 25 | 10 | 0 | 175 | 10 | 1.14 |
 
