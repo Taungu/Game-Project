@@ -3,6 +3,7 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-11-12
+- Roran R: the extra health now scales with Essence capacity: 25% of max Essence (+44 at level 1, ~+100 on a capacity build). Was a flat 40. Knobs `bonusHealth` + `bonusHealthPerEssence`.
 - Roran R fix: his sword's swing trail no longer turns on during bare-handed M1s, and hit effects no longer spawn at the hidden sword (`CombatScript` ignores the weapon visual while bare-handed).
 - Roran R now also swaps his M1s for his own moveset (`WeaponMoves.RoranBareHands`: the Leather Gloves' punches, empowered to 10.5 damage, no gloves shown) and turns off the weapon's effects and F skill while it lasts.
 - Roran R **Bare Hands** (placeholder name): he throws his sword away for 12 s, gaining +40 max HP (healed), +15% Physical / Magic resistance and a 15 Magic burst (r 10) on activation. His changed Q / E are still to design (`RoranBareHanded` attribute). Filler visuals: the sword hidden and thrown, a red ring and a glow.
