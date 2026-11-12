@@ -2,6 +2,9 @@
 
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
+## 2026-11-12
+- **Ziel: two bursts per ultimate.** His burst came back far more often than Bella's, so each burst is now smaller and he gets two per R, together matching her one (126 base). Q 14 → 12 outer (35 → 30 inner), cd 10 → 14. E 14 → 12 (burn 7 → 6), cd 8 → 12. R charge window 10 → 25 s, long enough to burst, retreat, wait for the Q and go back in.
+
 ## 2026-11-11
 - Ziel's R: he can act the instant he lands (it was blocked for the maces' 0.35 s swing), so the landing combos straight into a Q or an E.
 - **Ziel balance** (weighed against Bella): Q 32 → 14 outer, inner ×1.5 → ×2.5 (48 → 35): the burst lives in the sweet spot. E 26 → 14 (burn 13 → 7): CC and set-up first. R plant 8 → 3, flourish 18 → 7 (78 → 30 over three charges): mobility first.
