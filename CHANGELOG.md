@@ -3,6 +3,7 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-11-12
+- Ziel Q can be redirected during the throw: the range is locked on release, but the direction follows his camera until impact. His circle follows on his screen, the chain bends toward the new spot, and the hit lands where he's aiming at impact. Knobs: `Q.redirect`, `Q.redirectRate`.
 - Ziel's Q circle and E rectangle are drawn only on his own screen. Others still see the whirling chain and the ring of flames.
 - Ziel E marks: the texture itself now glows hot yellow: the decal's colour is pushed past white (`markGlow` 4) and pulses gently. The glow copy and the floor light are gone, and so are the round lit patches. Marks are 11 studs across (was 6).
 - Ziel passive heal raised: 20% max HP over 4 s (was 5%).
