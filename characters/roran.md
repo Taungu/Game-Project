@@ -1,9 +1,10 @@
-# Roran (empty shell)
+# Roran (in progress)
 
 - **Affinity:** Medium · **Default weapon:** the Medium default (StraightSword) · **Rarity:** 3★, the first **standard** 3★ Soul for Medium
 - **Not a starter.** Meant for Convoke's standard pool, but **unreleased** for now: the Lobby's `ClassDefinitions` marks him `unreleased = true`, so Convoke skips him. The dev accounts get him through `GRANT_EVERYTHING`; in the Session he's on the DEV panel's Soul switch.
 - **Title, lore, model:** none yet.
-- **Status (2026-11-12):** registered only. No kit or animations yet.
+- **Status (2026-11-12):** Q built (filler visuals). E, passive and R not designed yet. No animations.
+- **Identity:** a **Bleed** Soul like Luther. He's listed as a Hemorrhage contributor in `StatusEffects`, so his Physical hits feed a Hemorrhage bleed's burst.
 
 | Stat | Value (all placeholders) |
 |---|---|
@@ -14,6 +15,23 @@
 | MaxStagger | 15 |
 | Everything else | Shared defaults |
 | Affinity Stat (Mastery kicker) | PhysicalDamage (placeholder) |
+
+## Kit
+Run by `ServerScriptService.RoranKit` (`kit = "RoranKit"`, registered in AbilityScript's `KIT_MODULES`). Visuals are code-drawn fillers in `StarterPlayerScripts.RoranKitClient`. All numbers are placeholders in `ClassAbilities.Roran`.
+
+| Slot | Name | What it does | Numbers |
+|---|---|---|---|
+| **Q** | **Riposte** (placeholder name) | **Parry and counter**, a laid-back skill. Press Q for a **0.4 s parry stance**. The first hit that lands in it is **blocked**, and he **counters** the nearest enemy within 9 studs: damage plus a **Bleed**, his first Bleed source. Every **3rd successful parry in a row** also puts **Hemorrhage** on that bleed. After a parry he gets 0.25 s of i-frames so a multi-hit's next tick doesn't land. **No cooldown while he keeps parrying**: Q is ready again 0.3 s after a parry. **A missed parry** (the window runs out with nothing to parry) leaves him stuck 0.35 s, puts Q on a **5 s cooldown** and resets the streak. | Counter 10 Physical · stagger 2 · Bleed 5 s · 0 Essence · window 0.4 s · miss cd 5 s |
+| E | — | Not designed | — |
+| Passive | — | Not designed | — |
+| R | — | Not designed | — |
+
+**How the parry is wired:** the stance is an i-frame window of a new kind, `PlayerInvulnerability.PARRY_KIND`. `PlayerDamageReduction.ApplyToDamage`, the shared damage choke point, blocks a hit landing in it and hands it to the handler the kit registered (`SetParryHandler`). It isn't a perfect dodge. The counter targets the nearest enemy, not necessarily the attacker, because the choke point doesn't know who hit. Damage that skips the choke point (bleed ticks, for example) isn't parried. `RoranKit` keeps real cooldowns even in Studio (`TEST_NO_COOLDOWNS = false`), because the miss cooldown is the mechanic.
+
+**Filler look:**
+- **Stance:** a pale glint over him and a widening ring of light.
+- **Parry:** a white flash, a red slash to the target and a spray of blood, darker and bigger on a Hemorrhage counter.
+- **Whiff:** a dull grey flicker.
 
 ## Where he's registered
 | Place | Module | Entry |
