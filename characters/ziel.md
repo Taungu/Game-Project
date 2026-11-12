@@ -46,6 +46,8 @@ Runs in its own module, `ServerScriptService.ZielKit` (registered in `AbilityScr
 
 **How the R is wired:** `ZielKit` keeps the charges per player; each use fires `ZielChains` (both landing spots and the timings) for every client to draw, and moves the anchored character by hand for the pull, letting go on landing. The charge count uses the ability bar's existing `AbilityCharges` message (sending no count now hides it). `FreezeWatchdog` leaves a character with `ChargingSkill` alone.
 
+**The R's chains:** `ZielKit` puts two more copies of the chain on him on his first R: `ZielsTwinRight` on the right arm and `ZielsTwinLeft` on the left. The left one is the right one mirrored across the middle of the body: every joint and attachment is flipped, and every pose is flipped as it plays (`ZielChainMotion.Mirror`). The R has its own copies so a Q straight after the landing doesn't fight over the chain. The motion is `TWIN` in `ZielChainMotion`, copied from Lukas's "Ziel R Attach and Sp" save (one chain): the throw f0–10 (plants ~11.6 studs ahead), planted f10–31, ripped free and the spin f31–61. The body animation is `rbxassetid://100958304389046` (61 frames). Both are stretched phase by phase to the R's timing: the throw = `throwTime`, the plant to the arrival = `pullDelay + pullTime`, the spin = `spinTime`. Each chain's last link is fitted like the Q's: it turns onto its real landing spot during the throw, stays pinned there while he's pulled in, then snaps back into the animated spin. A Q or E out of the spin cuts the body animation and hides the chains.
+
 ## Where he's wired
 | Place | What |
 |---|---|
