@@ -3,6 +3,7 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-11-12
+- Ziel E marks: much bigger (6 studs, was 2.6) with a hot yellow glow and light under each, breathing until the burn ends. The smouldering burn emits 4× more (24/s) at 20% of the hit's speed so it stays low.
 - Ziel R spin: plays Raam's Liberating Cleave slashes on arrival, without the blood slash, recoloured gold (dark slashes deep gold, bright ones pale) and held more solid. Knobs in `Ultimate.vfx.cleave`.
 - Ziel E look: each lance leaves Lukas's image `17067103637` on the ground (replacing the dark scorch circles) and its impact keeps smouldering there, fainter, until the burn ends. The orange glow box under the burn is gone. Knobs in `E.vfx`: `markTexture`, `markTransparency`, `smoulderTransparency`, `smoulderRate`.
 - Ziel R uses Lukas's animation: body `100958304389046` plus the one-chain "Ziel R Attach and Sp" track (`ZielChainMotion.TWIN`), played on two chain copies (`ZielsTwinRight`, `ZielsTwinLeft`, the left one mirrored). The maces are fitted to the real landing spots and pinned during the pull; the phases are stretched to the R's timing. A Q or E out of the spin cuts it.
