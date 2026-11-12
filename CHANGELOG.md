@@ -3,6 +3,7 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-11-12
+- Ziel passive **Quiet Absolution** (placeholder name): every 15 s out of combat he prays (animation `70581799346883`). A fire on his left hand goes into his heart at f27, he flashes pastel yellow, and he heals 5% max HP over 4 s. Combat cuts it. Data: `ClassAbilities` Ziel `Passive`.
 - Ziel E marks: much bigger (6 studs, was 2.6) with a hot yellow glow and light under each, breathing until the burn ends. The smouldering burn emits 4× more (24/s) at 20% of the hit's speed so it stays low.
 - Ziel R spin: plays Raam's Liberating Cleave slashes on arrival, without the blood slash, recoloured gold (dark slashes deep gold, bright ones pale) and held more solid. Knobs in `Ultimate.vfx.cleave`.
 - Ziel E look: each lance leaves Lukas's image `17067103637` on the ground (replacing the dark scorch circles) and its impact keeps smouldering there, fainter, until the burn ends. The orange glow box under the burn is gone. Knobs in `E.vfx`: `markTexture`, `markTransparency`, `smoulderTransparency`, `smoulderRate`.
