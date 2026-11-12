@@ -3,6 +3,7 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-11-12
+- Ziel passive heal raised: 20% max HP over 4 s (was 5%).
 - Ziel animation fixes: his idle and walk run at Action priority, so his skill tracks were blending half-and-half with them and looked weak. They now sit above: Q hold Action2, Q slam / E cast / R Action3, prayer Action2. R `spinTime` is 0.35 → 0.5, so the spin plays at full speed (visual only). The R chains draw in as he's pulled toward the maces instead of reaching past them into the ground, and the maces rest on the surface.
 - Ziel's `ClassAnimations` (both places): idle `76861990864361`, jump `75265926269215`, passive `70581799346883`, walk `122948945550363`. Death is still the default.
 - Ziel R spin: the Cleave's air slashes (`SlashAir`, `SlashAir2`) are skipped too.
