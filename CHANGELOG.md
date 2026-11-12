@@ -3,6 +3,7 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-11-12
+- Ziel's Q circle and E rectangle are drawn only on his own screen. Others still see the whirling chain and the ring of flames.
 - Ziel E marks: the texture itself now glows hot yellow: the decal's colour is pushed past white (`markGlow` 4) and pulses gently. The glow copy and the floor light are gone, and so are the round lit patches. Marks are 11 studs across (was 6).
 - Ziel passive heal raised: 20% max HP over 4 s (was 5%).
 - Ziel animation fixes: his idle and walk run at Action priority, so his skill tracks were blending half-and-half with them and looked weak. They now sit above: Q hold Action2, Q slam / E cast / R Action3, prayer Action2. R `spinTime` is 0.35 → 0.5, so the spin plays at full speed (visual only). The R chains draw in as he's pulled toward the maces instead of reaching past them into the ground, and the maces rest on the surface.
