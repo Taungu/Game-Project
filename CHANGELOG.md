@@ -3,6 +3,7 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-11-12
+- Lobby Character Page fix: the Soul roster's scroll area stopped short (`AutomaticCanvasSize` gave ~630 px for ~1,100 px of rows), so the last owned Souls (Ziel, Roran) couldn't be reached. `CharacterPageController` now sizes the canvas from the list layout's real content height.
 - Roran Q **Riposte** (placeholder name): a parry and counter. The parried hit is blocked, and the nearest enemy is countered with a Bleed; every 3rd parry in a row adds Hemorrhage. No cooldown unless the parry whiffs (5 s). New `RoranKit` / `RoranKitClient` (filler visuals). New i-frame kind `PlayerInvulnerability.PARRY_KIND` and `PlayerDamageReduction.SetParryHandler`. Roran is a Hemorrhage contributor.
 - New Soul **Roran**: an empty shell, Medium affinity, 3★ (the first standard Medium 3★). Registered in both places with placeholder stats and an empty kit. Unreleased in the Lobby, so he's not in Convoke yet. See [characters/roran.md](characters/roran.md).
 - New OverStatus **Impaired**: an upgraded Slow with the same half speed plus no dodging at all (dodge, roll, air dash, skill dodges), 2 s by default. Ziel's E now Impairs instead of Slowing (`E.slowEffect`). StatusEffects is mirrored to the Lobby. See [systems/combat.md](systems/combat.md).
