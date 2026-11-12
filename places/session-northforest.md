@@ -8,6 +8,7 @@ Where things live, for quick navigation. ~185 live scripts (plus backups in Serv
 | `ClassDefinitions` | Classes → weaponType, tier, class weapon, anyWeapon |
 | `ClassBaseStats` | Per-class base stats |
 | `ClassAbilities` | E/Q/Passive/R data for every class (the biggest module) |
+| `ZielChainMotion` | Ziel's Q chain spin, copied from Lukas's animation |
 | `ClassAnimations`, `DodgeAnimations`, `ClassPresentation` | Animations, pick pose, essence colours |
 | `WeaponDefinitions` | Weapons → weaponType, isDefault, tier |
 | `WeaponMoves` | M1 combo data per weapon |

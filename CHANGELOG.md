@@ -3,6 +3,7 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-11-12
+- **Ziel's Q uses Lukas's chain.** The code-drawn lasso is replaced by a real chain (`ClassWeapons.ZielsChain`, five links on his right arm with golden beams, trails and the mace) spun exactly as animated, from the motion copied into `ZielChainMotion`, while his body animation `106989997206174` plays. The drawn lasso stays as a fallback.
 - **Ziel: two bursts per ultimate.** His burst came back far more often than Bella's, so each burst is now smaller and he gets two per R, together matching her one (126 base). Q 14 → 12 outer (35 → 30 inner), cd 10 → 14. E 14 → 12 (burn 7 → 6), cd 8 → 12. R charge window 10 → 25 s, long enough to burst, retreat, wait for the Q and go back in.
 
 ## 2026-11-11
