@@ -3,6 +3,7 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-11-12
+- Immobility statuses (Stun, Daze, Aerial, Stagger, Imbalance) now lock all player actions until they wear off: M1, E/Q/R (every kit), dodge, roll, air dash and jump. Server and client both check. F was already gated. See [systems/combat.md](systems/combat.md).
 - Zumin R (Devastation): only the inner circle (r 18) Dazes now. The outer ring is only Slowed (3 s). Before, the whole 36-stud shockwave Dazed everyone in it.
 - Ziel Q can be redirected during the throw: the range is locked on release, but the direction follows his camera until impact. His circle follows on his screen, the chain bends toward the new spot, and the hit lands where he's aiming at impact. Knobs: `Q.redirect`, `Q.redirectRate`.
 - Ziel's Q circle and E rectangle are drawn only on his own screen. Others still see the whirling chain and the ring of flames.

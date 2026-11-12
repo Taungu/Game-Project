@@ -55,6 +55,8 @@ What a weapon hit physically is, on top of its damage type. Applied in `PlayerCo
 - Some moves **force** a stagger (IllThorn at 4+ marks). Enemy **BREAK** moves stagger players in one hit.
 - Stagger is the highest-priority immobility effect: "no one is safe from being staggered".
 
+**Immobility locks a player's actions** (since 2026-11-12): while any Immobility effect is on a player (the `ActiveStatusEffect` attribute: Stun, Daze, Aerial, Stagger, Imbalance), they can't M1, use E / Q / R / F, dodge, roll, air dash or jump until it wears off. The server refuses each one (`CombatScript`, `AbilityScript`, `DodgeServerScript`, `WeaponSkillScript`), and the client doesn't even try (`M1InputScript`, `AbilityInputScript`, `CameraLockOnScript`; jumping in `CombatJumpCooldown`). Held skills already broke on it.
+
 ## Status effects (`StatusEffects`)
 | Effect | Category | Default duration | What it does |
 |---|---|---|---|
