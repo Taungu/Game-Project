@@ -3,6 +3,7 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-11-12
+- Ziel E uses Lukas's cast animation `82165859076474`: held on frame 0, played on release, with a golden swing trail and the glyphs Ranah · Ithav · Lumet · Tzimra · Marek · Akhar (Javelin of God without Ovin). The lances fly on f14 (data: `castAnimationId`, `fireFrame`, `swingTrail`, `spell`).
 - Ziel Q throw uses Lukas's slam: the body animation `133182986549336` plus the chain's "Ziel Q slam" tracks (`ZielChainMotion.SLAM`); the last link stretches so the mace lands on the circle at any range. The mace lands at 37/60 s (was 0.4). The chain gained bridge beams between links.
 - **Ziel's Q uses Lukas's chain.** The code-drawn lasso is replaced by a real chain (`ClassWeapons.ZielsChain`, five links on his right arm with golden beams, trails and the mace) spun exactly as animated, from the motion copied into `ZielChainMotion`, while his body animation `106989997206174` plays. The drawn lasso stays as a fallback.
 - **Ziel: two bursts per ultimate.** His burst came back far more often than Bella's, so each burst is now smaller and he gets two per R, together matching her one (126 base). Q 14 → 12 outer (35 → 30 inner), cd 10 → 14. E 14 → 12 (burn 7 → 6), cd 8 → 12. R charge window 10 → 25 s, long enough to burst, retreat, wait for the Q and go back in.
