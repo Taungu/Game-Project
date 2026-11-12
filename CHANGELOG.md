@@ -3,6 +3,7 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-11-12
+- Roran R now also swaps his M1s for his own moveset (`WeaponMoves.RoranBareHands`: the Leather Gloves' punches, empowered to 10.5 damage, no gloves shown) and turns off the weapon's effects and F skill while it lasts.
 - Roran R **Bare Hands** (placeholder name): he throws his sword away for 12 s, gaining +40 max HP (healed), +15% Physical / Magic resistance and a 15 Magic burst (r 10) on activation. His changed Q / E are still to design (`RoranBareHanded` attribute). Filler visuals: the sword hidden and thrown, a red ring and a glow.
 - Roran E **Precise Plunge** (placeholder name): a 12-stud lunge into the first enemy in his path. 8 Physical, plus True damage of 3% max HP per Bleed stack (cap 12%), or the full 12% if Hemorrhage landed on them in the last 2 s. New `StatusEffectManager.GetBleedStacks` / `HadHemorrhageWithin` (`HemorrhageAt` attribute).
 - Lobby Character Page fix: the Soul roster's scroll area stopped short (`AutomaticCanvasSize` gave ~630 px for ~1,100 px of rows), so the last owned Souls (Ziel, Roran) couldn't be reached. `CharacterPageController` now sizes the canvas from the list layout's real content height.
