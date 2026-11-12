@@ -3,6 +3,7 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-11-12
+- Roran bare-handed E **Skull Breaker** (placeholder name): during his R, E is a lunge that grabs the first enemy in his path, holds them 0.8 s, knees them in the head (12 Physical) and ragdolls them on release (Imbalance 1.5 s). Cooldown 10 s, 15 Essence. Data `EBare`.
 - Roran bare-handed Q **Twin Haymakers** (placeholder name): during his R, Q is two wide punches. Each pushes him 3 studs forward and hits a 10 × 7 box in front for 8 Physical + Daze. Cooldown 6 s, 10 Essence. Data `QBare`.
 - Roran R: the extra health now scales with Essence capacity: 25% of max Essence (+44 at level 1, ~+100 on a capacity build). Was a flat 40. Knobs `bonusHealth` + `bonusHealthPerEssence`.
 - Roran R fix: his sword's swing trail no longer turns on during bare-handed M1s, and hit effects no longer spawn at the hidden sword (`CombatScript` ignores the weapon visual while bare-handed).
