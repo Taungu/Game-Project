@@ -70,6 +70,7 @@ What a weapon hit physically is, on top of its damage type. Applied in `PlayerCo
 | **Sick** | OverStatus | 20 s | Akavish poison: the bite's damage ×3 over its duration. |
 | **Blind** | OverStatus | 3 s | Outward-facing: the blinded character's hits still connect but deal no damage and apply no statuses ("Miss"). Self-effects are untouched. |
 | **Slow** | OverStatus | 1 s | 50% walk speed. Refreshes, doesn't stack. |
+| **Impaired** | OverStatus | 2 s | An upgraded Slow, used sparingly: 50% walk speed (shares Slow's speed tracker) **and no dodging at all**. Dodge, roll, air dash and skill dodges are refused (`DodgeServerScript`, `CameraLockOnScript`). Refreshes, doesn't stack. Chip colour deep blue. First user: Ziel's E. |
 | **Rooted** | OverStatus | 1 s | Can't walk but can still attack. Wins over Slow. |
 | **Weakened** | OverStatus | 5 s | Deals 20% less (strength can vary; the strongest wins). |
 | **Sensitive** | OverStatus | 5 s | Takes 20% more from everything. |
