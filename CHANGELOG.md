@@ -3,6 +3,7 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-11-12
+- Ziel R spin: the Cleave's air slashes (`SlashAir`, `SlashAir2`) are skipped too.
 - Ziel tuning: the R spin's Cleave slashes are now 0.55× size and much fainter (`faint` 0.55, Raam's own fade and glow). The E marks' heat glow is now the image itself, tinted yellow and a little larger, instead of a neon disc, so there are no flat yellow circles.
 - Ziel passive **Quiet Absolution** (placeholder name): every 15 s out of combat he prays (animation `70581799346883`). A fire on his left hand goes into his heart at f27, he flashes pastel yellow, and he heals 5% max HP over 4 s. Only combat or death cuts it; his skills don't, so he can flee with the R and keep healing. Data: `ClassAbilities` Ziel `Passive`.
 - Ziel E marks: much bigger (6 studs, was 2.6) with a hot yellow glow and light under each, breathing until the burn ends. The smouldering burn emits 4× more (24/s) at 20% of the hit's speed so it stays low.
