@@ -73,3 +73,21 @@ Passive names and descriptions come from `WeaponMoves.GetPassiveInfo` (for the p
 - Weapons are independent of classes in animations, moves and skills. The only link is affinity.
 - **Hybrid weapons** deal whichever damage type the wielder's build is stronger in: IllThorn's burst and the Imperial Rifle.
 - In PVP each Soul will be locked to a **signature weapon**. Until those exist, PVP locks each Soul to its affinity's 3★ (see [pvp](../systems/pvp.md)).
+
+## The standard grip (for Soul skills that animate the weapon)
+A Soul skill that moves the held weapon (Roran's stab) keys a pose named **`Handle`** under `Right Arm`. That drives the `WeaponGrip` joint `WeaponVisuals` makes, so it moves **whichever weapon is in the hand**. For one animation to look the same on every weapon, each weapon has to meet the joint the same way:
+
+- **Pivot at the arm's centre:** the joint's arm side (C0) is left at identity, and each weapon's own fit goes on the weapon side (C1: a `GripAttachment`, or the `Value` with `AsC1`).
+- **Blade along the arm's −Z** (pointing forward when the arm hangs down).
+
+Checked 2026-11-13 for the Medium and Light weapons (Roran's affinities):
+
+| Weapon | Pivot | Blade direction (arm space) | Handle keyed by its own animations | Standard? |
+|---|---|---|---|---|
+| StraightSword | arm centre | −Z | none | yes |
+| SilverFlash | arm centre (`AsC1`) | −Z | M1 (11 keys) | yes |
+| Dagger | arm centre | −Z | none | yes |
+| IllThorn | arm centre (`AsC1`) | −Z | F (69 keys), M1 (4 keys) | yes, no change needed |
+| BroadDagger | **its own offset in C0**, turned 90° | −Z | M1 steps 2–3 (6 keys each) | **no**, pending |
+
+**BroadDagger's conversion:** its offset moves to C1 (`C1 × C0⁻¹`), and its two Handle-keyed M1 animations are re-based (each Handle key becomes `C0 × key × C0⁻¹`). The math was checked to place the dagger identically on every key. The re-based animations are saved in the Session's `ServerStorage.StandardGripAnimations`, waiting to be published; then the new ids go into `WeaponMoves` and the model's grip is switched in the same step.
