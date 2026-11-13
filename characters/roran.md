@@ -35,7 +35,7 @@ Run by `ServerScriptService.RoranKit` (`kit = "RoranKit"`, registered in Ability
 
 **Filler look:**
 - **Stance:** a pale glint over him and a widening ring of light.
-- **Parry:** a white flash, a red slash to the target and a spray of blood, darker and bigger on a Hemorrhage counter.
+- **Parry:** pale-red **afterimages** of him trail the slide and slash (a frozen copy every 0.035 s, each fading over 0.3 s; `RoranCounterTrail`), plus a white flash, a red slash to the target and a spray of blood, darker and bigger on a Hemorrhage counter.
 - **Whiff:** a dull grey flicker.
 - **R:** his sword is hidden and a copy of it spins away behind him, a blood-red ring of force runs out to the burst radius, and a faint red glow stays on him while it lasts.
 - **Bare-handed Q:** a wide sheet of air sweeps across the hitbox with each punch, tilted left then right, with a puff of dust at his feet.
