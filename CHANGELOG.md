@@ -3,6 +3,7 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-11-13
+- Roran Q parry window cut to 0.2 s (was 0.4), as tight as the dodge's i-frame.
 - Roran Q animations: the stance pose `103156680326170` is held for the parry window. A successful parry plays one of two ripostes at random (`70402213623639`, slash on f30; `105336066233942`, slash on f47), and the counter lands on the slash frame. He's protected and committed until it lands.
 
 ## 2026-11-12
