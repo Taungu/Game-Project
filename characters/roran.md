@@ -1,6 +1,6 @@
 # Roran (in progress)
 
-- **Affinity:** Medium · **Default weapon:** the Medium default (StraightSword) · **Rarity:** 3★, the first **standard** 3★ Soul for Medium
+- **Affinity:** Medium **+ Light**, the **first hybrid Soul**: lore-wise he fights with a rapier, which has a Medium's reach and a Light's weight, so he can equip both. Medium is his main affinity (default weapon, icon, PVP lock). · **Default weapon:** the Medium default (StraightSword) · **Rarity:** 3★, the first **standard** 3★ Soul for Medium
 - **Not a starter.** Meant for Convoke's standard pool, but **unreleased** for now: the Lobby's `ClassDefinitions` marks him `unreleased = true`, so Convoke skips him. The dev accounts get him through `GRANT_EVERYTHING`; in the Session he's on the DEV panel's Soul switch.
 - **Title, lore, model:** none yet.
 - **Status (2026-11-13):** Q, E and R built; the Q has Lukas's animations, the rest are filler visuals. His bare-handed Q / E and the passive aren't designed yet. No animations.
@@ -45,7 +45,7 @@ Run by `ServerScriptService.RoranKit` (`kit = "RoranKit"`, registered in Ability
 ## Where he's registered
 | Place | Module | Entry |
 |---|---|---|
-| Both | `ClassDefinitions` | `weaponType = "Medium"`, `tier = 3` (+ `unreleased` in the Lobby) |
+| Both | `ClassDefinitions` | `weaponType = "Medium"`, `extraWeaponTypes = { "Light" }` (hybrid), `tier = 3` (+ `unreleased` in the Lobby) |
 | Both | `ClassBaseStats` | the stats above |
 | Both | `LevelDefinitions` | `AFFINITY_STATS.Roran = "PhysicalDamage"` |
 | Both | `ClassAnimations` | all nil (default Roblox animations) |

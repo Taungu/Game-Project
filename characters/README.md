@@ -10,9 +10,11 @@ Code calls them **classes**. Convoke and the Character Page call them **Souls**.
 | **Bella** | Substance Fanatic | Light | 2★ | Starter pick | Dagger | Assassin-mage with rotating vials, hybrid scaling | [bella.md](bella.md) |
 | **Zumin** | Depths Delver | Gauntlet | 2★ | Convoke only (not a starter) | LeatherGloves | Counter-puncher tank | [zumin.md](zumin.md) |
 | **Ziel** | Gifted Sinner | Conjurer | 2★ (placeholder) | Unreleased (dev accounts only) | ConjuredPebble | Caster: chain flail Q, javelin E, twin-chain R, healing prayer passive | [ziel.md](ziel.md) |
-| **Roran** | — | Medium | 3★ (standard) | Unreleased (dev accounts only) | StraightSword | Bleed duelist (in progress): parry-counter Q, bleed-cashing plunge E, bare-handed R | [roran.md](roran.md) |
+| **Roran** | — | Medium + Light (hybrid) | 3★ (standard) | Unreleased (dev accounts only) | StraightSword | Bleed duelist (in progress): parry-counter Q, bleed-cashing plunge E, bare-handed R | [roran.md](roran.md) |
 | **Authan** | — | Authan (any weapon) | Personal | Lukas's account only | Than | Lukas's own character | [authan.md](authan.md) |
 | **Hayut** | Ancient Conduit | Conduit | Personal | Dev character (Session only) | none | Test bed | [hayut.md](hayut.md) |
+
+**Hybrid Souls** (since 2026-11-13): a Soul with `extraWeaponTypes` in `ClassDefinitions` can also equip those affinities' weapons (`CanUseWeaponType`, used by every equip check and the Lobby's weapon grid). Its `weaponType` stays the main affinity: default weapon, icon and PVP lock. Roran is the first (Medium + Light). Any rarity can be hybrid.
 
 New players pick one of the four **starters** (Raam, Fahlon, Luther, Bella) in The Embracer's scene. Others come from Convoke or grants.
 

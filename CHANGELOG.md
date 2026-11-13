@@ -3,6 +3,7 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-11-13
+- **Hybrid Souls**: `ClassDefinitions` classes can list `extraWeaponTypes`, other affinities they may also equip (`CanUseWeaponType`, plus new `GetWeaponTypes` / `IsHybrid`), in both places. Roran is the first: Medium + Light (a rapier fighter). His main affinity stays Medium.
 - Roran Q counter: afterimages trail him through the slide and slash (a pale-red frozen copy every 0.035 s, fading over 0.3 s). Knobs in `Q.vfx`.
 - Roran Q counter: reach 16 studs (was 9). He now slides to the target during the swing-back, arriving on the slash and released after it, instead of snapping. The target is picked at the parry. Knobs `counterRange`, `slashDistance`, `slashReach`.
 - Roran Q ripostes play at 1.5× speed (`counterSpeed`); the counter's hit moves with them (0.33 s / 0.52 s).
