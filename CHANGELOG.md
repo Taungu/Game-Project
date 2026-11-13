@@ -3,6 +3,7 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-11-13
+- Roran E animations: dash `134069051747675` during the lunge. On contact, hit `136994736650625`: the target is held through the wind-up, the stab lands on f78 and he's free on f100. New `ReplicatedStorage.WeaponGripMotion` holds the FakeHandle track from the "Roran E connect" save; every client plays it on the held weapon's `WeaponGrip` joint, so any weapon (BroadDagger included, via re-basing) follows the stab.
 - Standard weapon grip checked for the Medium and Light weapons (see [weapons/README.md](weapons/README.md#the-standard-grip-for-soul-skills-that-animate-the-weapon)). StraightSword, SilverFlash, Dagger and IllThorn already pivot at the arm's centre with the blade along −Z, so one `Handle` animation works on all of them. BroadDagger is the exception: its two M1 animations are re-based for the standard grip and saved in `ServerStorage.StandardGripAnimations`, waiting to be published.
 - **Hybrid Souls**: `ClassDefinitions` classes can list `extraWeaponTypes`, other affinities they may also equip (`CanUseWeaponType`, plus new `GetWeaponTypes` / `IsHybrid`), in both places. Roran is the first: Medium + Light (a rapier fighter). His main affinity stays Medium.
 - Roran Q counter: afterimages trail him through the slide and slash (a pale-red frozen copy every 0.035 s, fading over 0.3 s). Knobs in `Q.vfx`.
