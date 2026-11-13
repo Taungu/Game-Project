@@ -2,6 +2,9 @@
 
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
+## 2026-11-13
+- Roran Q animations: the stance pose `103156680326170` is held for the parry window. A successful parry plays one of two ripostes at random (`70402213623639`, slash on f30; `105336066233942`, slash on f47), and the counter lands on the slash frame. He's protected and committed until it lands.
+
 ## 2026-11-12
 - Roran bare-handed F **Earthfall** (placeholder name): during his R, F is a leap and ground slam, The Commandment's last hit bigger: 20-stud leap, 13-stud slam for 22 Physical, a bigger crater. Cooldown 12 s. Data `FBare`; WeaponSkillScript routes F to `RoranKit.BareSkill`.
 - Roran bare-handed E **Skull Breaker** (placeholder name): during his R, E is a lunge that grabs the first enemy in his path, holds them 0.8 s, knees them in the head (12 Physical) and ragdolls them on release (Imbalance 1.5 s). Cooldown 10 s, 15 Essence. Data `EBare`.
