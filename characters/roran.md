@@ -37,7 +37,7 @@ Run by `ServerScriptService.RoranKit` (`kit = "RoranKit"`, registered in Ability
 
 **Filler look:**
 - **Stance:** a pale glint over him and a widening ring of light.
-- **Parry:** muted teal (116, 161, 165) **afterimages** of him trail the slide and slash (a frozen copy every 0.035 s, each fading over 0.3 s; `RoranCounterTrail`), plus a white flash, **SingleSlashVFX** on each riposte's real slash (angle and frame read off the blade tip's path: variant 1 sweeps left→right rising slightly, roll 10, from f29; variant 2 comes down high-left→low-right, roll −27, from f45; both sped up with the riposte; data `Q.counterAnimations[i].slash`, colour `Q.vfx.slashColor`) and a spray of blood, darker and bigger on a Hemorrhage counter.
+- **Parry:** muted teal (116, 161, 165) **afterimages** of him trail the slide and slash (a frozen copy every 0.035 s, each fading over 0.3 s; `RoranCounterTrail`), plus a white flash, **SingleSlashVFX** on each riposte's real slash (angle and frame read off the blade tip's path: variant 1 (the one that spins him) roll 190, from f29; variant 2 comes down high-left→low-right, roll −27, from f45; both sped up with the riposte; data `Q.counterAnimations[i].slash`, colour `Q.vfx.slashColor`) and a spray of blood, darker and bigger on a Hemorrhage counter.
 - **Whiff:** a dull grey flicker.
 - **R:** his sword is hidden and a copy of it spins away behind him, a blood-red ring of force runs out to the burst radius, and a faint red glow stays on him while it lasts.
 - **Bare-handed Q:** a wide sheet of air sweeps across the hitbox with each punch, tilted left then right, with a puff of dust at his feet.

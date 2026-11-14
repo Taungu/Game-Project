@@ -3,7 +3,7 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-11-14
-- Roran Q riposte slashes moved forward so they sit in front of him (riposte 2 reached behind): z −3.8 and −4.3 (were −2.5 and −1.5).
+- Roran Q: the spinning riposte's (riposte 1) slash is turned round (roll 190, was 10) so it no longer sweeps round him the wrong way through the spin. Slash positions are back to z −2.5 / −1.5.
 - Roran afterimages (Q counter and E stab) are now muted teal, RGB 116, 161, 165 (were pale red). Knob `Q.vfx.afterimageColor`.
 - Roran Q ripostes: the filler neon slash is replaced by SingleSlashVFX, angled and timed to each variant's real blade path (roll 10 from f29; roll −27 from f45; at the 1.5× riposte speed). Knobs per variant in `Q.counterAnimations[i].slash`.
 - Roran E: invulnerable from connecting to the end of the hit animation (full stab and straight-through).
