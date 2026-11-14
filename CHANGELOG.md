@@ -3,6 +3,7 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-11-14
+- Roran E slide-out: after he's put behind the target he now slides 8 studs (was 3 over 0.25 s), easing out until the hit animation ends (f122–149 straight through, f70–149 after the stab). Knobs `easeOutDistance`, `easeOutPower`.
 - Roran E full stab fix: the target is frozen in front of him through the stab, and he only passes behind them on f70 when he pulls the blade out (the damage lands then too, was f78). Knobs `stabFrame`, `passFrame`.
 
 ## 2026-11-13
