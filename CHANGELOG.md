@@ -3,6 +3,10 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-11-14
+- Roran balance pass 2:
+  - The E's True % is no longer a fixed 3% per stack / 12% cap. It shrinks the bigger the target's health pool is (`refHealth` 150, `healthFalloff` 0.5): 3% at 150 HP, 1.2% at 1000, 0.5% at 5000. A capped hit counts as 4 stacks.
+  - His Bleeds now stack: queued Roran bleeds tick alongside the active one. New `Bleed.stackingTicks` in StatusEffects (+ `StatusEffects.HasStackingTicks`). Luther is unchanged.
+  - Base Physical Damage is down to 20 (was 25), the class average, in both places.
 - Roran balance pass (playstyle): new generic **M1 limiter** (`ClassAbilities.<Class>.m1Limiter`, applied in CombatScript). Roran's normal-form M1s do 0.6× damage, and the limiter is off during his R. His dodge-bleed passive is now off during the R too. Build paths are documented in [characters/roran.md](characters/roran.md#playstyle-and-balance-2026-11-14-per-lukas).
 - Roran passive indicator reworked like SilverFlash's lucky hit: his blade and right arm flash and stay glowing light red (255, 120, 110) while readied, plus one star spark on the blade; spending it flares and fades.
 - Roran's first passive **Read the Opening** (placeholder name): any dodge readies his next M1 that lands to Bleed everything that swing hits (4 s window, a faint red glow on the blade meanwhile). New hooks `RoranKit.OnDodge` (DodgeServerScript) and `RoranKit.OnM1Hit` (CombatScript). Basics mirrored to the Lobby.
