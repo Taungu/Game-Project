@@ -3,6 +3,7 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-11-14
+- Roran bare E knee impact: now plays Lukas's Shockwave Impact model (copied to `VFXModels.ShockwaveImpact`) out of the victim's back, with each mesh animated (Spiky snaps open and turns, Wave stretches forward and spins, Circle counter-spins and drifts). This replaces the generic Shock/Wave rings. Knobs in `EBare.vfx.impactModel`.
 - Roran bare-handed E (Skull Breaker) rebuilt on Lukas's animations: the base E's dash (build-up, red flash, IllThorn dash bursts + contact impact), then the ultimate grab (`132959435893370` on him, `94635516414789` on the victim via the grab double). The knee lands on f61 with a shockwave out of the victim's back, a distortion sphere at the head and a heavy shake. Grab-hold i-frames; release and ragdoll on f150.
 - Roran balance pass 2:
   - The E's True %: against players it's always 3% per stack (capped = 4 stacks = 12%), whatever their health. Against NPCs it eases down with the health pool (`healthFalloff` 0.3, floor `minPercentPerStack` 0.5%): 1.7% at 1000 HP, 0.53% at 50k (~263 per stack). (A first version also shrank it on players and on bosses with falloff 0.5; too punishing.)
