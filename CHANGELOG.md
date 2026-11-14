@@ -2,6 +2,9 @@
 
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
+## 2026-11-14
+- Roran E full stab fix: the target is frozen in front of him through the stab, and he only passes behind them on f70 when he pulls the blade out (the damage lands then too, was f78). Knobs `stabFrame`, `passFrame`.
+
 ## 2026-11-13
 - Roran E reworked to feel like IllThorn's ThornBurst: an 18-frame build-up (dash animation + red flash) before the lunge, IllThorn's dash bursts and impact (shockwave, shake, impale blood), and he always passes through the target, put behind them by their size, then eases out 3 studs. 0–2 Bleed stacks skip the hit animation to f122 with the True % at once; 3 stacks or a recent Hemorrhage play the full stab. Knobs `buildUpFrame`, `skipToFrame`, `stabAtStacks`, `passGap`, `easeOutDistance`, `easeOutTime`, `feelLike`, `connectShake`.
 - Roran E animations: dash `134069051747675` during the lunge. On contact, hit `136994736650625`: the target is held through the wind-up, the stab lands on f78 and he's free on f100. New `ReplicatedStorage.WeaponGripMotion` holds the FakeHandle track from the "Roran E connect" save; every client plays it on the held weapon's `WeaponGrip` joint, so any weapon (BroadDagger included, via re-basing) follows the stab.
