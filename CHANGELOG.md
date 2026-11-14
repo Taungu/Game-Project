@@ -3,6 +3,7 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-11-14
+- Roran E: invulnerable from connecting to the end of the hit animation (full stab and straight-through).
 - Roran E full stab: the afterimages now last through the slide to the end of the animation (were the arc only).
 - Roran E full stab: instead of teleporting behind, he's driven round the target in an arc (f68–78, timed to the animation's spin, round his right) with the Q's afterimages, then slides on. Knobs `passFrame` (68), `orbitFrames`, `orbitSide`.
 - Roran E slide-out: after he's put behind the target he now slides 8 studs (was 3 over 0.25 s), easing out until the hit animation ends (f122–149 straight through, f70–149 after the stab). Knobs `easeOutDistance`, `easeOutPower`.
