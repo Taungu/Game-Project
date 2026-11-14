@@ -3,6 +3,7 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-11-14
+- Roran Q: a landed parry shoves him back 2.5 studs over 0.12 s before he slides back in for the slash (back to where he stood if there's no one to counter). Knobs `parryPushback`, `parryPushbackTime`.
 - Roran Q: a successful parry now bursts Lukas's IronSpark VFX at his blade (1.8× size, 2.5× brightness, emitters on for 4 frames, just in front of him to the right). Knob `Q.vfx.parrySpark`.
 - Roran Q: riposte 1's slash (the spinning one) now uses riposte 2's trajectory (roll −27 at 0.9, 1.5, −1.5, scale 1.3), keeping its own timing (f29). Its own angle swept round him.
 - Roran afterimages (Q counter and E stab) are now muted teal, RGB 116, 161, 165 (were pale red). Knob `Q.vfx.afterimageColor`.
