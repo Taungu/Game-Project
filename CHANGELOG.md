@@ -3,6 +3,7 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-11-14
+- Roran balance pass (playstyle): new generic **M1 limiter** (`ClassAbilities.<Class>.m1Limiter`, applied in CombatScript). Roran's normal-form M1s do 0.6× damage, and the limiter is off during his R. His dodge-bleed passive is now off during the R too. Build paths are documented in [characters/roran.md](characters/roran.md#playstyle-and-balance-2026-11-14-per-lukas).
 - Roran passive indicator reworked like SilverFlash's lucky hit: his blade and right arm flash and stay glowing light red (255, 120, 110) while readied, plus one star spark on the blade; spending it flares and fades.
 - Roran's first passive **Read the Opening** (placeholder name): any dodge readies his next M1 that lands to Bleed everything that swing hits (4 s window, a faint red glow on the blade meanwhile). New hooks `RoranKit.OnDodge` (DodgeServerScript) and `RoranKit.OnM1Hit` (CombatScript). Basics mirrored to the Lobby.
 - Roran E full stab: the blade turns blood-coated the moment the stab goes in (on contact) and the last flick of the hit animation (f129) shakes it off with a few droplets. Any weapon (tints its blade/edge parts). Knobs `E.bloodyBlade`.
