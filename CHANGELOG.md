@@ -4,7 +4,7 @@ Notable design/content changes. Newest first. Dates are when they landed in Stud
 
 ## 2026-11-14
 - Roran balance pass 2:
-  - The E's True % is no longer a fixed 3% per stack / 12% cap. It shrinks the bigger the target's health pool is (`refHealth` 150, `healthFalloff` 0.5): 3% at 150 HP, 1.2% at 1000, 0.5% at 5000. A capped hit counts as 4 stacks.
+  - The E's True %: against players it's always 3% per stack (capped = 4 stacks = 12%), whatever their health. Against NPCs it eases down with the health pool (`healthFalloff` 0.3, floor `minPercentPerStack` 0.5%): 1.7% at 1000 HP, 0.53% at 50k (~263 per stack). (A first version also shrank it on players and on bosses with falloff 0.5; too punishing.)
   - His Bleeds now stack: queued Roran bleeds tick alongside the active one. New `Bleed.stackingTicks` in StatusEffects (+ `StatusEffects.HasStackingTicks`). Luther is unchanged.
   - Base Physical Damage is down to 20 (was 25), the class average, in both places.
 - Roran balance pass (playstyle): new generic **M1 limiter** (`ClassAbilities.<Class>.m1Limiter`, applied in CombatScript). Roran's normal-form M1s do 0.6× damage, and the limiter is off during his R. His dodge-bleed passive is now off during the R too. Build paths are documented in [characters/roran.md](characters/roran.md#playstyle-and-balance-2026-11-14-per-lukas).
