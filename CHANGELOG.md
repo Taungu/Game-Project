@@ -3,6 +3,7 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-11-14
+- Roran E full stab: R6 victims play IllThorn's ThornBurst Victim animation through the grab double, slowed (0.44×) so IllThorn's pull-out lands on Roran's f70, then normal speed in place while he goes round them; released when it ends. `GrabDoubleClient` gained an optional speed plan and a "Detach" phase (the double stays put while the grabber moves).
 - Roran Q: the counter slash plays the blades' CutVFX hit effect where it meets the target (played on clients).
 - Roran Q: the parry recoil is near-instant: 0.05 s (was 0.12) with a sharper snap (`parryPushbackPower` 3). The slide back in gets the extra time.
 - Roran Q: a landed parry flashes a yellow glow round the edges of the parrying player's own screen, fading over 0.35 s. Knob `Q.vfx.parryEdgeFlash`.
