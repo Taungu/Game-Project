@@ -3,6 +3,7 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-11-14
+- Roran Q: the parry recoil is near-instant: 0.05 s (was 0.12) with a sharper snap (`parryPushbackPower` 3). The slide back in gets the extra time.
 - Roran Q: a landed parry flashes a yellow glow round the edges of the parrying player's own screen, fading over 0.35 s. Knob `Q.vfx.parryEdgeFlash`.
 - Roran Q: a landed parry shoves him back 2.5 studs over 0.12 s before he slides back in for the slash (back to where he stood if there's no one to counter). Knobs `parryPushback`, `parryPushbackTime`.
 - Roran Q: a successful parry now bursts Lukas's IronSpark VFX at his blade (1.8× size, 2.5× brightness, emitters on for 4 frames, just in front of him to the right). Knob `Q.vfx.parrySpark`.
