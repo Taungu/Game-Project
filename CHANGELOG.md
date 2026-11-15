@@ -3,6 +3,7 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-11-15
+- Roran bare M1 finisher: the push plays Zumin's Vengeance VFX (as an unbraced Vengeance) plus a little screen shake for both. New export `ZuminKit.PlayVengeanceVfx` (Zumin unchanged).
 - Roran bare M1 head grab: Roran himself is frozen in place (anchored, WalkSpeed 0) while he holds them, so the grab can't be dragged around.
 - Roran bare M1 hit 5 is now a mini grab: the freeze only happens if it connects (new `poseHolds` `onlyOnHit` + `skipTo` in CombatScript; a miss jumps straight to the swing-through). The throw is now a short push straight away from him (~6 studs; it went the wrong way and too far).
 - Roran bare-handed M1s: his own 5-hit fist combo on Lukas's animation `78716295632427` (one track, sliced; hits f5/34/54/82/113; dmg 9/9/10/11/14). Hit 5 grabs the first enemy by the head: their head rides his left hand through the freeze (f114–122 + 0.4 s pose hold), then the swing-through throws them and they're knocked down on landing. New `WeaponMoves.GetHeadGrab`, CombatScript passes weapon and step to `RoranKit.OnM1Hit`. The bare F's crater moved to `groundSlams[9]`. Replaces the empowered Leather Gloves.
