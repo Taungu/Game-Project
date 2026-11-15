@@ -3,6 +3,7 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-11-15
+- Roran bare E knee impact: the model's Wave is removed. IllThorn's contact impact (the Shock + Wave rings the grab plays on contact) now plays at 1.8× size out of the victim's back. The Spiky and Circle stay.
 - Roran bare E knee impact sped up: the Wave lasts 0.5 s (was 0.9) and the Circle 0.45 s (was 0.85). Both start fading sooner.
 - Roran bare E knee impact: the Wave also stays put now. It stretches out where it appears (0.35× to 1.4×) while it spins and fades, instead of growing forward from its back end.
 - Roran bare E knee impact: the Circle (the middle piece) no longer travels forward. It stays put and stretches out to 1.6× as it fades (was travel 12, to 1.2×).
