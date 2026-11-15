@@ -3,6 +3,7 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-11-15
+- Roran bare M1 head grab: the release now follows his animation itself. The server and every client let go when the playing combo track reaches f121 (`headGrab.releaseFrame`), not after a fixed timer, so the victim no longer hangs on after the swing.
 - Roran bare M1 finisher: the push plays Zumin's Vengeance VFX (as an unbraced Vengeance) plus a little screen shake for both. New export `ZuminKit.PlayVengeanceVfx` (Zumin unchanged).
 - Roran bare M1 head grab: Roran himself is frozen in place (anchored, WalkSpeed 0) while he holds them, so the grab can't be dragged around.
 - Roran bare M1 hit 5 is now a mini grab: the freeze only happens if it connects (new `poseHolds` `onlyOnHit` + `skipTo` in CombatScript; a miss jumps straight to the swing-through). The throw is now a short push straight away from him (~6 studs; it went the wrong way and too far).
