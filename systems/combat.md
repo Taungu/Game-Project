@@ -9,7 +9,7 @@
 | Right click | Dodge (`CameraLockOnScript` client slide + `DodgeServerScript` i-frames) |
 | Right click twice | Roll (a second tap during the dodge) |
 | Right click in the air | Air dash |
-| Lock-on | `CameraLockOnScript` (respects Grabbed / FacingLocked) |
+| Lock-on | `CameraLockOnScript` (respects Grabbed / FacingLocked / HoldingGrab) |
 
 ## M1 combos (`WeaponMoves`)
 - Each weapon defines combo **segments** (slices of one animation or separate animations), **hit delays**, per-hit **damage**, **cooldowns**, **hitbox offsets/sizes**, **stagger points** (per step allowed), and swing/hit **sounds** and VFX.
@@ -84,6 +84,8 @@ What a weapon hit physically is, on top of its damage type. Applied in `PlayerCo
 
 ## Grabs
 Several moves grab and hold a target: the Light Brigand, Bella's Injection, the Host's Invading Grab, the Wyvern's talon, IllThorn's ThornBurst. Grabbed players see a GrabVisual double, get screen blur/flashes, and the camera respects `Grabbed`. Dodging through the catch moment makes a grab miss. Zumin's brace is immune.
+
+**The grabber's facing is locked** (2026-11-15): shift lock and lock-on can't turn a player who is holding a grab. Every grab-hold i-frame window (`PlayerInvulnerability.GRAB_HOLD_KIND`: Bella's Q, IllThorn's ThornBurst, Roran's bare E) also sets the player's `HoldingGrab` attribute for its length. A grab without those i-frames calls `PlayerInvulnerability.LockFacing(userId, seconds)` instead (Roran's E stab). `CameraLockOnScript` skips turning a player who has `Grabbed`, `FacingLocked` or `HoldingGrab` set.
 
 ## Aggro & combat tag
 - **Aggro race:** the first hitter takes aggro; after that, whoever lands **5 hits** first takes or keeps it (`EnemyAggroManager`).
