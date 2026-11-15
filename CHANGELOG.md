@@ -3,6 +3,7 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-11-15
+- Roran bare Q movement: one long continuous slide from the press to the end of the animation (12 studs, f0–85, camera-steered), with the punches landing on their frames along the way. Replaces the two per-punch slides.
 - Roran bare Q movement: instead of a dash at each punch, he slides through each wind-up, easing in and arriving as the punch lands (f0–31, then f38–62; `QBare.slideFrames`). Still 6 studs each, camera-steered.
 - Imbalance on players no longer physics-ragdolls the real body, which could fling them. The real body is held still with the status, and a collision-free double topples over in its place for the knockdown (`GrabDoubleClient`). NPCs keep the real ragdoll. Switch: `IMBALANCE_DOUBLE_FOR_PLAYERS`.
 - Roran bare Q: locked in place for the whole move (no walking). He turns with the camera between punches, and each punch's dash is camera-steered all the way and longer: 6 studs (was 3) over 0.16 s at speed 1.
