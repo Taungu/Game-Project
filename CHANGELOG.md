@@ -3,6 +3,7 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-11-15
+- Roran R activation: Raam's Unchained VFX recoloured to his teal (BlackBeat burst, UnchainedCharge for 0.8 s, OverloadingEssence aura for the duration). It replaces the red ring and glow. Not used: GroundBreak (the crack) and ChainRupture.
 - Roran bare Q bigger: hit box 14 × 7 × 10 (was 10 × 6 × 7). The Vengeance VFX is at growth 1.2 over an 11-stud, 90° cone (was 0.7, 7, 80°).
 - Roran bare Q: his teal afterimages trail the whole slide (same as the Q counter and the E stab).
 - Roran bare Q slide: now 2.5× his own walk speed, at least 40 studs/s (about 40 studs over the move; was 20 studs). It's faster than walking would be. `slideDistance` replaced by `slideSpeedMultiplier` / `slideMinSpeed`.
