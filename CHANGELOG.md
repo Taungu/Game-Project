@@ -3,6 +3,7 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-11-15
+- Imbalance on players no longer physics-ragdolls the real body, which could fling them. The real body is held still with the status, and a collision-free double topples over in its place for the knockdown (`GrabDoubleClient`). NPCs keep the real ragdoll. Switch: `IMBALANCE_DOUBLE_FOR_PLAYERS`.
 - Roran bare Q: locked in place for the whole move (no walking). He turns with the camera between punches, and each punch's dash is camera-steered all the way and longer: 6 studs (was 3) over 0.16 s at speed 1.
 - Roran's dashes steer with the camera like Bella's Q / Raam's R: base E and bare E (aim through the build-up, steer the lunge), and each bare Q punch aims at the camera. New `RoranKit.Steer` / `steeredLunge` / `RoranSteer` client loop.
 - Roran bare Q (Twin Haymakers): 1.4× faster (hits at 0.37 / 0.74 s). Each punch plays Zumin's Vengeance VFX (smaller), hit targets get the white impact and are slung ~5 studs away, plus a small shake for him on a landed punch. New `ZuminKit.PlayVengeanceHitVfx` and a `shove` helper in RoranKit.
