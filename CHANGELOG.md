@@ -3,6 +3,7 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-11-15
+- Roran bare E distortion sphere: much bigger and faster, 1 to 30 studs in 0.2 s (was 14 over 0.4 s).
 - Roran bare E knee impact fix: the distortion sphere was invisible (the template sits at Transparency 10). It now starts at 0 and fades while it grows, like Zumin's stomp, and is bigger: 0.5 to 14 studs over 0.4 s (was 0.5 to 6 over 0.3 s).
 - Roran bare E knee impact: floor dust. FloorAirDust fans out round the floor under the impact in 8 directions, tinted toward the floor's colour (`EBare.vfx.floorDust`).
 - Roran bare E knee impact tilts 35° upward to follow the upward knee (`EBare.vfx.impactTilt`).
