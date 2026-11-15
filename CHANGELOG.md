@@ -3,6 +3,7 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-11-15
+- Roran bare Q: the UnchainedCharge also drops its speed lines (Line1/Line2) and the Specs that made a dot in the middle. Only its teal DashWind remains.
 - Roran bare Q: BlackBeat burst removed. The UnchainedCharge also drops RamCharge1, an orange fire flipbook whose colour is baked into the texture, so it can't be tinted.
 - Roran bare Q: the UnchainedCharge is back on the slide without its strongest particle, the bright "Shockwave" rings (`raamVfx.skipEmitters`).
 - Roran bare Q: Raam's Unchained dash VFX recoloured to his teal: the BlackBeat burst as the slide starts and the UnchainedCharge riding on him for the slide. No GroundBreak crack or ChainRupture. (It was briefly put on the R by mistake; the R keeps its own look.)
