@@ -3,6 +3,7 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-11-15
+- Roran bare Q: his teal afterimages trail the whole slide (same as the Q counter and the E stab).
 - Roran bare Q slide: now 2.5× his own walk speed, at least 40 studs/s (about 40 studs over the move; was 20 studs). It's faster than walking would be. `slideDistance` replaced by `slideSpeedMultiplier` / `slideMinSpeed`.
 - Roran bare Q slide: one steady speed with no build-up, faster and further: 20 studs over the ~1 s animation (was 12). `slideAccel` removed.
 - Roran bare Q slide: he gains speed over the first 40% and keeps that top speed to the end, with no settling (`QBare.slideAccel`).
