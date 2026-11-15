@@ -3,6 +3,7 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-11-15
+- Roran bare Q: Vengeance's 3D waves now spin as they fly (Wave3 +240°, Wave −300°, Shock +180° over their life). They're drawn on every client for smooth spin, and the dust and impact still come from ZuminKit. `ZuminKit.PlayVengeanceVfx` got a `noWaves` flag; Zumin is unchanged.
 - Roran bare Q: the UnchainedCharge also drops its speed lines (Line1/Line2) and the Specs that made a dot in the middle. Only its teal DashWind remains.
 - Roran bare Q: BlackBeat burst removed. The UnchainedCharge also drops RamCharge1, an orange fire flipbook whose colour is baked into the texture, so it can't be tinted.
 - Roran bare Q: the UnchainedCharge is back on the slide without its strongest particle, the bright "Shockwave" rings (`raamVfx.skipEmitters`).
