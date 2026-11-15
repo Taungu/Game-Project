@@ -4,6 +4,8 @@ Notable design/content changes. Newest first. Dates are when they landed in Stud
 
 ## 2026-11-15
 
+- Roran R activation: no afterimages during the activation animation (per Lukas). His bare-handed moves keep theirs.
+
 - **Roran R camera: no stop before the last key.** The swing to the usual view now starts at `returnStartFrame` (f104), while the Eclipse move is still easing into f121, and blends from the live shot. The motion carries straight through instead of resting at f121 and then setting off again. `returnTime` 0.6 s. Checked in play: the camera never drops below about 10 studs/s until it eases into the normal view.
 
 - **Roran R camera: an extra last key** (per Lukas). The blend-after-hand-back never showed with Shift Lock on, because its RenderStepped loop wrote over it. Now the cinematic keeps the camera past the f122 cut and carries on to one more key, the usual camera view (the pre-R camera offset from his root and its rotation, in world axes like the normal camera and Shift Lock). It swings round him over `returnTime` (0.5 s, Sine InOut) and only then hands back, sitting exactly where the normal camera / Shift Lock picks up. Checked in play with Shift Lock on while walking.
