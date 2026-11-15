@@ -3,6 +3,7 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-11-15
+- Roran bare Q slide: one steady speed with no build-up, faster and further: 20 studs over the ~1 s animation (was 12). `slideAccel` removed.
 - Roran bare Q slide: he gains speed over the first 40% and keeps that top speed to the end, with no settling (`QBare.slideAccel`).
 - Roran bare Q movement: one long continuous slide from the press to the end of the animation (12 studs, f0–85, camera-steered), with the punches landing on their frames along the way. Replaces the two per-punch slides.
 - Roran bare Q movement: instead of a dash at each punch, he slides through each wind-up, easing in and arriving as the punch lands (f0–31, then f38–62; `QBare.slideFrames`). Still 6 studs each, camera-steered.
