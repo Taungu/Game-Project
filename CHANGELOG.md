@@ -3,6 +3,7 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-11-15
+- Roran bare F sped up 1.5×: 0.7 s in the air (was 1.05 s), free at 1 s (`FBare.speed`).
 - Roran's R: everything bare-handed now leaves his afterimages: each M1 swing (new `RoranKit.OnM1Swing` hook in CombatScript), the bare E's lunge and grab, and the bare F's leap to landing. The bare Q already had them.
 - Roran bare F (Earthfall) on Lukas's animation `110007105192748`: the leap lasts until the slam frame (f63, 1.05 s; was 0.7 s). He's free on f90, with the rest of the landing crouch faded out. Also fixed the slam sounds reading the old crater step (3 → 9).
 - Roran bare Q: Vengeance's 3D waves now spin as they fly (Wave3 +240°, Wave −300°, Shock +180° over their life). They're drawn on every client for smooth spin, and the dust and impact still come from ZuminKit. `ZuminKit.PlayVengeanceVfx` got a `noWaves` flag; Zumin is unchanged.
