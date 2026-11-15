@@ -4,6 +4,7 @@
 - **Not a starter.** Meant for Convoke's standard pool, but **unreleased** for now: the Lobby's `ClassDefinitions` marks him `unreleased = true`, so Convoke skips him. The dev accounts get him through `GRANT_EVERYTHING`; in the Session he's on the DEV panel's Soul switch.
 - **Title, lore, model:** none yet.
 - **Status (2026-11-13):** Q, E and R built; the Q has Lukas's animations, the rest are filler visuals. His bare-handed Q / E and the passive aren't designed yet. No animations.
+- **Movement animations (2026-11-15):** idle `108563588785780`, walk `124461748512504`, jump `107991336641853` (`ClassAnimations`, Session + Lobby).
 - **Identity:** a **Bleed** Soul like Luther. He's listed as a Hemorrhage contributor in `StatusEffects`, so his Physical hits feed a Hemorrhage bleed's burst.
 
 | Stat | Value (all placeholders) |

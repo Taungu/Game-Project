@@ -4,6 +4,8 @@ Notable design/content changes. Newest first. Dates are when they landed in Stud
 
 ## 2026-11-15
 
+- Roran's own idle `108563588785780`, walk `124461748512504` and jump `107991336641853` in `ClassAnimations` (Session + Lobby).
+
 - Roran R activation: no afterimages during the activation animation (per Lukas). His bare-handed moves keep theirs.
 
 - **Roran R camera: no stop before the last key.** The swing to the usual view now starts at `returnStartFrame` (f104), while the Eclipse move is still easing into f121, and blends from the live shot. The motion carries straight through instead of resting at f121 and then setting off again. `returnTime` 0.6 s. Checked in play: the camera never drops below about 10 studs/s until it eases into the normal view.
