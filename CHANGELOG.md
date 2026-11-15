@@ -3,6 +3,7 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-11-15
+- Roran bare Q: locked in place for the whole move (no walking). He turns with the camera between punches, and each punch's dash is camera-steered all the way and longer: 6 studs (was 3) over 0.16 s at speed 1.
 - Roran's dashes steer with the camera like Bella's Q / Raam's R: base E and bare E (aim through the build-up, steer the lunge), and each bare Q punch aims at the camera. New `RoranKit.Steer` / `steeredLunge` / `RoranSteer` client loop.
 - Roran bare Q (Twin Haymakers): 1.4× faster (hits at 0.37 / 0.74 s). Each punch plays Zumin's Vengeance VFX (smaller), hit targets get the white impact and are slung ~5 studs away, plus a small shake for him on a landed punch. New `ZuminKit.PlayVengeanceHitVfx` and a `shove` helper in RoranKit.
 - Roran bare M1 head grab consistency fix: the freeze sometimes got skipped because a hit the server registered a frame or two late arrived after the freeze's "did it connect?" check. The hold frame moved to f118 (was 116) to give more margin. As a safety net, a late grab now rewinds his animation to the held pose and holds it in RoranKit.
