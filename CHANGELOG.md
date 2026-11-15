@@ -2,6 +2,9 @@
 
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
+## 2026-11-15
+- Roran bare E knee impact: the shockwave meshes move at a constant speed (growth, spin, travel). There's no easing at the end any more; only the fade ends them. A part entry can set `ease` to get a curve back.
+
 ## 2026-11-14
 - Roran bare E knee impact timing: the Spiky burst is quicker and bigger (0.15 s to 1.7×; was 0.3 s to 1.15×) and gone first. The Wave and Circle last about 0.9 s and fade out slowly and evenly (`fadeLinear`).
 - Roran bare E knee impact: the Shockwave Impact meshes now start at 0.85 transparency, about as faint as the dash bursts (`impactModel.transparency`).
