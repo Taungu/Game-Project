@@ -3,6 +3,8 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-11-15
+
+- **Roran R: activation cinematic.** Plays `138154696395355` with the Eclipse camera move on the caster's screen (new data module `CinematicCameraTracks`, client `RoranCinematic` in RoranKitClient, Scriptable camera at RenderPriority.Last+1; restores the old camera at the f122 cut). He's anchored, invulnerable and facing-locked until f122; sword toss + burst + bonuses moved to f95. New `Ultimate` knobs: `animationId`, `animationSpeed`, `cameraTrack`, `throwFrame`, `cinematicEndFrame`, `invulnerable`; `castLock` 0.35 → 0.1 (after release).
 - Roran bare F sped up 1.5×: 0.7 s in the air (was 1.05 s), free at 1 s (`FBare.speed`).
 - Roran's R: everything bare-handed now leaves his afterimages: each M1 swing (new `RoranKit.OnM1Swing` hook in CombatScript), the bare E's lunge and grab, and the bare F's leap to landing. The bare Q already had them.
 - Roran bare F (Earthfall) on Lukas's animation `110007105192748`: the leap lasts until the slam frame (f63, 1.05 s; was 0.7 s). He's free on f90, with the rest of the landing crouch faded out. Also fixed the slam sounds reading the old crater step (3 → 9).
