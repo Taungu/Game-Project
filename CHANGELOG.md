@@ -4,6 +4,8 @@ Notable design/content changes. Newest first. Dates are when they landed in Stud
 
 ## 2026-11-15
 
+- **Roran R camera tweens back** instead of cutting: at the f122 cut the normal camera (or Shift Lock / lock-on) takes over again, and for `CinematicCameraTracks.RoranR.returnTime` (0.5 s, Sine InOut) the screen blends from the last shot to it. The normal camera's own view is put back before it runs every frame, so the blend doesn't drag its rotation or zoom. `returnTime = 0` gives the old straight cut.
+
 - **Roran R camera fixed.** (1) It was rebaked: the first bake stacked Eclipse's live preview C0 on top of the keyframe poses, so the camera sat in the wrong place. It now uses each CamPart key's C0 (Eclipse's exported KeyframeSequence pose sits 1.2 studs in front of the real camera), relative to the R6 dummy. It frames Roran from about 4–5 studs away, as in Eclipse. (2) It barely ever showed because CameraLockOnScript's Shift Lock / lock-on loop overwrote it every frame. The cinematic now sets the local `InCutscene` attribute (the loop pauses, as for the Rehem cutscene), binds at Last+100 and restores the camera type exactly (Scriptable when Shift Lock was on).
 
 - **Roran R: activation cinematic.** Plays `138154696395355` with the Eclipse camera move on the caster's screen (new data module `CinematicCameraTracks`, client `RoranCinematic` in RoranKitClient, Scriptable camera at RenderPriority.Last+1; restores the old camera at the f122 cut). He's anchored, invulnerable and facing-locked until f122; sword toss + burst + bonuses moved to f95. New `Ultimate` knobs: `animationId`, `animationSpeed`, `cameraTrack`, `throwFrame`, `cinematicEndFrame`, `invulnerable`; `castLock` 0.35 → 0.1 (after release).
