@@ -3,6 +3,7 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-11-15
+- Roran bare Q (Twin Haymakers): 1.4× faster (hits at 0.37 / 0.74 s). Each punch plays Zumin's Vengeance VFX (smaller), hit targets get the white impact and are slung ~5 studs away, plus a small shake for him on a landed punch. New `ZuminKit.PlayVengeanceHitVfx` and a `shove` helper in RoranKit.
 - Roran bare M1 head grab consistency fix: the freeze sometimes got skipped because a hit the server registered a frame or two late arrived after the freeze's "did it connect?" check. The hold frame moved to f118 (was 116) to give more margin. As a safety net, a late grab now rewinds his animation to the held pose and holds it in RoranKit.
 - Roran bare M1 head grab: the release now follows his animation itself. The server and every client let go when the playing combo track reaches f121 (`headGrab.releaseFrame`), not after a fixed timer, so the victim no longer hangs on after the swing.
 - Roran bare M1 finisher: the push plays Zumin's Vengeance VFX (as an unbraced Vengeance) plus a little screen shake for both. New export `ZuminKit.PlayVengeanceVfx` (Zumin unchanged).
