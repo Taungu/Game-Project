@@ -3,6 +3,7 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-11-15
+- Roran bare-handed Q (Twin Haymakers) on Lukas's animation `128718495182284`: one track for both punches, hits on f31 and f62 (read off the fists' fastest frames), each push starting 4 frames before its hit, committed until f70. Replaces the Leather Gloves filler.
 - Roran bare E knee: an **impact frame**. For two beats (2 frames each) the world drops out and only the bodies at the hit remain, frozen as flat silhouettes: black on white, then white on black. A white flash and a contrast pop follow. Client-side ViewportFrame clones through a copy of the camera, so they line up with the scene. Only for cameras within 80 studs. `EBare.vfx.impactFrame` (false = off).
 - Roran bare E distortion sphere: much bigger and faster, 1 to 30 studs in 0.2 s (was 14 over 0.4 s).
 - Roran bare E knee impact fix: the distortion sphere was invisible (the template sits at Transparency 10). It now starts at 0 and fades while it grows, like Zumin's stomp, and is bigger: 0.5 to 14 studs over 0.4 s (was 0.5 to 6 over 0.3 s).
