@@ -3,6 +3,7 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-11-15
+- Roran bare E knee impact tilts 35° upward to follow the upward knee (`EBare.vfx.impactTilt`).
 - Roran bare E knee impact: the model's Wave is removed and nothing replaces it in the centre. The impact is just the Spiky burst and the Circle (plus the distortion sphere). Briefly tried IllThorn's contact impact there instead.
 - Roran bare E knee impact sped up: the Wave lasts 0.5 s (was 0.9) and the Circle 0.45 s (was 0.85). Both start fading sooner.
 - Roran bare E knee impact: the Wave also stays put now. It stretches out where it appears (0.35× to 1.4×) while it spins and fades, instead of growing forward from its back end.
