@@ -10,6 +10,7 @@ Notable design/content changes. Newest first. Dates are when they landed in Stud
 - Roran base Q slash: half his Physical bonus (`counterPhysicalScaling`).
 - Roran bare-handed: no endlag on Q / E / F; Q 15 a punch + an 8-stud hit zone round him; E Stun on the knee, then Slow + Impaired 2 s after the knockdown; F is a steerable jump, 14 damage.
 - Roran R: one-shot burst borrowed from Bella's R in his teal, screen shake (now through his cinematic camera), impact frame; body aura (new `BodyAura` module); topped up to the run threshold; his own run animation with real-speed playback, limb trails and lean.
+- Stagger flash is now dark grey; its old dark crimson flash plays on a Hemorrhage burst instead.
 - DEV panel **No cooldowns** button (`DevNoCooldowns`), replacing the hard-coded `TEST_NO_COOLDOWNS` switches.
 
 ## 2026-11-15

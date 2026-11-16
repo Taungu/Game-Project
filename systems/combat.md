@@ -50,7 +50,7 @@ What a weapon hit physically is, on top of its damage type. Applied in `PlayerCo
 
 ## Stagger (`StaggerSystem`)
 - A universal meter on **every** humanoid, players included. Every hit adds stagger points.
-- When it reaches **MaxStagger**, it resets to 0 and the target is **Staggered**: interrupted and locked out for **1 s** (red flash on players). There's no passive decay.
+- When it reaches **MaxStagger**, it resets to 0 and the target is **Staggered**: interrupted and locked out for **1 s** (a dark grey flash on players and enemies, `StaggerSystem`; was dark crimson until 2026-11-16). There's no passive decay.
 - Enemy MaxStagger comes from `EnemyDefinitions` (bosses can be `math.huge`). Players' comes from their class, and **grows with health** (square root).
 - Some moves **force** a stagger (IllThorn at 4+ marks). Enemy **BREAK** moves stagger players in one hit.
 - Stagger is the highest-priority immobility effect: "no one is safe from being staggered".
@@ -74,7 +74,7 @@ What a weapon hit physically is, on top of its damage type. Applied in `PlayerCo
 | **Rooted** | OverStatus | 1 s | Can't walk but can still attack. Wins over Slow. |
 | **Weakened** | OverStatus | 5 s | Deals 20% less (strength can vary; the strongest wins). |
 | **Sensitive** | OverStatus | 5 s | Takes 20% more from everything. |
-| **Hemorrhage** | StatusAmplifier | — | The Bleed's **crit** (2026-11-16): every Bleed a player applies rolls their Crit Chance (still rolls on a target at 3 stacks); a crit is an **instant True burst** of `burstDamage` (15) × passive buffs × Physical bonus × level ability power × Crit Damage. Also forced by Roran's 3rd parry in a row, Luther's Blood Letting, and Hemostatic Impact (×2, any target hit). Once per Bleed. Shows blood + the word "Hemorrhage" over the head (`HemorrhageBurstClient`, `StatusEffects.Hemorrhage.burstVisual`). Nothing is recorded any more. |
+| **Hemorrhage** | StatusAmplifier | — | The Bleed's **crit** (2026-11-16): every Bleed a player applies rolls their Crit Chance (still rolls on a target at 3 stacks); a crit is an **instant True burst** of `burstDamage` (15) × passive buffs × Physical bonus × level ability power × Crit Damage. Also forced by Roran's 3rd parry in a row, Luther's Blood Letting, and Hemostatic Impact (×2, any target hit). Once per Bleed. Shows a dark crimson flash on the target, blood and the word "Hemorrhage" over the head (`HemorrhageBurstClient`, `StatusEffects.Hemorrhage.burstVisual`). Nothing is recorded any more. |
 
 - **Immobility** effects fight for control of WalkSpeed. Only one is in control at a time, by priority (Daze < Aerial < Stun < Imbalance < Stagger), and it shows as the marker above the head. Imbalance's ragdoll physics always happens, even when Stagger holds the marker.
 - **OverStatus** effects are tracked independently and can stack with each other.
