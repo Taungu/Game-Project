@@ -2,6 +2,16 @@
 
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
+## 2026-11-16
+- Roran named (per Lukas, from his novel): title **Entrepreneur**; Q Elegant Correction, E Closing Clause, passive Paint Red, R Core Unbound; bare-handed Q Mongrel's Answer, E Until I Say So, F Beyond Measure (`ClassAbilities` both places; title in `ClassDefinitions` both places).
+- **Bleed overhaul:** ticks are typed damage (3 Magic + 1 Physical per second per Bleed, full stat bonus + level ability power, resisted), not 0.5% max HP True.
+- **Hemorrhage overhaul:** the Bleed's crit. Every Bleed rolls the applier's Crit Chance (even at 3 stacks); a crit is an instant True burst (`StatusEffects.Hemorrhage.burstDamage` × Physical × Crit Damage). The recording pool is gone. Blood + "Hemorrhage" over the head on a burst (`HemorrhageBurstClient`).
+- Luther's Hemostatic Impact: a guaranteed 2× Hemorrhage on every target hit.
+- Roran base Q slash: half his Physical bonus (`counterPhysicalScaling`).
+- Roran bare-handed: no endlag on Q / E / F; Q 15 a punch + an 8-stud hit zone round him; E Stun on the knee, then Slow + Impaired 2 s after the knockdown; F is a steerable jump, 14 damage.
+- Roran R: one-shot burst borrowed from Bella's R in his teal, screen shake (now through his cinematic camera), impact frame; body aura (new `BodyAura` module); topped up to the run threshold; his own run animation with real-speed playback, limb trails and lean.
+- DEV panel **No cooldowns** button (`DevNoCooldowns`), replacing the hard-coded `TEST_NO_COOLDOWNS` switches.
+
 ## 2026-11-15
 
 - Roran's own idle `108563588785780`, walk `124461748512504` and jump `107991336641853` in `ClassAnimations` (Session + Lobby).

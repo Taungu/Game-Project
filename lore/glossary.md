@@ -16,7 +16,7 @@ Game terms (mechanics and lore) in one place. Lore details: [world.md](world.md)
 | **Embracing Flush** | The bar where the player wakes up (the Lobby). |
 | **Essence** | Magic/life force. In-game, the ability resource pool (like mana) and the EXP orbs enemies drop. |
 | **EventAnchor!** | The part on each path where its random event spawns. |
-| **Hemorrhage** | A status amplifier that turns Bleed into a damage-storing burst (Luther). |
+| **Hemorrhage** | The crit of a Bleed: an instant True burst, rolled on the applier's Crit Chance (Luther, Roran). |
 | **Host** | An Infected enemy: a person turned by the roots. A player whose Infestation fills becomes one. |
 | **Infected** | The enemy category born of the ill Father Tree (Deceased, Host). |
 | **Infestation** | A hidden meter that Infected hits fill. Full = death and turning into a Host (Story only). |

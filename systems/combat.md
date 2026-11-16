@@ -66,7 +66,7 @@ What a weapon hit physically is, on top of its damage type. Applied in `PlayerCo
 | **Imbalance** | Immobility | 2 s (callers set their own) | The knockdown: thrown off balance and ragdolled onto the floor, paired with a screen blur. Applied by every ragdoll in the game: grab releases (Light Brigand, Bella's Q, ThornBurst, the Host), Dohv's finisher, the Rehem and the Wyvern. Outranks Stun, ranks under Stagger. **Players aren't physics-ragdolled** (since 2026-11-15, it could fling them): their real body is held still (anchored, server-owned) with just the status on it, while every client shows a collision-free double in its place that topples over the way they were moving and lies there for the knockdown (`GrabDoubleClient`, `ImbalanceDouble`). NPCs keep the real ragdoll. Switch: `IMBALANCE_DOUBLE_FOR_PLAYERS` in `StatusEffectManager`. |
 | **Stagger** | Immobility | 1 s | The stagger payoff. Top priority, can't be preempted. |
 | **Vulnerable** | OverStatus | ≤15 s | Bursts early after taking 10% max HP of damage (+5% max HP bonus damage). Fahlon's mark, the rifle's Trained Veteran. **Protection:** once made Vulnerable, a target can't be made Vulnerable again (by anyone, refreshes included) for **30 s** from that application (`reapplyCooldown`). |
-| **Bleed** | OverStatus | 5 s | DoT of 0.5% max HP per second, up to 3 stacks. |
+| **Bleed** | OverStatus | 5 s | DoT: each second a **3 Magic** hit and a **1 Physical** hit (`BLEED_TICK_MAGIC_DAMAGE` / `_PHYSICAL_DAMAGE`), each taking the applier's full bonus for its type + level ability power, cut by the target's resistances. Up to 3 stacks (Roran's tick together). Not an attack: no dodge, crit or on-hit effects. (2026-11-16; was 0.5% max HP True.) |
 | **Sick** | OverStatus | 20 s | Akavish poison: the bite's damage ×3 over its duration. |
 | **Blind** | OverStatus | 3 s | Outward-facing: the blinded character's hits still connect but deal no damage and apply no statuses ("Miss"). Self-effects are untouched. |
 | **Slow** | OverStatus | 1 s | 50% walk speed. Refreshes, doesn't stack. |
@@ -74,7 +74,7 @@ What a weapon hit physically is, on top of its damage type. Applied in `PlayerCo
 | **Rooted** | OverStatus | 1 s | Can't walk but can still attack. Wins over Slow. |
 | **Weakened** | OverStatus | 5 s | Deals 20% less (strength can vary; the strongest wins). |
 | **Sensitive** | OverStatus | 5 s | Takes 20% more from everything. |
-| **Hemorrhage** | StatusAmplifier | — | Turns Bleed into a pool of 10% of physical hits, burst at the end (Luther). |
+| **Hemorrhage** | StatusAmplifier | — | The Bleed's **crit** (2026-11-16): every Bleed a player applies rolls their Crit Chance (still rolls on a target at 3 stacks); a crit is an **instant True burst** of `burstDamage` (15) × passive buffs × Physical bonus × level ability power × Crit Damage. Also forced by Roran's 3rd parry in a row, Luther's Blood Letting, and Hemostatic Impact (×2, any target hit). Once per Bleed. Shows blood + the word "Hemorrhage" over the head (`HemorrhageBurstClient`, `StatusEffects.Hemorrhage.burstVisual`). Nothing is recorded any more. |
 
 - **Immobility** effects fight for control of WalkSpeed. Only one is in control at a time, by priority (Daze < Aerial < Stun < Imbalance < Stagger), and it shows as the marker above the head. Imbalance's ragdoll physics always happens, even when Stagger holds the marker.
 - **OverStatus** effects are tracked independently and can stack with each other.
@@ -108,7 +108,7 @@ Damage numbers (`DamageIndicator`), enemy overhead health (`EnemyOverheadUI`), s
 
 ## Run flourish (`RunFlourishClient`, tuning `MovementTuning.RunFlourish`)
 - **Run pace:** the run plays faster the further your movement-speed buff is past its +20% trigger: `rate = 1 + (speed / triggerSpeed − 1) × rateScale`, capped at `maxRate` (`ClassAnimations` FAST_WALK; rateScale 1 keeps the legs in step with the ground). +30% → 1.08×, +40% → 1.17×, +60% → 1.33×, +100% → 1.6×. Footsteps follow automatically.
-While a character's **run animation** plays (the shared fast walk, `ClassAnimations.GetFastWalk()`, swapped in by `ClassMovementAnimations` once the movement-speed buff passes its threshold; 3★ Souls have none):
+While a character's **run animation** plays (the shared fast walk, `ClassAnimations.GetFastWalk()`, swapped in by `ClassMovementAnimations` once the movement-speed buff passes its threshold; 3★ Souls have none unless they have **their own**, `CLASS_FAST_WALKS`, Roran first, whose playback follows real ground speed; `GetAllFastWalkIds`):
 - its **arms and legs carry the dash's limb trails** (`BodyTrail`'s texture and lavender colour, a touch softer: 0.5 start transparency), on for as long as it runs and fading 0.25 s after;
 - the body **leans a little into its turns** (2.2° per rad/s of turning) and toward sideways movement when strafing on lock-on (7° fully sideways), capped at **8°**, easing in and out.
 - Every client draws it for every player character. The lean is a roll on the root joint's **C1**, so it never fights the air dash spin (which uses C0). "Moving" is read from the character's real speed, so other players' runs show too.

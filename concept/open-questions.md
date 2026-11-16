@@ -30,4 +30,3 @@ Things the design hasn't settled yet. Move an item out once it's decided and doc
 - The Sufferer's AI is a placeholder until its full kit.
 - Cleanser lore lines (players can talk to survivors; the text is Lukas's to write).
 - Alpha Dohv and Lord Dohv (planned major enemies).
-- Hemorrhage: how a character applies it, and its lifetime rules.
