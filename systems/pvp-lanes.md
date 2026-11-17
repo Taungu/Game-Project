@@ -58,6 +58,15 @@ Principle: Silver and levels for the winners, something smaller for the losers, 
 - **To monsters:** respawn as today (10 s).
 - **To players:** respawn at your team's Safe Haven (time lost). Bounties pay out.
 
+## Built so far
+**Step 1, lanes (2026-11-17, Session).** Not playtested yet.
+- `ReplicatedStorage.PVPLaneSettings`: sides, roles, seats (1/2/2), the role fill order and `laneSpacing` (8,000 studs).
+- `ServerScriptService.PVPLanes`: a lane per side + role; `Acquire` makes the lane's own copy of a path (named and tagged like the template, marked `LaneCopyOf` / `LaneId`, moved to its slot), `Release` removes it once the lane has moved on. Slots alternate ±X: +8k, −8k, +16k… The original paths span X −1,073…2,022, so nothing overlaps.
+- `PathProgressionScript` runs each lane as a **track** (same machinery as the old teams): own random paths, events, enemy level and Safe Haven every 5 paths. With `Workspace.PVPLanes` on it builds six lanes. Each side's **entrance is shared** (the team leaves together, splits at the first path). The path pools, parking and name lookups never pick a copy. Lanes never meet by sharing a path (meetings come in step 2). The Studio "Secound Stage first" override doesn't apply to lanes.
+- `SessionPartyState`: roles per player (`GetRole` / `AssignRole`; from `teleportData.roles` later). The player gets a `PVPRole` attribute.
+- **Studio test:** tick `Workspace.StudioTestPVPLanes`. Players get teams as in the PVP test and roles in the fill order per team (Vanguard, Rearguard, Scout, Rearguard, Scout). Set `Workspace.StudioTestRole` to make the first player another role. The lobby will set `teleportData.lanes` / `.roles` (step 5).
+- **Still on from the old PVP until replaced:** lives (unused, since nobody meets yet) and the boss race, which now runs **per lane** (each lane would reach its own Rehem at path 27). Step 3 replaces it. The Rejuvenating Field's lake on a lane copy is untested (step 4).
+
 ## Build order
 1. **Lanes:** per-lane path copies and the lane track system (no PVP yet).
 2. **Roles and matchups:** Vanguard duel rhythm and mirrored first events; Rearguard–Scout Ambushes; Rearguard reinforcement; the bounty.
