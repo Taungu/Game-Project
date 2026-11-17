@@ -4,6 +4,7 @@
 - **Not a starter.** Only obtainable through **Convoke** (featured on the "Depths Delver" Souls banner) or a grant.
 - **Role:** Counter-puncher tank. Holds his ground, takes the hit, gives it back. The whole kit is Physical and scales on Physical Damage.
 - **Affinity Stat:** Health (Mastery levels grow his health most)
+- **M1 limiter (2026-11-17):** every M1 swing takes **1.25×** as long (animation, hit timing and cooldown together), on top of Attack Speed, so with the same items he always swings slower than most. Damage per hit is unchanged. His raw stats made his weapon pairings too strong. `ClassAbilities.Zumin.m1Limiter.swingTime`; any class can set it (`CombatScript`).
 - Kit runs in `ServerScriptService.ZuminKit`; numbers in `ClassAbilities.Zumin`.
 
 | Stat | Value |
