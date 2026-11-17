@@ -1,6 +1,6 @@
-# PVP: Lanes (design spec, not built yet)
+# PVP: Lanes (design spec, being built)
 
-Agreed with Lukas on 2026-11-17. **Replaces the current PVP mode entirely** ([pvp.md](pvp.md) describes what's live today). Nothing here is built yet; numbers are placeholders.
+Agreed with Lukas on 2026-11-17. **Replaces the current PVP mode entirely** ([pvp.md](pvp.md) describes what's live today). Steps 1–2 are built (see **Built so far**); numbers are placeholders.
 
 **Why:** today's PVP lives on chance meetings and a pool of lives, which gives players little purpose together. Lanes give every player a **role**, a **rival** and a reason to play with their team.
 
@@ -65,7 +65,16 @@ Principle: Silver and levels for the winners, something smaller for the losers, 
 - `PathProgressionScript` runs each lane as a **track** (same machinery as the old teams): own random paths, events, enemy level and Safe Haven every 5 paths. With `Workspace.PVPLanes` on it builds six lanes. Each side's **entrance is shared** (the team leaves together, splits at the first path). The path pools, parking and name lookups never pick a copy. Lanes never meet by sharing a path (meetings come in step 2). The Studio "Secound Stage first" override doesn't apply to lanes.
 - `SessionPartyState`: roles per player (`GetRole` / `AssignRole`; from `teleportData.roles` later). The player gets a `PVPRole` attribute.
 - **Studio test:** tick `Workspace.StudioTestPVPLanes`. Players get teams as in the PVP test and roles in the fill order per team (Vanguard, Rearguard, Scout, Rearguard, Scout). Set `Workspace.StudioTestRole` to make the first player another role. The lobby will set `teleportData.lanes` / `.roles` (step 5).
-- **Still on from the old PVP until replaced:** lives (unused, since nobody meets yet) and the boss race, which now runs **per lane** (each lane would reach its own Rehem at path 27). Step 3 replaces it. The Rejuvenating Field's lake on a lane copy is untested (step 4).
+- **Still on from the old PVP until replaced:** the boss race, which now runs **per lane** (each lane would reach its own Rehem at path 27). Step 3 replaces it. The Rejuvenating Field's lake on a lane copy is untested (step 4).
+
+**Step 2, roles and matchups (2026-11-17, Session).** Checked in a solo playtest: the Vanguard's first path after the entrance was the opening (PathVersion3 with the Zev fight) on his own copy. Meetings, reinforcement and the bounty need two or more players to see; they're checked by code reading only so far.
+- **Meetings are decided by the system.** When a lane leaves a path, `laneNextNode` may send it onto an enemy lane's **own copy** instead of a new path. That starts today's **Ambush** there (locked until one side is wiped, losers to their own Safe Haven). A lane can only be reached on a path copy with players on it: never in a Safe Haven, on a boss path, on a detour (side path), while moving or while already fighting. When two lanes share a copy it's removed once nobody stands on it.
+- **Vanguard duel.** The opening: the same first path and the same fight for both Vanguards (`openingEvents`, empty = any normal fight). The first to clear it lands on the slower one's path. After that a Vanguard leaving a path meets the enemy Vanguard once he's walked `duelEveryPaths` (2) paths since their last duel; if the enemy can't be reached he's tried again on every path after.
+- **Rearguards vs Scouts.** Each path a Rearguard lane leaves rolls `encounterChance` (25%) to land on the enemy Scouts' path, and Scouts roll the same against the enemy Rearguards. Rearguards never meet Rearguards.
+- **Reinforcement.** A Rearguard lane leaving a Safe Haven joins its Vanguard on his current path (waits up to `reinforceWait` s if he's between paths; skipped if he's in a haven or at the entrance). They count as his players for that path (exit gate, Ambush, respawns, Essence); if he's fighting they're in the fight. When he leaves the path they go back to their own lane's next path, and the path counts for their lane. If he loses an Ambush they go to their own Safe Haven.
+- **No lives in lanes.** Killing an enemy player pays their **bounty**: `baseSilver` + `silverPerStreak` × their streak, plus 1 level per `streakPerLevel` streak. A streak is enemy players killed since your own last death to a player. Your bounty shows where the lives counter used to be ("Bounty on you: N Silver"). The match doesn't end yet (step 3).
+- Fixes: a lane could pick another lane's copy of a Safe Haven as its haven (now only templates), the Ambush banner now names the side (not the lane), and losing says "Back to your Safe Haven".
+- **To test with players:** Studio's *Clients and Servers* test with 2+ players and `StudioTestPVPLanes` ticked. Teams split players as in the PVP test; with 2 players each side has a Vanguard, so the opening and duels happen. Roles via `StudioTestRole` (first player).
 
 ## Build order
 1. **Lanes:** per-lane path copies and the lane track system (no PVP yet).

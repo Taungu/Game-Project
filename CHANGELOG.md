@@ -3,6 +3,7 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-11-17
+- **PVP lanes, step 2 built (Session):** the system decides every meeting. Vanguards get a mirrored opening path and fight, then duel every 2nd path; Rearguards and Scouts meet by chance (25%); Rearguards leaving a Safe Haven reinforce their Vanguard for one path; no lives, kills pay a streak bounty (Silver + levels). Opening checked solo; meetings need a multi-player test. Spec: [systems/pvp-lanes.md](systems/pvp-lanes.md).
 - **PVP lanes, step 1 built (Session, not playtested):** each side + role is its own lane with its own copies of the paths (`PVPLanes`, `PVPLaneSettings`, roles in `SessionPartyState`). Studio test: tick `Workspace.StudioTestPVPLanes`.
 - **PVP redesign agreed (not built):** 5v5 lanes and roles (Vanguard, Rearguards, Scouts), team fights at the main bosses, a final fight in the losers' Safe Haven decides the match. Spec: [systems/pvp-lanes.md](systems/pvp-lanes.md).
 - Zumin: M1 limiter, every swing 1.25× as long (`m1Limiter.swingTime`, a new option any class can use), stacking on top of Attack Speed.
