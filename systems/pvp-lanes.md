@@ -59,7 +59,7 @@ Principle: Silver and levels for the winners, something smaller for the losers, 
 - **To players:** respawn at your team's Safe Haven (time lost). Bounties pay out.
 
 ## Built so far
-**Step 1, lanes (2026-11-17, Session).** Not playtested yet.
+**Step 1, lanes (2026-11-17, Session).** Checked in a solo Studio playtest: leaving the entrance put the Embracers Vanguard on its own copy of the path, 8,000 studs along X, with the event spawned on it and the original parked. Both Studio test overrides ("Secound Stage first" and the entrance's forced Akavish) are kept out of lanes.
 - `ReplicatedStorage.PVPLaneSettings`: sides, roles, seats (1/2/2), the role fill order and `laneSpacing` (8,000 studs).
 - `ServerScriptService.PVPLanes`: a lane per side + role; `Acquire` makes the lane's own copy of a path (named and tagged like the template, marked `LaneCopyOf` / `LaneId`, moved to its slot), `Release` removes it once the lane has moved on. Slots alternate ±X: +8k, −8k, +16k… The original paths span X −1,073…2,022, so nothing overlaps.
 - `PathProgressionScript` runs each lane as a **track** (same machinery as the old teams): own random paths, events, enemy level and Safe Haven every 5 paths. With `Workspace.PVPLanes` on it builds six lanes. Each side's **entrance is shared** (the team leaves together, splits at the first path). The path pools, parking and name lookups never pick a copy. Lanes never meet by sharing a path (meetings come in step 2). The Studio "Secound Stage first" override doesn't apply to lanes.
