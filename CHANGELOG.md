@@ -2,6 +2,9 @@
 
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
+## 2026-11-17
+- Bleed ticks lean much harder on Magic: 4 Magic + 0.5 Physical per second per Bleed (was 3 + 1). A Physical build is paid through Hemorrhage.
+
 ## 2026-11-16
 - Roran named (per Lukas, from his novel): title **Entrepreneur**; Q Elegant Correction, E Closing Clause, passive Paint Red, R Core Unbound; bare-handed Q Mongrel's Answer, E Until I Say So, F Beyond Measure (`ClassAbilities` both places; title in `ClassDefinitions` both places).
 - **Bleed overhaul:** ticks are typed damage (3 Magic + 1 Physical per second per Bleed, full stat bonus + level ability power, resisted), not 0.5% max HP True.

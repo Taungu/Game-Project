@@ -21,6 +21,6 @@
 | **R** | **Hemostatic Impact** | A step forward, then one heavy 120° slash. It **force-bursts every Bleed** it hits, puts a **guaranteed 2× Hemorrhage** on every target, and **roots** them. | 20 Physical · radius 8 · root 0.75 s · cd 45 s · 35 Essence · stagger 3 |
 
 ## Bleed & Hemorrhage (how his damage pays off)
-- **Bleed** (2026-11-16): a DoT for 5 s, each second a 3 Magic + 1 Physical hit scaled by his stats. Up to 3 stacks.
+- **Bleed** (2026-11-16): a DoT for 5 s, each second a 4 Magic + 0.5 Physical hit scaled by his stats. Up to 3 stacks.
 - **Hemorrhage** (2026-11-16) is the Bleed's crit: an instant True burst scaled by Physical and Crit Damage. Every Bleed rolls his Crit Chance; Blood Letting forces one. Nothing is stored any more.
 - **Hemostatic Impact** guarantees a Hemorrhage on every target it hits, at **2×** (`guaranteedHemorrhage`, `hemorrhageMultiplier`). It still detonates their Bleed (ending it, rolling Anemic); that burst's old ×2 no longer adds damage.
