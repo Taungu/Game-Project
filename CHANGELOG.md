@@ -3,6 +3,7 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-11-19
+- **Old PVP retired (Servitude):** the PVP party queue (solo/duo/trio, 3v3 across servers) is removed; PVP is the open lanes lobby only. `PVPQueue`/`PVPTeamBuilder` moved to `ServerStorage.RetiredPVP`. Custom Match's Free battle keeps the old lives/shared-start rules.
 - **Fix (Session):** the Session's Soul/weapon saves (`savePlayerData`, `saveWeaponData` in `ServerScriptService.Script`) overwrote the lobby's whole save with only their own fields, wiping Essence (`convokeEssence`) and other lobby fields whenever a weapon was granted or equipped mid-run. They now merge (`UpdateAsync`) and keep everything else.
 - **PVP-only Souls (Session + Servitude):** unowned Souls can be bought on the PVP Soul pick screen, for PVP only (2-star 3,300 Essence = 20 pulls, 3-star 6,600 = 40 pulls; Personal Souls not for sale). Ownership in `PVPSoulOwnership`; the Essence is booked in `PendingRunRewards.essenceSpent` and taken off by the lobby on your next visit.
 - **Soul pick (Session, PVP lanes):** drawn Soul select at match start (no map), each Soul shown as its Character Page rig (tiles framed like the lobby icons, the middle waist up, idles playing), smooth crossfades with a black silhouette clearing on each pick, preview-only clicks (spam-safe), and a LOCKED IN card on the black screen behind which the Soul is applied once with its base stats and kit; last 10 s fade second by second.

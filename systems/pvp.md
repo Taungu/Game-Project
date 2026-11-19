@@ -1,5 +1,7 @@
 # PVP mode
 
+> **Retired (2026-11-19).** The queue-based PVP described here was replaced by **PVP lanes** ([pvp-lanes.md](pvp-lanes.md)). Its lives/shared-start rules live on only in Custom Match's *Free battle*.
+
 > **Being replaced:** a new lane-and-roles PVP has been designed (2026-11-17) and will replace this mode entirely. See [pvp-lanes.md](pvp-lanes.md). This page describes what's live until then.
 
 A race to get strong. Two teams walk the same random path pool from opposite ends, building items and levels exactly like Story. When they collide, they fight.
