@@ -3,7 +3,7 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-11-19
-- **Soul pick (Session, PVP lanes):** drawn Soul select at match start (no map), each Soul shown as its Character Page rig (tiles framed like the lobby icons, the middle waist up, idles playing), preview by clicking, applied once at the end or on Lock in; last 10 s fade second by second.
+- **Soul pick (Session, PVP lanes):** drawn Soul select at match start (no map), each Soul shown as its Character Page rig (tiles framed like the lobby icons, the middle waist up, idles playing), smooth crossfades with a black silhouette clearing on each pick, preview-only clicks (spam-safe), and a LOCKED IN card on the black screen behind which the Soul is applied once with its base stats and kit; last 10 s fade second by second.
 - **Custom Match (was PVP Test, Servitude):** own window with two sides you can switch between, the host's rules switch (Free battle / PVP match with lanes), in-server invites onto your side.
 - **PVP lanes, step 5 started (Servitude):** lane cards in the open PVP lobby (5v5, seats per lane, remembered favourite, animated see-through cards with corner filigree), in-server invites that group players onto the same team, and teams drawn per lane.
 - **PVP lanes, step 4 built (Session):** the side path (Rejuvenating Field, caves, Wyvern Nest; the corrupted field) is one shared copy for all lanes, PvP anywhere inside, one fight per path, counts for progression, one life inside (a death throws the lane out), and the miniboss's killing blow locks it for everyone but the slayers' side, who keep the lake.
