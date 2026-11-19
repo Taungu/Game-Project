@@ -19,7 +19,7 @@ Pressing **PVP** (after picking the stage) puts you straight into the server's *
 - At 0 everyone is **shuffled into two random teams** (Embracers / Navats; Embracers get the extra player on odd counts). The window shows the draw for 2.5 s, then everyone is teleported into one reserved session server as a normal PVP match (separate entrances). A failed teleport un-readies everyone so they can try again.
 - Leave takes you out. Joining the open lobby drops you from any party you were in.
 - It's per lobby server (players on another lobby server have their own open lobby). Teleports can't be tested in Studio.
-- The old party queue below (`PVPQueue`) is still in the code but nothing opens it any more; **PVP Test** still uses hosting.
+- The old party queue below (`PVPQueue`) is still in the code but nothing opens it any more; **PVP Test (renamed **Custom Match** on 2026-11-19, see pvp-lanes.md)** still uses hosting.
 
 ### (Old) Matchmaking (Lobby: `SessionManager`, `PVPQueue`, `PVPTeamBuilder`)
 - Queue as **solo, duo or trio**. A **global queue** across all lobby servers (MemoryStore). Groups are never split.
