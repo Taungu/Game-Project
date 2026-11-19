@@ -3,6 +3,7 @@
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
 ## 2026-11-19
+- **PVP lanes, step 5 started (Servitude):** lane cards in the open PVP lobby (5v5, seats per lane, remembered favourite, animated see-through cards with corner filigree), in-server invites that group players onto the same team, and teams drawn per lane.
 - **PVP lanes, step 4 built (Session):** the side path (Rejuvenating Field, caves, Wyvern Nest; the corrupted field) is one shared copy for all lanes, PvP anywhere inside, one fight per path, counts for progression, one life inside (a death throws the lane out), and the miniboss's killing blow locks it for everyone but the slayers' side, who keep the lake.
 - **PVP lanes, step 3 built (Session):** team waiting rooms before the Rehem and The Chastity (no enemies, barrier until the whole team is there, Soul line), the team walks on as one; boss contests until the boss falls; Rehem rewards (Silver, level, Spoils of the Beast; half Silver for the other team); the ending (losers of The Chastity held in their Safe Haven, slayers shop then walk in for the final fight, which wins the match). Solo walk-through done; team parts need a multi-player test.
 

@@ -92,6 +92,13 @@ Principle: Silver and levels for the winners, something smaller for the losers, 
 - **The miniboss** (the Wyvern / the Abominable Akavish). The side whose player lands the **killing blow** (the enemy's `LastHitUserId`) owns it: that stage locks, every enemy lane inside is thrown out, enemy lanes on their way in (Path version 5) are turned onto normal paths, and its entrance becomes a wall for everyone. The slayers go back to the field and the lake works for **their side only** (per your call: lake first, then lock).
 - Fix: a copied field carried the template's lake prompts without their connection; the lake now clears those and makes its own.
 
+**Step 5, the lobby (in progress, 2026-11-19, Servitude).** Decided with Lukas: lanes are picked **in the lobby** and remembered; teams are drawn **per lane**; enemy lanes stay hidden until the match starts; the Soul is picked **in the match** (fog-styled screen, mock-up on the "PVP Lanes – Role Pick" canvas); when its timer runs out you go in as the Soul you have selected. Lukas prefers **sharp corners** in UI.
+- **Open PVP lobby, now 5v5** (`SessionConfig.PVPLobby`: `maxPlayers` 10, `laneSeats` Vanguard 2 / Rearguard 4 / Scout 4 for both teams together). `LaneFavourites` (DataStore `PVPLaneFavourite`) puts you straight back in your lane if it has a seat.
+- **Lane cards** (`ScreenGui.LaneCardsFrame`, beside the lobby window): the whole card is the button. Idle cards use the house see-through panel (`PVPLobbyFrame`'s gradient) with the Hotbar plate's corner filigree; hover grows a card a touch; your lane pops ~7% bigger, turns solid plum with a gold edge. Cards come in one after another when the window opens. A full lane can't be picked; Ready needs a lane.
+- **In-server invites:** "Invite" in the lobby window lists the players on this server; the invited player gets an Accept / Decline pop-up (`ScreenGui.PVPInvitePrompt`, 30 s). Accepting joins the lobby **in your group**: a group (max 5, lanes must fit one team) is always drawn onto the same team.
+- **The draw:** groups first (each whole, onto the smaller team it fits), then everyone else per lane (never more than half a lane's seats on one team). The session gets `teleportData.lanes = true` and `.roles`.
+- Still to build: the in-match Soul pick. Not yet tested with 2+ players: invites, groups and the draw.
+
 ## Build order
 1. **Lanes:** per-lane path copies and the lane track system (no PVP yet).
 2. **Roles and matchups:** Vanguard duel rhythm and mirrored first events; Rearguard–Scout Ambushes; Rearguard reinforcement; the bounty.
