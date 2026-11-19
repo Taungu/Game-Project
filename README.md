@@ -23,7 +23,7 @@ This repo is the **design reference**, not the code. The code lives in the two R
 | How stats, levels and damage work | [systems/stats-and-levels.md](systems/stats-and-levels.md) |
 | How combat works (M1, abilities, stagger, status effects) | [systems/combat.md](systems/combat.md) |
 | How a run is structured (paths, events, safe havens, economy) | [systems/run-structure.md](systems/run-structure.md) |
-| PVP mode | [systems/pvp.md](systems/pvp.md) (live) · [systems/pvp-lanes.md](systems/pvp-lanes.md) (the planned replacement, not built yet) |
+| PVP mode | [systems/pvp.md](systems/pvp.md) (live) · [systems/pvp-lanes.md](systems/pvp-lanes.md) (the replacement, steps 1–3 built) |
 | Essence (premium currency): Convoke prices and what runs pay | [systems/economy.md](systems/economy.md) |
 | Lobby: Convoke, Character Page, intro, matchmaking | [systems/lobby.md](systems/lobby.md) |
 | Which script or module does what | [places/session-northforest.md](places/session-northforest.md) · [places/lobby-servitude.md](places/lobby-servitude.md) |
