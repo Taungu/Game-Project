@@ -1,6 +1,6 @@
 # PVP: Lanes (design spec, being built)
 
-Agreed with Lukas on 2026-11-17. **Replaces the current PVP mode entirely** ([pvp.md](pvp.md) describes what's live today). Steps 1–3 are built (see **Built so far**); numbers are placeholders.
+Agreed with Lukas on 2026-11-17. **Replaces the current PVP mode entirely** ([pvp.md](pvp.md) describes what's live today). Steps 1–4 are built (see **Built so far**); numbers are placeholders.
 
 **Why:** today's PVP lives on chance meetings and a pool of lives, which gives players little purpose together. Lanes give every player a **role**, a **rival** and a reason to play with their team.
 
@@ -65,7 +65,6 @@ Principle: Silver and levels for the winners, something smaller for the losers, 
 - `PathProgressionScript` runs each lane as a **track** (same machinery as the old teams): own random paths, events, enemy level and Safe Haven every 5 paths. With `Workspace.PVPLanes` on it builds six lanes. Each side's **entrance is shared** (the team leaves together, splits at the first path). The path pools, parking and name lookups never pick a copy. Lanes never meet by sharing a path (meetings come in step 2). The Studio "Secound Stage first" override doesn't apply to lanes.
 - `SessionPartyState`: roles per player (`GetRole` / `AssignRole`; from `teleportData.roles` later). The player gets a `PVPRole` attribute.
 - **Studio test:** tick `Workspace.StudioTestPVPLanes`. Players get teams as in the PVP test and roles in the fill order per team (Vanguard, Rearguard, Scout, Rearguard, Scout). Set `Workspace.StudioTestRole` to make the first player another role. The lobby will set `teleportData.lanes` / `.roles` (step 5).
-- **Still open:** the Rejuvenating Field's lake on a lane copy is untested (step 4).
 
 **Step 2, roles and matchups (2026-11-17, Session).** Checked in a solo playtest: the Vanguard's first path after the entrance was the opening (PathVersion3 with the Zev fight) on his own copy. Meetings, reinforcement and the bounty need two or more players to see; they're checked by code reading only so far.
 - **Meetings are decided by the system.** When a lane leaves a path, `laneNextNode` may send it onto an enemy lane's **own copy** instead of a new path. That starts today's **Ambush** there (locked until one side is wiped, losers to their own Safe Haven). A lane can only be reached on a path copy with players on it: never in a Safe Haven, on a boss path, on a detour (side path), while moving or while already fighting. When two lanes share a copy it's removed once nobody stands on it.
@@ -84,6 +83,14 @@ Principle: Silver and levels for the winners, something smaller for the losers, 
 - No more meetings once The Chastity has fallen. A gathered team meets nobody on the way.
 - Boss messages now name the side (not the lane), so "slain by you / by them" lines are right in lanes.
 - Tunables: `waitingRoom` (barrier look, Soul line delay), `bossContestWindow`, `rehem` (Silver, levels, loser share, Spoils %), `chastity.blessingPercent`. Soul line `WaitForAllies` in `SoulWhisperLines`.
+
+**Step 4, the side path (2026-11-19, Session).** Walked through solo in Studio: PathVersion3 → Path version 5 → the shared field (slot +32,000, PvP flag on) → dying there threw the lane out onto a normal path → field → caves (a beaten cave stayed empty on the way back through) → Wyvern Nest → killing the Wyvern locked stage 1 for the killer's side, and PathVersion3's way in became a wall. Not seen yet: two teams inside at once, and the corrupted field (stage 2).
+- **Shared.** The side-path nodes (`sidePath.stages`: the field, CavePath1/2 and the Wyvern Nest; second stage: the corrupted field) have **one copy each for the whole match** (`PVPLanes.AcquireShared`, lane slot 7 = +32,000 X), walked by every lane of both teams. No Ambush lock there: inside, every player gets `InAmbush = "SidePath"`, so enemies can fight anywhere in it.
+- **One fight per path.** The first lane in pulls a shared path's fight. A later lane walks in on it as it is (and can leave once its own fight, which it has none of, is "cleared"). Once beaten, that path stays empty for the rest of the match.
+- **Counts for progression** in lanes (detours don't count in Story).
+- **One life inside.** A player dying in the side path throws their whole lane out onto a normal path (per your call). They can walk back in while it's open.
+- **The miniboss** (the Wyvern / the Abominable Akavish). The side whose player lands the **killing blow** (the enemy's `LastHitUserId`) owns it: that stage locks, every enemy lane inside is thrown out, enemy lanes on their way in (Path version 5) are turned onto normal paths, and its entrance becomes a wall for everyone. The slayers go back to the field and the lake works for **their side only** (per your call: lake first, then lock).
+- Fix: a copied field carried the template's lake prompts without their connection; the lake now clears those and makes its own.
 
 ## Build order
 1. **Lanes:** per-lane path copies and the lane track system (no PVP yet).
