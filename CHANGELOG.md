@@ -2,6 +2,9 @@
 
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
+## 2026-11-19
+- **PVP lanes, step 3 built (Session):** team waiting rooms before the Rehem and The Chastity (no enemies, barrier until the whole team is there, Soul line), the team walks on as one; boss contests until the boss falls; Rehem rewards (Silver, level, Spoils of the Beast; half Silver for the other team); the ending (losers of The Chastity held in their Safe Haven, slayers shop then walk in for the final fight, which wins the match). Solo walk-through done; team parts need a multi-player test.
+
 ## 2026-11-17
 - **PVP lanes, step 2 built (Session):** the system decides every meeting. Vanguards get a mirrored opening path and fight, then duel every 2nd path; Rearguards and Scouts meet by chance (25%); Rearguards leaving a Safe Haven reinforce their Vanguard for one path; no lives, kills pay a streak bounty (Silver + levels). Opening checked solo; meetings need a multi-player test. Spec: [systems/pvp-lanes.md](systems/pvp-lanes.md).
 - **PVP lanes, step 1 built (Session, not playtested):** each side + role is its own lane with its own copies of the paths (`PVPLanes`, `PVPLaneSettings`, roles in `SessionPartyState`). Studio test: tick `Workspace.StudioTestPVPLanes`.
