@@ -2,6 +2,10 @@
 
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
+## 2026-11-20
+- **Double events (Session):** a path can pull two combat events at once (chance rises with progression; higher for bigger parties; PVP lanes use the solo odds). 11 pairs with their own arrivals (Zevs from the forest, a Dohv breaking the Brigands' standoff, the Brigand running to the Cleansers...). New: `DoubleEvents`, `DoubleEventSettings`, controller interrupts in BrigandAmbush/BrigandHost, `spawnEvent` can run a second event on the same exit.
+- **Three-way fights (Session):** `EnemyRivalry` lets two enemy groups fight each other; Zevs and Brigands use it (pair 1).
+
 ## 2026-11-19
 - **Old PVP retired (Servitude):** the PVP party queue (solo/duo/trio, 3v3 across servers) is removed; PVP is the open lanes lobby only. `PVPQueue`/`PVPTeamBuilder` moved to `ServerStorage.RetiredPVP`. Custom Match's Free battle keeps the old lives/shared-start rules.
 - **Fix (Session):** the Session's Soul/weapon saves (`savePlayerData`, `saveWeaponData` in `ServerScriptService.Script`) overwrote the lobby's whole save with only their own fields, wiping Essence (`convokeEssence`) and other lobby fields whenever a weapon was granted or equipped mid-run. They now merge (`UpdateAsync`) and keep everything else.

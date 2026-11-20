@@ -56,6 +56,38 @@ Quiet guidance that doesn't look like guidance. Each player only sees their own.
 - Leaving a node destroys any leftover enemies, so a fight left mid-battle doesn't follow you.
 - Full event list: [enemies/README.md](../enemies/README.md#encounters-serverstoragepathevents).
 
+## Double events (`DoubleEvents`, data in `DoubleEventSettings`)
+Added 2026-11-20 so one strong player can't carry a fight while the others watch. Now and then a path gets **two combat events**: the first plays as usual, and the second arrives into it a few seconds in and goes for whoever isn't already fighting. Both count toward the same exit.
+- **Chance** rises with progression (every path left counts) from path 3 to path 25, then stays at the cap:
+
+  | Party | Path 3 | Path 25 (cap) |
+  |---|---|---|
+  | Solo (and every PVP lane) | 5% | 40% |
+  | 2 players | 10% | 50% |
+  | 3+ players | 15% | 60% |
+
+- **Never on:** the first path after an entrance or a Safe Haven, boss paths, the Rehem run-up, detours/the side path, PVP waiting rooms or Ambushes.
+- **Pairs** (a path that pulls either event of a pair can become it; the first one always plays first):
+
+  | # | First | Second | What happens |
+  |---|---|---|---|
+  | 1 | Brigand ambush | Zevs | A pack bursts out of the forest 4 s into the fight, howls, goes for whoever is free. **Three-way:** Zevs and Brigands fight each other too. |
+  | 2 | Brigand ambush | Dohv | A Dohv charges through the standoff; the Brigands curse, blame the party and attack (no grab). |
+  | 3 | Dohv | Zevs | The Dohv fights the party; 5 s in a pack comes from behind and picks off whoever strays alone. They never attack the Dohv. |
+  | 4 | Totem grove | Zevs | The rising totems draw a pack from the forest. |
+  | 5 | Totem grove | Brigands | Brigands camping in the trees, startled, rush in hostile. |
+  | 6 | Brigand Host | Deceased | As the turning starts, the roots answer and the dead rise. |
+  | 7 | Cleansers vs Sufferer | Deceased | The dead rise in the middle of the Cleansers' fight. |
+  | 8 | Deceased | Corrupted Dohv | A Dohv crashes through the rising dead. |
+  | 9 | Brigand Host | Corrupted Dohv | The Dohv crashes the talk; the turning starts at once. |
+  | 10 | Cleansers vs Sufferer | Corrupted Dohv | A Dohv charges into the Cleansers' fight. |
+  | 11 | Cleansers vs Sufferer | Brigand Host | The worried Brigand runs to the Cleansers for help; his friend turns right there. |
+
+- **Three-way fights** (`EnemyRivalry`): two groups made rivals hunt and hit each other as well as the players. Wired for Zevs and Brigands. Lore rule: the **infected never fight each other**, so never pair them as rivals.
+- **Rewards:** each enemy pays as usual, so a double event pays both events.
+- **Studio test:** Workspace attribute `StudioTestDoubleEvent` = `"First+Second"` (event module names) or `"any"` forces that pair whenever a path pulls one of its events.
+- Checked in Studio: pair 1 (the three-way fight ran with both sides hurting each other) and pair 11 (run-in, plea, turning, both Hosts unleashed). The other pairs are built the same way but not yet seen.
+
 ## Safe Havens
 - Their own node (`SafeHavenNode` tag), guaranteed every **5** paths. There are no random ones now (`SAFE_HAVEN_CHANCE = 0`). Never two in a row.
 - **Heal zone:** refills **25% of max Health and Essence per second**.
