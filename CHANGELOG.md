@@ -2,6 +2,10 @@
 
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
+## 2026-11-21
+
+- **UI style guide** added: [style/README.md](style/README.md), with the palette (+ swatch image), fonts and text conventions, the panel / title bar / rule / button / diamond / backdrop recipes with exact values, ornament asset ids, layout rules, and 13 reference screenshots of both places' UI (Studio viewport captures). Also lists which old Lobby dev panels are legacy. CLAUDE.md now says to read it before building UI.
+
 ## 2026-11-20
 - **Double events (Session):** a path can pull two combat events at once (chance rises with progression; higher for bigger parties; PVP lanes use the solo odds). 11 pairs with their own arrivals (Zevs from the forest, a Dohv breaking the Brigands' standoff, the Brigand running to the Cleansers...). New: `DoubleEvents`, `DoubleEventSettings`, controller interrupts in BrigandAmbush/BrigandHost, `spawnEvent` can run a second event on the same exit.
 - **Three-way fights (Session):** `EnemyRivalry` lets two enemy groups fight each other; Zevs and Brigands use it (pair 1).
@@ -33,10 +37,6 @@ Notable design/content changes. Newest first. Dates are when they landed in Stud
 - Roran R: one-shot burst borrowed from Bella's R in his teal, screen shake (now through his cinematic camera), impact frame; body aura (new `BodyAura` module); topped up to the run threshold; his own run animation with real-speed playback, limb trails and lean.
 - Stagger flash is now dark grey; its old dark crimson flash plays on a Hemorrhage burst instead.
 - DEV panel **No cooldowns** button (`DevNoCooldowns`), replacing the hard-coded `TEST_NO_COOLDOWNS` switches.
-
-## 2026-11-21
-
-- **UI style guide** added: [style/README.md](style/README.md), with the palette (+ swatch image), fonts and text conventions, the panel / title bar / rule / button / diamond / backdrop recipes with exact values, ornament asset ids, layout rules, and 13 reference screenshots of both places' UI (Studio viewport captures). Also lists which old Lobby dev panels are legacy. CLAUDE.md now says to read it before building UI.
 
 ## 2026-11-15
 
