@@ -21,6 +21,7 @@ Read [README.md](README.md) first. It indexes everything. This file covers how t
 - Every tunable number lives in a **data module** (ReplicatedStorage). Scripts read from it. Keep it that way.
 - Data tables are kept separate from function tables in every module, so `pairs()` over the data never hits functions.
 - NPC dialogue calls the player **"wanderer"**. Brigands talk normally (no "Oi").
+- **Building or reworking UI?** Read [style/README.md](style/README.md) first (palette, fonts, panel/button recipes, reference screenshots) and match it. Add a picture of any new screen there.
 - Item descriptions tell the **history** behind the item, not how it looks, and hint at links to other items rather than stating them.
 - He animates in **Moon Animator** at 60 fps; hit timings are written as `frame/60`.
 - **Test-only things stay in Studio.** Every test override, forced event, test pickup/NPC or dev button must be gated with `RunService:IsStudio()` (or `DevAccess` when it has to work on real servers, like PVP Test). Session test content goes in `Workspace.DevTesting` or gets the `DevOnly` tag; `DevContentGuard` removes both outside Studio.

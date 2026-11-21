@@ -18,6 +18,7 @@ This repo is the **design reference**, not the code. The code lives in the two R
 | Artifacts (the Armory, permanent) | [items/artifacts.md](items/artifacts.md) |
 | Soul Mastery (per-Soul 0–10) | [systems/soul-mastery.md](systems/soul-mastery.md) |
 | Settings menu | [systems/settings.md](systems/settings.md) |
+| **UI look**: palette, fonts, panel/button recipes, screenshots | [style/README.md](style/README.md) |
 | UI motion (fades, letter writing, card reveals) | [systems/ui-motion.md](systems/ui-motion.md) |
 | What they fight | [enemies/README.md](enemies/README.md) |
 | How stats, levels and damage work | [systems/stats-and-levels.md](systems/stats-and-levels.md) |

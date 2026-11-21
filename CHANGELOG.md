@@ -34,6 +34,10 @@ Notable design/content changes. Newest first. Dates are when they landed in Stud
 - Stagger flash is now dark grey; its old dark crimson flash plays on a Hemorrhage burst instead.
 - DEV panel **No cooldowns** button (`DevNoCooldowns`), replacing the hard-coded `TEST_NO_COOLDOWNS` switches.
 
+## 2026-11-21
+
+- **UI style guide** added: [style/README.md](style/README.md), with the palette (+ swatch image), fonts and text conventions, the panel / title bar / rule / button / diamond / backdrop recipes with exact values, ornament asset ids, layout rules, and 13 reference screenshots of both places' UI (Studio viewport captures). Also lists which old Lobby dev panels are legacy. CLAUDE.md now says to read it before building UI.
+
 ## 2026-11-15
 
 - Roran's own idle `108563588785780`, walk `124461748512504` and jump `107991336641853` in `ClassAnimations` (Session + Lobby).
