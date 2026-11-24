@@ -11,7 +11,7 @@ This repo is the **design reference**, not the code. The code lives in the two R
 | If you want… | Read |
 |---|---|
 | The idea, the core loop and the design rules | [concept/overview.md](concept/overview.md) |
-| The world of Tzarot, its factions and its magic | [lore/world.md](lore/world.md) · [lore/glossary.md](lore/glossary.md) |
+| The world of Tzarot, its factions and its magic | [lore/world.md](lore/world.md) · [lore/characters.md](lore/characters.md) (novel characters) · [lore/glossary.md](lore/glossary.md) |
 | Who you can play | [characters/README.md](characters/README.md) |
 | What they fight with | [weapons/README.md](weapons/README.md) |
 | Charms, materials and crafting | [items/charms.md](items/charms.md) · [items/materials.md](items/materials.md) |
