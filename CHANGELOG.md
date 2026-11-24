@@ -2,6 +2,10 @@
 
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
+## 2026-11-24
+
+- **Lore aligned with the novels** ([lore/world.md](lore/world.md)): Opharim are granted by the Pontiff to the skilled or blessed, not by Ministry rank; Wanderers are the Wandering Union's mercenaries (Iron-Willed is the lowest rank); the split crown is still the Benaiah crest; Sturla rivals Klynehart without hating him; Fahlon is the son of the Empire's founder; the South Gate is the poor exception to Da'at Rav's wealth; Lord Dohvs are a separate, superior species; Kleilevs answer to their owner's essence. "Pontif" spelled "Pontiff".
+
 ## 2026-11-21
 
 - **UI style guide** added: [style/README.md](style/README.md), with the palette (+ swatch image), fonts and text conventions, the panel / title bar / rule / button / diamond / backdrop recipes with exact values, ornament asset ids, layout rules, and 13 reference screenshots of both places' UI (Studio viewport captures). Also lists which old Lobby dev panels are legacy. CLAUDE.md now says to read it before building UI.

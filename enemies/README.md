@@ -64,6 +64,6 @@ Corrupted enemies (Deceased, Host, Sufferer, Dohv(Corrupted), Abominable Akavish
 | **RossMerchant** | Safe | Random pool, weight 0.5 (a chance encounter) | Ross the merchant: buy and sell. |
 
 ## Planned
-- **Alpha Dohv** (pinnacle of the Dohv species, just under Lord Dohv) and **Lord Dohv** as a major enemy.
+- **Alpha Dohv** (the peak a Dohv can reach) and **Lord Dohv** (a related, far superior species, not a higher Dohv rank) as major enemies.
 - **Valrek**: the intro's chasing monster (cutscene rig only).
 - The final boss.
