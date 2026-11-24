@@ -4,7 +4,7 @@ Notable design/content changes. Newest first. Dates are when they landed in Stud
 
 ## 2026-11-24
 
-- **Lore aligned with the novels** ([lore/world.md](lore/world.md)): Opharim are granted by the Pontiff to the skilled or blessed, not by Ministry rank; Wanderers are the Wandering Union's mercenaries (Iron-Willed is the lowest rank); the split crown is still the Benaiah crest; Sturla rivals Klynehart without hating him; Fahlon is the son of the Empire's founder; the South Gate is the poor exception to Da'at Rav's wealth; Lord Dohvs are a separate, superior species; Kleilevs answer to their owner's essence. "Pontif" spelled "Pontiff". Cleansing's Way of Flash was founded by Marcus, built on his father Lucas's Silver Flash (was "Inquisitor Lukas").
+- **Lore aligned with the novels** ([lore/world.md](lore/world.md)): Opharim are granted by the Pontiff to the skilled or blessed, not by Ministry rank; Wanderers are the Wandering Union's mercenaries (Iron-Willed is the lowest rank); the split crown is still the Benaiah crest; Sturla rivals Klynehart without hating him; Fahlon is the son of the Empire's founder; the South Gate is the poor exception to Da'at Rav's wealth; Lord Dohvs are a separate, superior species; Kleilevs answer to their owner's essence. "Pontif" spelled "Pontiff". Cleansing's Way of Flash grew out of Lucas's early Silver Flash and was popularised by his son Marcus (was "Inquisitor Lukas").
 
 ## 2026-11-21
 
