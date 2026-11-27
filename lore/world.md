@@ -1,5 +1,7 @@
 # The world of Tzarot
 
+> Spoiler-level truths (the cosmos, Ishdam's split, why the tree is ill, Hans, Danial, the Embracer) are in [hidden-lore.md](hidden-lore.md).
+
 > Lukas keeps a separate **Tzarot Lore Bible** document. Many terms here are **game-only extras** that the bible doesn't cover yet. Items, NPCs and enemies are written to tie into this lore, so new content should fit it. Names below come from item descriptions, NPC lines and design notes.
 
 ## Creation and the gods

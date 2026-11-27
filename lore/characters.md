@@ -54,8 +54,8 @@ The significant characters of Lukas's novels: Arc 1 *Graceless Life*, Arc 2 *Bor
 | **Jina** | South Gate brothel worker whom Klyne saved; now a waitress. Blessed. 17. | Brown hair, amber eyes with gold flecks. In love with Klyne, calls herself "his woman". |
 | **Roran Keller** | "The Baron" of the South Gate, an Empire-born self-made "entrepreneur" who ran its brothels and businesses. Core Essence duelist. (Dead.) | Slicked tan hair, beige suit, wavy rapier **Sapere**. Imprisoned and tortured Klyne. Killed by Shrolt after his fight with Klyne. |
 | **Shrolt** | Roran's bandaged right-hand man, born in the South Gate. | Weak presence, yet the most dangerous man in the room. Took Roran's face and now rules the South Gate as "Roran". Brought Klyne to the cell, then freed the prisoners. |
-| **Danial** | Inquisitor of the Church. | Masked, silver gauntlet, light hair with a blue tint. Credited Klyne with the Apex Predator and gave him the Pentagon insignia. Humble, apologises for the Cleansers' failures. |
-| **Pontiff Hans** | Head of the Church, who grants Cleansers their Opharim. | Prophesied with Danial to be "the gateway of paradise". |
+| **Danial** | Inquisitor of the Church. | Masked, silver gauntlet, light hair with a blue tint. Credited Klyne with the Apex Predator and gave him the Pentagon insignia. Humble, apologises for the Cleansers' failures. Hidden truth: [hidden-lore.md](hidden-lore.md#danial). |
+| **Pontiff Hans** | Head of the Church, who grants Cleansers their Opharim. | Prophesied with Danial to be "the gateway of paradise". Hidden truth: [hidden-lore.md](hidden-lore.md#pontiff-hans). |
 
 ## The Navats
 

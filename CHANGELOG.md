@@ -2,6 +2,10 @@
 
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
+## 2026-11-27
+
+- **Hidden lore** added: [lore/hidden-lore.md](lore/hidden-lore.md), the truths the novels keep secret, defined for the game: the cosmos and its omnipotent force, Ishdam's three-way split and the selfish ruler, why the Father Tree is ill (clogged cycle of souls), Pontiff Hans as the ruler's vessel, Danial as the loving Ishdam's carrier, and the Embracer as the figure in black.
+
 ## 2026-11-24
 
 - **Novel characters** added: [lore/characters.md](lore/characters.md), the significant characters of *Graceless Life*, *Bordering Life* and *Inquisitor's Descent* (who they are, looks, key facts), limited to what the books already reveal.
