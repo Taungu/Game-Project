@@ -4,6 +4,8 @@ Notable design/content changes. Newest first. Dates are when they landed in Stud
 
 ## 2026-11-27
 
+- **Idol's Stamp** (new tier-3, Destruction, 1750): 1200 MagicDmg; takes over the "whole MagicDmg stat counts 50% more" passive. Pontiff Hans's seal on every Opharim pact. Recipe: Formula of Light + Essence Piercer. See [items/charms.md](items/charms.md).
+- **Ishdam's Scriptures** new passive: +1% damage per 100 Essence capacity (its old passive moved to Idol's Stamp); description adjusted.
 - **Hidden lore** added: [lore/hidden-lore.md](lore/hidden-lore.md), the truths the novels keep secret, defined for the game: the cosmos and its omnipotent force, Ishdam's three-way split and the selfish ruler, why the Father Tree is ill (clogged cycle of souls), Pontiff Hans as the ruler's vessel, Danial as the loving Ishdam's carrier, and the Embracer as the figure in black.
 
 ## 2026-11-24
