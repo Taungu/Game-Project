@@ -2,6 +2,10 @@
 
 Notable design/content changes. Newest first. Dates are when they landed in Studio (approximate before 2026-10-23).
 
+## 2026-11-28
+
+- **Rounded corners removed** (both places), per the style guide's square-corners rule: item icons (`ItemUI`), the posture bar, item/skill tooltips, run-end panels and buttons, the artifact and Convoke legend-card flash, the hotbar hide arrow, the drag ghost, the Lobby's Core Essence button and the dev/test panels. True circles keep theirs (sigil rings, coin icons, infestation roots, reticle, twinkle stars).
+
 ## 2026-11-27
 
 - **Idol's Stamp** (new tier-3, Destruction, 1750): 1200 MagicDmg; takes over the "whole MagicDmg stat counts 50% more" passive. Pontiff Hans's seal on every Opharim pact. Recipe: Formula of Light + Essence Piercer. See [items/charms.md](items/charms.md).
